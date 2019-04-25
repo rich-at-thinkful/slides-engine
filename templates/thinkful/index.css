@@ -112,7 +112,21 @@ pre {
 }
 
 code {
-    font-family: 'MaisonNeue-Mono', 'Inconsolata' ,monospace;
+    font-family: 'MaisonNeue-Mono', 'Inconsolata', monospace;
+    padding: 0 2px;
+    margin: 0 4px;
+    border-radius: 1px;
+    font-size: 0.9rem;
+    background-color: #e5e5e5;
+    box-shadow: 0 0 0 3px #e5e5e5;
+}
+
+pre code {
+    font-size: 0.7rem;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -121,6 +135,7 @@ pre.hljs {
     overflow: auto;
     line-height: 1.3;
     font-size: 0.7rem;
+    border-radius: 4px;
 }
 
 .title-slide {
