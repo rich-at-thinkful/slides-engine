@@ -4,3 +4,13 @@ slides:
   - react-introduction/01-what-is-react
   - react-introduction/02-node-ecosystem
   - react-introduction/03-modules
+  - react-introduction/04-react-component
+  - react-introduction/05-a-react-component
+  - react-introduction/06-jsx-vs-html
+  - react-introduction/07-component-composition
+  - react-introduction/08-props
+  - react-introduction/09-component-with-props
+  - react-introduction/10-passing-props
+  - react-introduction/11-mapping-over-data
+  - react-introduction/12-class-components
+  - react-introduction/13-ei-project
