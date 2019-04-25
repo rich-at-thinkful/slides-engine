@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'MaisonNeue';
+    src:
+        url('https://fonts.thinkful.com/MaisonNeue-Book.woff') format('woff'),
+        url('https://fonts.thinkful.com/MaisonNeue-Book.woff2') format('woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+@font-face {
+    font-family: 'MaisonNeue-Italic';
+    src:
+        url('https://fonts.thinkful.com/MaisonNeue-BookItalic.woff') format('woff'),
+        url('https://fonts.thinkful.com/MaisonNeue-BookItalic.woff2') format('woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+@font-face {
+    font-family: 'MaisonNeue-Bold';
+    src:
+        url('https://fonts.thinkful.com/MaisonNeue-Bold.woff') format('woff'),
+        url('https://fonts.thinkful.com/MaisonNeue-Bold.woff2') format('woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+@font-face {
+    font-family: 'MaisonNeue-BoldItalic';
+    src:
+        url('https://fonts.thinkful.com/MaisonNeue-BoldItalic.woff') format('woff'),
+        url('https://fonts.thinkful.com/MaisonNeue-BoldItalic.woff2') format('woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+@font-face {
+    font-family: 'MaisonNeue-Mono';
+    src:
+        url('https://fonts.thinkful.com/MaisonNeue-Mono_web.woff') format('woff'),
+        url('https://fonts.thinkful.com/MaisonNeue-Mono_web.woff2') format('woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #373a36;
+    background-color: #fafafa;
+    font-size: 28px;
+    font-family: 'MaisonNeue','Helvetica',sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slide-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.slide {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.note {
+    display: none;
+}
+
+.title-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.title-slide h1 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

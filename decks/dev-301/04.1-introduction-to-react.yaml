@@ -1,0 +1,6 @@
+title: Introduction to React
+template: thinkful
+slides:
+  - react-introduction/01-what-is-react
+  - react-introduction/02-node-ecosystem
+  - react-introduction/03-modules
