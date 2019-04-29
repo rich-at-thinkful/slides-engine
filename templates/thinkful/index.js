@@ -10,6 +10,22 @@
         return document.getElementById('slide-wrapper');
     }
 
+    function getProgressBar() {
+        return document.getElementById('progress-bar');
+    }
+
+    function onSlideChange(
+        currentSlide,
+        totalSlides,
+        currentFragment,
+        totalFragments
+    ) {
+        console.log('SlideChange');
+        getProgressBar().style.width = `${100 *
+            currentSlide /
+            (totalSlides - 1)}%`;
+    }
+
     function resize() {
         const main = getMain();
         const {width, height} = main.getBoundingClientRect();
@@ -26,6 +42,8 @@
     function main() {
         window.onresize = resize;
         resize();
+        Fieldfare.onSlideChange = onSlideChange;
+        Fieldfare.start();
     }
 
     window.addEventListener('DOMContentLoaded', main);

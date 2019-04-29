@@ -161,3 +161,12 @@ pre.hljs {
 .highlight {
     border: 3px rgb(32, 194, 0) solid;
 }
+
+#progress-bar {
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #3E2AEE;
+}
