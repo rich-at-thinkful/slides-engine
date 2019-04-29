@@ -157,3 +157,7 @@ pre.hljs {
     transform: translateY(-50%);
     font-size: 2rem;
 }
+
+.highlight {
+    border: 3px rgb(32, 194, 0) solid;
+}
