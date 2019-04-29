@@ -102,8 +102,11 @@ main {
     overflow: hidden;
 }
 
-
 .note {
+    display: none;
+}
+
+.fragment:not(.visible) {
     display: none;
 }
 
