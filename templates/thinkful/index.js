@@ -12,8 +12,7 @@
 
     function resize() {
         const main = getMain();
-        const width = main.clientWidth;
-        const height = main.clientHeight;
+        const {width, height} = main.getBoundingClientRect();
 
         const wrapper = getSlideWrapper();
         const xScale = width / CONTENT_WIDTH;
