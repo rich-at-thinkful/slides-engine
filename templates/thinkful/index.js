@@ -20,7 +20,6 @@
         currentFragment,
         totalFragments
     ) {
-        console.log('SlideChange');
         getProgressBar().style.width = `${100 *
             currentSlide /
             (totalSlides - 1)}%`;
