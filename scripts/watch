@@ -1,0 +1,7 @@
+#! /bin/bash
+find decks -name "*.yaml" |
+    while read f; do
+        outdir=build/$(dirname $f | cut -d '/' -f2-)/$(basename $f .yaml)
+        PATH=$(npm bin):$PATH fieldfare $f slides templates $outdir --watch &
+    done
+    live-server build

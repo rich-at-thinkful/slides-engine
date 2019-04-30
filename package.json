@@ -11,5 +11,8 @@
     "fieldfare": "git+https://693dbafb5eb6e130c5b941e20b58b8037a5fe365:x-oauth-basic@github.com/oampo/fieldfare.git"
   },
   "author": "Joe Turner <jturner@thinkful.com>",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
