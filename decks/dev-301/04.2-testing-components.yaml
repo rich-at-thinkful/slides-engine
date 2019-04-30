@@ -1,0 +1,10 @@
+title: Testing Componennts
+template: thinkful
+slides:
+  - react-testing/01-testing
+  - react-testing/02-jest
+  - react-testing/03-unit-testing
+  - react-testing/04-smoke-testing
+  - react-testing/05-passing-props
+  - react-testing/06-snapshot-testing
+  - react-testing/07-ei-project

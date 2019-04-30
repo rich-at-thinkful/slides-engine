@@ -1,0 +1,4 @@
+title: Promises and AJAX Requests
+template: thinkful
+slides:
+  - react-promises-ajax/01-why-chain-promises.md
