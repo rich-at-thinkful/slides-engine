@@ -240,3 +240,35 @@ img.right {
     margin-left: auto;
 }
 
+.small {
+    font-size: 0.9em;
+}
+
+.smaller {
+    font-size: 0.8em;
+}
+
+.smallest {
+    font-size: 0.7em;
+}
+
+.tiny {
+    font-size: 0.6em;
+}
+
+.big {
+    font-size: 1.1em;
+}
+
+.bigger {
+    font-size: 1.2em;
+}
+
+.biggest {
+    font-size: 1.3em;
+}
+
+.huge {
+    font-size: 1.4em;
+}
+
