@@ -123,10 +123,6 @@ img {
     display: block;
 }
 
-pre {
-    padding: 12px;
-}
-
 code {
     font-family: 'MaisonNeue-Mono', 'Inconsolata', monospace;
     padding: 0 2px;
@@ -144,14 +140,13 @@ pre code {
     background-color: transparent;
     box-shadow: none;
     padding: 12px;
+    border-radius: 4px;
 }
 
 
-pre.hljs {
+pre code.hljs {
     background-color: #f3f3f3;
-    overflow-x: auto;
-    border-radius: 4px;
-    padding: 0;
+    padding: 12px;
 }
 
 .title-slide {
