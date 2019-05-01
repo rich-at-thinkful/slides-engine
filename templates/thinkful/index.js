@@ -38,8 +38,13 @@
         wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
     }
 
+    function highlightCode() {
+        hljs.initHighlighting();
+    }
+
     function main() {
         window.onresize = resize;
+        highlightCode();
         resize();
         Fieldfare.onSlideChange = onSlideChange;
         Fieldfare.start();
