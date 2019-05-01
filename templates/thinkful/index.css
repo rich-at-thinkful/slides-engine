@@ -170,3 +170,49 @@ pre.hljs {
     height: 2px;
     background-color: #3E2AEE;
 }
+
+.row {
+    display: flex;
+}
+
+.cell {
+    flex: 1;
+}
+
+.cell-1 {
+    flex-basis: calc(100%/6);
+}
+
+.cell-2 {
+    flex-basis: calc(200%/6);
+}
+
+.cell-3 {
+    flex-basis: calc(300%/6);
+}
+
+.cell-4 {
+    flex-basis: calc(400%/6);
+}
+
+.cell-5 {
+    flex-basis: calc(500%/6);
+}
+
+.cell-6 {
+    flex-basis: calc(600%/6);
+}
+
+.cell, .cell-1, .cell-2, .cell-3, .cell-4, .cell-5, .cell-6 {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.cell:first-child, .cell-1:first-child, .cell-2:first-child, .cell-3:first-child, .cell-4:first-child, .cell-5:first-child, .cell-6:first-child {
+    margin-left: 0;
+}
+
+.cell:last-child, .cell-1:last-child, .cell-2:last-child, .cell-3:last-child, .cell-4:last-child, .cell-5:last-child, .cell-6:last-child {
+    margin-right: 0;
+}
+
