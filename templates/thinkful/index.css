@@ -67,6 +67,10 @@ h2 {
     font-size: 1.1rem;
 }
 
+h3, h4, h5, h6 {
+    font-size: 1rem;
+}
+
 h2, h3, h4, h5, h6, pre, p, ul {
     margin: 0 0 12px 0;
 }
@@ -116,6 +120,7 @@ main {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 pre {
@@ -218,5 +223,21 @@ pre.hljs {
 
 .cell:last-child, .cell-1:last-child, .cell-2:last-child, .cell-3:last-child, .cell-4:last-child, .cell-5:last-child, .cell-6:last-child {
     margin-right: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+img.center {
+    margin: auto;
+}
+
+img.right {
+    margin-left: auto;
 }
 
