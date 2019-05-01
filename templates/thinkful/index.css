@@ -114,6 +114,10 @@ main {
     display: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 pre {
     padding: 12px;
 }
