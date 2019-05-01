@@ -1,12 +1,12 @@
 title: Event Handlers and State
 template: thinkful
 slides:
-  - react-event-handlers-state/01-lifecycle-methods.md
-  - react-event-handlers-state/02-event-handlers.md
-  - react-event-handlers-state/03-event-handlers-example.md
-  - react-event-handlers-state/04-passing-arguments.md
-  - react-event-handlers-state/05-state.md
-  - react-event-handlers-state/06-using-state.md
-  - react-event-handlers-state/07-mutation-arrays.md
-  - react-event-handlers-state/08-mutation-objects.md
-  - react-event-handlers-state/09-ei-project.md
+  - react-event-handlers-state/01-lifecycle-methods
+  - react-event-handlers-state/02-event-handlers
+  - react-event-handlers-state/03-event-handlers-example
+  - react-event-handlers-state/04-passing-arguments
+  - react-event-handlers-state/05-state
+  - react-event-handlers-state/06-using-state
+  - react-event-handlers-state/07-mutation-arrays
+  - react-event-handlers-state/08-mutation-objects
+  - react-event-handlers-state/09-ei-project

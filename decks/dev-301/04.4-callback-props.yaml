@@ -1,10 +1,10 @@
 title: Callback Props
 template: thinkful
 slides:
-  - react-callback-props/01-props-recap.md
-  - react-callback-props/02-types-of-props.md
-  - react-callback-props/03-why-callback-props.md
-  - react-callback-props/04-why-callback-props-ii.md
-  - react-callback-props/05-passing-callback-props.md
-  - react-callback-props/06-calling-callback-props.md
-  - react-callback-props/07-ei-project.md
+  - react-callback-props/01-props-recap
+  - react-callback-props/02-types-of-props
+  - react-callback-props/03-why-callback-props
+  - react-callback-props/04-why-callback-props-ii
+  - react-callback-props/05-passing-callback-props
+  - react-callback-props/06-calling-callback-props
+  - react-callback-props/07-ei-project
