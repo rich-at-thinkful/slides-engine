@@ -1,0 +1,18 @@
+title: Collaboration with Git and GitHub
+template: thinkful
+slides:
+  - js-git/01-goals
+  - js-git/02-version-control
+  - js-git/03-git-vs-github
+  - js-git/04-git-vs-github-git
+  - js-git/05-git-vs-github-github
+  - js-git/06-how-git-works
+  - js-git/07-git-workspaces
+  - js-git/08-git-workflow
+  - js-git/09-cheatsheet
+  - js-git/10-branches-i
+  - js-git/11-branches-ii
+  - js-git/12-how-branches-work-i
+  - js-git/13-how-branches-work-ii
+  - js-git/14-how-branches-work-iii
+  - js-git/15-resolving-conflicts
