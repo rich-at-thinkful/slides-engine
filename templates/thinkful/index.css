@@ -166,7 +166,8 @@ pre code.hljs {
     border: 3px rgb(32, 194, 0) solid;
 }
 
-.highlight-under {
+code .highlight {
+    border: 0;
     border-bottom: 3px rgb(32, 194, 0) solid;
 }
 
