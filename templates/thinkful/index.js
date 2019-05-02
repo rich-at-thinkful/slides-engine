@@ -2,6 +2,8 @@
     const CONTENT_WIDTH = 1280;
     const CONTENT_HEIGHT = 720;
 
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+
     function getMain() {
         return document.getElementById('main');
     }
@@ -53,6 +55,65 @@
         hljs.initHighlighting();
     }
 
+    function drawLine(e1, e2, svg) {
+        const rect1 = e1.getBoundingClientRect();
+        const rect2 = e2.getBoundingClientRect();
+        let x1, x2, cx1, cx2, y1, y2, cy1, cy2;
+
+        if (rect1.x + rect1.width < rect2.x) {
+            // e2 is to the right of e1
+            x1 = rect1.x + rect1.width;
+            x2 = rect2.x;
+            y1 = rect1.y + rect1.height / 2;
+            y2 = rect2.y + rect2.height / 2;
+            cx1 = (x1 + x2) / 2;
+            cy1 = y1;
+            cx2 = (x1 + x2) / 2;
+            cy2 = y2;
+        } else if (rect2.x + rect2.width < rect1.x) {
+            // e2 is to the left of e1
+            x1 = rect1.x;
+            x2 = rect2.x + rect2.width;
+            y1 = rect1.y + rect1.height / 2;
+            y2 = rect2.y + rect2.height / 2;
+            cx1 = (x1 + x2) / 2;
+            cy1 = y1;
+            cx2 = (x1 + x2) / 2;
+            cy2 = y2;
+        } else if (rect1.y + rect1.height < rect2.y) {
+            // e2 is below e1
+            x1 = rect1.x + rect1.width / 2;
+            x2 = rect2.x + rect2.width / 2;
+            y1 = rect1.y + rect1.height;
+            y2 = rect2.y;
+            cx1 = x1;
+            cy1 = (y1 + y2) / 2;
+            cx2 = x2;
+            cy2 = (y1 + y2) / 2;
+        } else if (rect2.y + rect2.height < rect1.y) {
+            // e2 is above ei
+            y1 = rect1.y;
+            y2 = rect2.y + rect2.height;
+            x1 = rect1.x + rect1.width / 2;
+            x2 = rect2.x + rect2.width / 2;
+            cx1 = x1;
+            cy1 = (y1 + y2) / 2;
+            cx2 = x2;
+            cy2 = (y1 + y2) / 2;
+        } else {
+            // They overlap
+            console.error(
+                `Could not draw line between overlapping elements ${e1} and ${e2}`
+            );
+            return;
+        }
+
+        const path = document.createElementNS(SVG_NS, 'path');
+        const d = `M ${x1} ${y1} C ${cx1} ${cy1}, ${cx2} ${cy2}, ${x2} ${y2}`;
+        path.setAttributeNS(null, 'd', d);
+        svg.appendChild(path);
+    }
+
     function annotateCode() {
         const svg = getSvg();
         while (svg.firstChild) {
@@ -87,36 +148,7 @@
                 const line = document.querySelector(
                     `#${targetId} > span:nth-child(${lineNumber})`
                 );
-                const lineRect = line.getBoundingClientRect();
-                console.log(line);
-                const annotationRect = annotation.getBoundingClientRect();
-                let lineX, annotationX, lineY, annotationY;
-                lineY = lineRect.y + lineRect.height / 2;
-                annotationY = annotationRect.y + annotationRect.height / 2;
-
-                if (lineRect.x + lineRect.width < annotationRect.x) {
-                    // Annotation to right of line
-                    lineX = lineRect.x + lineRect.width;
-                    annotationX = annotationRect.x;
-                } else if (
-                    annotationRect.x + annotationRect.width <
-                    lineRect.x
-                ) {
-                    // Annotation to left of line
-                    lineX = lineRect.x;
-                    annotationX = annotationRect.x + annotationRect.width;
-                } else {
-                    return;
-                }
-
-                const svgNs = 'http://www.w3.org/2000/svg';
-                const path = document.createElementNS(svgNs, 'path');
-                const d = `M ${lineX} ${lineY}
-                           C ${(annotationX + lineX) / 2} ${lineY},
-                             ${(annotationX + lineX) / 2} ${annotationY},
-                             ${annotationX} ${annotationY}`;
-                path.setAttributeNS(null, 'd', d);
-                svg.appendChild(path);
+                drawLine(line, annotation, svg);
             });
         });
     }
