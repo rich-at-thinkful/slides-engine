@@ -4,9 +4,9 @@ Bob makes more commits, knowing at any time he can revert back to `master`.
 
 <pre>
 <code class="language-sh">$ git lg
-<span class="highlight-under">* 6fbba36 (HEAD -> smartbot) add extra bot functions</span>
-<span class="highlight-under">* 648be02 import bot functions to index.html</span>
-<span class="highlight-under">* 43dd387 add bot functions</span>
+<span class="highlight">* 6fbba36 (HEAD -> smartbot) add extra bot functions</span>
+<span class="highlight">* 648be02 import bot functions to index.html</span>
+<span class="highlight">* 43dd387 add bot functions</span>
 * 74224ab (master) add greet function
 * db2aeed link js script to html page
 * f39488b add title and header</code>

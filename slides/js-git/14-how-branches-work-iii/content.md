@@ -6,8 +6,8 @@ Alice also confirms she has the latest `master` and then starts her own branch a
 
 <pre>
 <code class="language-sh">$ git lg
-<span class="highlight-under">* 796ff14 (HEAD -> user-logins) include lib in index</span>
-<span class="highlight-under">* b7c4f22 create loginFunctions.js</span>
+<span class="highlight">* 796ff14 (HEAD -> user-logins) include lib in index</span>
+<span class="highlight">* b7c4f22 create loginFunctions.js</span>
   * 6fbba36 (smartbot) add extra bot functions
   * 648be02 import bot functions to index.html
   * 43dd387 add bot functions
