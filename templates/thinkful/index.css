@@ -47,7 +47,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html, body,  {
     margin: 0;
     padding: 0;
 }
@@ -71,7 +71,7 @@ h3, h4, h5, h6 {
     font-size: 1rem;
 }
 
-h2, h3, h4, h5, h6, pre, p, ul {
+h2, h3, h4, h5, h6, pre, p, ul, table {
     margin: 0 0 12px 0;
 }
 
@@ -148,6 +148,23 @@ pre code.hljs {
     background-color: #f3f3f3;
     padding: 12px;
 }
+
+table {
+    width: 100%;
+}
+
+tr {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+th, td {
+    padding: 8px;
+}
+
 
 .title-slide {
     width: 100%;
@@ -288,3 +305,4 @@ path {
     fill: none;
     stroke: rgb(32, 194, 0);
 }
+
