@@ -55,9 +55,22 @@
         hljs.initHighlighting();
     }
 
+    function isZeros(rect) {
+        return (
+            rect.x === 0 &&
+            rect.y === 0 &&
+            rect.width === 0 &&
+            rect.height === 0
+        );
+    }
+
     function drawLine(e1, e2, svg) {
         const rect1 = e1.getBoundingClientRect();
         const rect2 = e2.getBoundingClientRect();
+        if (isZeros(rect1) || isZeros(rect2)) {
+            // One of them isn't on screen (i.e. a fragment)
+            return;
+        }
         let x1, x2, cx1, cx2, y1, y2, cy1, cy2;
 
         if (rect1.x + rect1.width < rect2.x) {
@@ -140,10 +153,14 @@
             annotations.forEach(annotation => {
                 const targetId = annotation.getAttribute('data-for');
                 const lineNumber = annotation.getAttribute('data-line');
-                const line = document.querySelector(
-                    `#${targetId} > span:nth-child(${lineNumber})`
-                );
-                drawLine(line, annotation, svg);
+                // Can have multiple line numbers split by spaces
+                const lineNumbers = lineNumber.split(' ');
+                lineNumbers.forEach(lineNumber => {
+                    const line = document.querySelector(
+                        `#${targetId} > span:nth-child(${lineNumber})`
+                    );
+                    drawLine(line, annotation, svg);
+                });
             });
         });
     }
