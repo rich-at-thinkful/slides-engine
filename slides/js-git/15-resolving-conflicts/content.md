@@ -1,5 +1,7 @@
 # Resolving conflicts
 
+<div class="smallest">
+
 Merges are frictionless when the modified files in both branches are different. But what if each developer made changes to the **same file** on their own branch and you try to merge?
 
 
@@ -28,3 +30,5 @@ Alice opens up `index.html` and sees that Git has placed markers where the probl
 ```
 
 Alice can now decide which pieces between the markers she wants to keep or remove. When she's made those changes, she can re-commit the files and successfully merge to `master`.
+
+</div>
