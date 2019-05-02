@@ -1,0 +1,32 @@
+title: Loops, Arrays, Scope and Higher Order Functions (HOFs)
+template: thinkful
+slides:
+  - js-loops-arrays-scope/01-goals
+  - js-loops-arrays-scope/02-loops-title
+  - js-loops-arrays-scope/03-loops
+  - js-loops-arrays-scope/04-for-while-loops
+  - js-loops-arrays-scope/05-loop-example
+  - js-loops-arrays-scope/06-arrays-title
+  - js-loops-arrays-scope/07-why-arrays
+  - js-loops-arrays-scope/08-arrays
+  - js-loops-arrays-scope/09-creating-accessing-arrays
+  - js-loops-arrays-scope/10-array-example
+  - js-loops-arrays-scope/11-array-methods
+  - js-loops-arrays-scope/12-spread-operator
+  - js-loops-arrays-scope/13-array-destructuring
+  - js-loops-arrays-scope/14-scope-title
+  - js-loops-arrays-scope/15-variable-scope
+  - js-loops-arrays-scope/16-global-local-scope
+  - js-loops-arrays-scope/17-block-scope
+  - js-loops-arrays-scope/18-scope-challenge
+  - js-loops-arrays-scope/19-good-practice
+  - js-loops-arrays-scope/20-hof-title
+  - js-loops-arrays-scope/21-higher-order-functions
+  - js-loops-arrays-scope/22-functions-as-arguments
+  - js-loops-arrays-scope/23-closures
+  - js-loops-arrays-scope/24-arrow-functions
+  - js-loops-arrays-scope/25-arrow-function-arguments
+  - js-loops-arrays-scope/26-arrow-function-examples
+  - js-loops-arrays-scope/27-arrow-function-versions
+  - js-loops-arrays-scope/28-arrow-function-parameters
+  - js-loops-arrays-scope/29-when-not-arrows
