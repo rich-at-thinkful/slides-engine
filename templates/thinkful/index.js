@@ -143,7 +143,9 @@
 
             target.innerHTML = target.innerHTML
                 .split('\n')
-                .map(line => `<span>${line}</span>`)
+                .map(line =>
+                    line.replace(/^(\s*)(.*?)(\s*)$/, '$1<span>$2</span>$3')
+                )
                 .join('\n');
             target.setAttribute('data-split', true);
         });
