@@ -122,22 +122,17 @@
 
         const annotations = document.querySelectorAll('.visible .annotation');
         annotations.forEach(annotation => {
-            // TODO: Don't need to do this for duplicated targets
             const targetId = annotation.getAttribute('data-for');
             const target = document.querySelector(`#${targetId}`);
+            if (target.getAttribute('data-split')) {
+                return;
+            }
+
             target.innerHTML = target.innerHTML
                 .split('\n')
-                .map(line => {
-                    const trimmed = line.trim();
-                    if (
-                        trimmed.startsWith('<span>') &&
-                        trimmed.endsWith('</span>')
-                    ) {
-                        return line;
-                    }
-                    return `<span>${line}</span>`;
-                })
+                .map(line => `<span>${line}</span>`)
                 .join('\n');
+            target.setAttribute('data-split', true);
         });
 
         // RAF to wait until redraw is complete
