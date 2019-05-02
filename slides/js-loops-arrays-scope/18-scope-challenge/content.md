@@ -1,7 +1,7 @@
 # `var` scope challenge: What gets printed?
 
-<div class="grid">
-<div class="cell">
+<div class="row">
+<div class="cell-3">
 
 ```js
 var x = 10;
@@ -24,7 +24,7 @@ console.log(z());
 ```
 
 </div>
-<div class="cell fragment">
+<div class="cell-3 fragment">
 
 Behind the scenes:
 
