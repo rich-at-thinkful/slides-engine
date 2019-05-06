@@ -2,3 +2,11 @@ title: Promises and AJAX Requests
 template: thinkful
 slides:
   - react-promises-ajax/01-why-chain-promises
+  - react-promises-ajax/02-chaining-promises
+  - react-promises-ajax/03-why-parallelize-promises
+  - react-promises-ajax/04-parallelizing-promises
+  - react-promises-ajax/05-fetching-on-load
+  - react-promises-ajax/06-fetching-on-interaction
+  - react-promises-ajax/07-loading-indicators
+  - react-promises-ajax/08-error-handling
+  - react-promises-ajax/09-ei-project
