@@ -173,14 +173,18 @@
             const toId = line.getAttribute('data-to');
             const to = document.querySelector(`#${toId}`);
 
-            drawLine(from, to, svg, 'line');
+            drawLine(from, to, svg, line.className);
         });
     }
 
     function drawOverlay() {
         const svg = getSvg();
-        while (svg.firstChild) {
-            svg.firstChild.remove();
+        const children = svg.childNodes;
+        for (let i = children.length - 1; i >= 0; i--) {
+            if (children[i].tagName === 'defs') {
+                continue;
+            }
+            children[i].remove();
         }
 
         annotateCode(svg);

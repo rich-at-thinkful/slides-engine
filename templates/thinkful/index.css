@@ -337,3 +337,14 @@ path.line {
     stroke-width: 2px;
 }
 
+path.line-arrow-end {
+    marker-end: url('.#arrow');
+}
+
+path.line-arrow-start{
+    marker-start: url('.#arrow');
+}
+
+#arrow path {
+    fill: #373a36;
+}
