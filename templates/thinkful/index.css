@@ -197,10 +197,11 @@ code .highlight {
     background-color: #3E2AEE;
 }
 
-svg {
+svg.overlay {
     width: 100%;
     height: 100%;
     position: absolute;
+    pointer-events: none;
 }
 
 .row {
