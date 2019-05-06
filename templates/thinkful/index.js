@@ -67,7 +67,12 @@
     function drawLine(e1, e2, svg, className) {
         const rect1 = e1.getBoundingClientRect();
         const rect2 = e2.getBoundingClientRect();
-        if (isZeros(rect1) || isZeros(rect2)) {
+        if (
+            isZeros(rect1) ||
+            isZeros(rect2) ||
+            getComputedStyle(e1).visibility === 'hidden' ||
+            getComputedStyle(e2).visibility === 'hidden'
+        ) {
             // One of them isn't on screen (i.e. a fragment)
             return;
         }
