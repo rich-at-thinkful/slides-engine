@@ -115,7 +115,7 @@ main {
 }
 
 .fragment:not(.visible) {
-    display: none;
+    visibility: hidden;
 }
 
 img {
@@ -165,6 +165,11 @@ th, td {
     padding: 8px;
 }
 
+blockquote {
+    padding: 0 30px;
+    border-left: 6px solid #c4c5c8;
+    font-style: oblique;
+}
 
 .title-slide {
     width: 100%;
@@ -327,7 +332,7 @@ path {
     fill: none;
 }
 
-path.annotation {
+path.line-annotation {
     stroke: rgb(32, 194, 0);
 }
 
