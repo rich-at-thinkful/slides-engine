@@ -29,7 +29,7 @@
         getProgressBar().style.width = `${100 *
             currentSlide /
             (totalSlides - 1)}%`;
-        annotateCode();
+        drawOverlay();
     }
 
     function resize() {
@@ -43,7 +43,7 @@
         wrapper.style.width = `${CONTENT_WIDTH}px`;
         wrapper.style.height = `${CONTENT_HEIGHT}px`;
         wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
-        annotateCode();
+        drawOverlay();
     }
 
     function highlightCode() {
@@ -64,7 +64,7 @@
         );
     }
 
-    function drawLine(e1, e2, svg) {
+    function drawLine(e1, e2, svg, className) {
         const rect1 = e1.getBoundingClientRect();
         const rect2 = e2.getBoundingClientRect();
         if (isZeros(rect1) || isZeros(rect2)) {
@@ -124,15 +124,11 @@
         const path = document.createElementNS(SVG_NS, 'path');
         const d = `M ${x1} ${y1} C ${cx1} ${cy1}, ${cx2} ${cy2}, ${x2} ${y2}`;
         path.setAttributeNS(null, 'd', d);
+        path.setAttributeNS(null, 'class', className);
         svg.appendChild(path);
     }
 
-    function annotateCode() {
-        const svg = getSvg();
-        while (svg.firstChild) {
-            svg.firstChild.remove();
-        }
-
+    function annotateCode(svg) {
         const annotations = document.querySelectorAll('.visible .annotation');
         annotations.forEach(annotation => {
             const targetId = annotation.getAttribute('data-for');
@@ -161,10 +157,34 @@
                     const line = document.querySelector(
                         `#${targetId} > span:nth-child(${lineNumber})`
                     );
-                    drawLine(line, annotation, svg);
+                    drawLine(line, annotation, svg, 'line-annotation');
                 });
             });
         });
+    }
+
+    function drawLines(svg) {
+        const lines = document.querySelectorAll('.visible .line');
+
+        lines.forEach(line => {
+            const fromId = line.getAttribute('data-from');
+            const from = document.querySelector(`#${fromId}`);
+
+            const toId = line.getAttribute('data-to');
+            const to = document.querySelector(`#${toId}`);
+
+            drawLine(from, to, svg, 'line');
+        });
+    }
+
+    function drawOverlay() {
+        const svg = getSvg();
+        while (svg.firstChild) {
+            svg.firstChild.remove();
+        }
+
+        annotateCode(svg);
+        drawLines(svg);
     }
 
     function main() {
