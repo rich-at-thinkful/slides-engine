@@ -1,0 +1,10 @@
+title: Context
+template: thinkful
+slides:
+  - react-context/01-prop-drilling
+  - react-context/02-context
+  - react-context/03-creating-context
+  - react-context/04-setting-context
+  - react-context/05-consuming-context-i
+  - react-context/06-consuming-context-ii
+  - react-context/07-ei-project

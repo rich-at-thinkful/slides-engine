@@ -1,0 +1,12 @@
+title: Form Validation and Error Boundaries
+template: thinkful
+slides:
+  - react-form-validation/01-client-side-validation
+  - react-form-validation/02-controlled-inputs
+  - react-form-validation/03-validating-field
+  - react-form-validation/04-render-errors
+  - react-form-validation/05-validating-form
+  - react-error-boundaries/01-error-boundaries
+  - react-error-boundaries/02-creating-error-boundary
+  - react-error-boundaries/03-using-error-boundary
+  - react-error-boundaries/04-ei-project

@@ -1,0 +1,11 @@
+title: React Router
+template: thinkful
+slides:
+  - react-router/01-routing
+  - react-router/02-browser-router
+  - react-router/03-routes
+  - react-router/04-dynamic-routes
+  - react-router/05-fallback-route
+  - react-router/06-navigation-links
+  - react-router/07-navigation-history
+  - react-router/08-ei-project
