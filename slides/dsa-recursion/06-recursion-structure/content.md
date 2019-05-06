@@ -10,3 +10,4 @@
     * Forgetting the base case will result in infinite recursion and the function will never complete
 * Each recursive calls address a subtask that is smaller than the previous
 * These recursive calls converge to the base case
+{.small}
