@@ -1,4 +1,4 @@
-# Arrow function `=>`
+# Arrow functions `=>`
 
 * Syntax varies, depending on the parameters the function takes:
 
