@@ -185,12 +185,16 @@ blockquote {
 }
 
 .highlight {
-    border: 3px rgb(32, 194, 0) solid;
+    border: 3px #20c200 solid;
 }
 
 code .highlight {
     border: 0;
-    border-bottom: 3px rgb(32, 194, 0) solid;
+    border-bottom: 3px #20c200 solid;
+}
+
+code .highlight-secondary, .highlight-secondary {
+    border-color: #3E2AEE;
 }
 
 #progress-bar {
@@ -304,7 +308,7 @@ img.right {
 }
 
 .annotation {
-    border: 1px solid rgb(32, 194, 0);
+    border: 1px solid #20c200;
     padding: 0 12px;
 }
 
@@ -333,7 +337,7 @@ path {
 }
 
 path.line-annotation {
-    stroke: rgb(32, 194, 0);
+    stroke: #20c200;
 }
 
 path.line {
