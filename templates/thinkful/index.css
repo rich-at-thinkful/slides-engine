@@ -347,11 +347,11 @@ path.line {
 }
 
 path.line-arrow-end {
-    marker-end: url('.#arrow');
+    marker-end: url('#arrow');
 }
 
 path.line-arrow-start{
-    marker-start: url('.#arrow');
+    marker-start: url('#arrow');
 }
 
 #arrow path {
