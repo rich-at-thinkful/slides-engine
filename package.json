@@ -12,8 +12,5 @@
     "live-server": "^1.2.1"
   },
   "author": "Joe Turner <jturner@thinkful.com>",
-  "license": "UNLICENSED",
-  "dependencies": {
-    "live-server": "^1.2.1"
-  }
+  "license": "UNLICENSED"
 }
