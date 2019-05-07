@@ -155,7 +155,7 @@
         requestAnimationFrame(() => {
             annotations.forEach(annotation => {
                 const targetId = annotation.getAttribute('data-for');
-                const lineNumber = annotation.getAttribute('data-line');
+                const lineNumber = annotation.getAttribute('data-line') || 1;
                 // Can have multiple line numbers split by spaces
                 const lineNumbers = lineNumber.split(' ');
                 lineNumbers.forEach(lineNumber => {
