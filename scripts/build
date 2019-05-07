@@ -4,3 +4,4 @@ find decks -name "*.yaml" |
         outdir=build/$(dirname $f | cut -d '/' -f2-)/$(basename $f .yaml)
         PATH=$(npm bin):$PATH fieldfare $f slides templates $outdir
     done
+    tree -H '.' --noreport --charset utf-8 build -P '*.html' --prune > build/index.html
