@@ -57,7 +57,7 @@ You can add HTML attributes directly to your Markdown in the slides, using [mark
 Would produce the output:
 
 ```html
-<h1 id="some-id" class="some-class" data-for="bar">This is a heading</h1>
+<h1 id="some-id" class="some-class" data-foo="bar">This is a heading</h1>
 ```
 
 ### Grid
