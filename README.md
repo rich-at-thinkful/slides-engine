@@ -26,7 +26,7 @@ A deck is a YAML file, contained in [the `decks` directory](decks).  The decks a
 
 ### Slides
 
-A slide is constructed from a directory of files in [the `slides` directory](slides).  The slide directory must contain a `content.md`, containing Markdown for the slide.  It can also optionally contain a `notes.md` file, which contains speaker notes for the slide, and any image files which the slide uses.
+A slide is constructed from a directory of files in [the `slides` directory](slides).  The slides are grouped into subfolders by topic.  A slide directory must contain a `content.md`, containing Markdown for the slide.  It can also optionally contain a `notes.md` file, which contains speaker notes for the slide, and any image files which the slide uses.
 
 ### Templates
 
