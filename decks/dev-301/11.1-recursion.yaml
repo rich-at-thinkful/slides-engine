@@ -11,6 +11,14 @@ slides:
   - dsa-recursion/08-recursive-case
   - dsa-recursion/09-countdown-no-base
   - dsa-recursion/10-adding-base-case
+  - dsa-recursion/11-main-points
+  - dsa-recursion/12-carrying-data
+  - dsa-recursion/13-uppercase
+  - dsa-recursion/14-write-together
+  - dsa-recursion/15-validate-brackets-i
+  - dsa-recursion/16-validate-brackets-ii
+  - dsa-recursion/17-filter-i
+  - dsa-recursion/18-filter-ii
 
 
 
