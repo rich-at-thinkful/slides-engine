@@ -55,6 +55,79 @@
         hljs.initHighlighting();
     }
 
+    function parseCodeSpan(span, lines) {
+        const [lineInfo, ...attributes] = span.split(' ');
+        const [lineNum, ...positions] = lineInfo.split(':');
+        if (lineNum - 1 >= lines.length) {
+            console.error(
+                `Could not highlight code block: line ${lineNum} is out of bounds`
+            );
+            return;
+        }
+        // TODO: Check that lineNum is in bounds
+        const [startPos = 1, endPos = lines[lineNum - 1].length] = positions;
+        // Convert to zero-indexed
+        return {
+            lineNum: lineNum - 1,
+            startPos: startPos - 1,
+            endPos: endPos - 1,
+            attributes
+        };
+    }
+
+    function createSpan(attributes) {
+        const classes = attributes
+            .filter(attribute => attribute.startsWith('.'))
+            .map(attribute => attribute.slice(1))
+            .join(' ');
+        const attributeString = attributes
+            .filter(attribute => !attribute.startsWith('.'))
+            .reduce((s, attribute) => {
+                if (attribute.startsWith('#')) {
+                    return `${s} id="${attribute.slice(1)}"`;
+                } else {
+                    const [name, value] = attribute.split('=');
+                    if (value) {
+                        return `${s} ${name}="${value}"`;
+                    } else {
+                        return `${s} ${name}`;
+                    }
+                }
+            }, classes ? `class="${classes}"` : '');
+        return `<span ${attributeString}>`;
+    }
+
+    function addCodeSpans() {
+        // TODO: Make sure that spans are disjoint
+        const code = document.querySelectorAll('pre code[data-span]');
+        code.forEach(block => {
+            const spans = block
+                .getAttribute('data-span')
+                .split(';')
+                .map(s => s.trim());
+            const lines = block.innerText.split('\n');
+            spans
+                .map(span => parseCodeSpan(span, lines))
+                // Remove out of bounds spans
+                .filter(span => span !== undefined)
+                .sort((a, b) => b.lineNum - a.lineNum || b.endPos - a.endPos)
+                .forEach(span => {
+                    const {lineNum, startPos, endPos, attributes} = span;
+                    span = createSpan(attributes);
+                    let line = lines[lineNum];
+                    // +1 so we're inclusive on the endpost
+                    line =
+                        line.slice(0, endPos + 1) +
+                        '</span>' +
+                        line.slice(endPos + 1);
+                    line =
+                        line.slice(0, startPos) + span + line.slice(startPos);
+                    lines[lineNum] = line;
+                });
+            block.innerHTML = lines.join('\n');
+        });
+    }
+
     function isZeros(rect) {
         return (
             rect.x === 0 &&
@@ -198,6 +271,7 @@
 
     function main() {
         window.onresize = resize;
+        addCodeSpans();
         highlightCode();
         resize();
         Fieldfare.onSlideChange = onSlideChange;
