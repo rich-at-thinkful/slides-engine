@@ -3,10 +3,10 @@
 <div class="row">
 <div class="cell-4">
 
-<pre><code id="function-arguments">
-function myForEach(array, <span class="fragment" data-style="highlight-in">callback</span>) {
+```js {#function-arguments data-span="1:27:34 .fragment data-style=highlight-in; 3:5:12 .fragment data-style=highlight-in data-index=2"}
+function myForEach(array, callback) {
   for (let i = 0; i < array.length; i++) {
-    <span class="fragment" data-style="highlight-in" data-index="2">callback</span>(array[i], i);
+    callback(array[i], i);
   }
 }
 
@@ -19,7 +19,7 @@ myForEach(arr, function(value, index) {
 myForEach(arr, function(value, index) {
   console.log('Here is the value! ' + value);
 });
-</pre></code>
+```
 
 </div>
 

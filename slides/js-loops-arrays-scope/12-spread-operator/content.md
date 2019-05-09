@@ -7,18 +7,16 @@ Convert array elements into a **list**
 <div class="row">
 <div class="cell-4">
 
-<pre>
-<code class="language-js" id="spread-operator">
+```js {#spread-operator data-span="7:19:22 .highlight; 7:37:40 .highlight"}
 const dogs = ["Golden Retriever", "Husky"];
 const cats = ["Bengal", "Persian", "Siamese"];
 
 const animals = [...dogs, "squirrel", ...cats, "coyote", "fox"];
 console.log(animals.length);   // => 8
 
-const animals2 = [<span class="highlight">dogs</span>, "squirrel", <span class="highlight">cats</span>, "coyote", "fox"];
+const animals2 = [dogs, "squirrel", cats, "coyote", "fox"];
 console.log(animals2.length);  // => 5
-</code>
-</pre>
+```
 
 </div>
 <div class="cell-2">

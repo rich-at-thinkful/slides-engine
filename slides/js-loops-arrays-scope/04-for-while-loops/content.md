@@ -5,13 +5,11 @@
 <div class="row">
 <div class="cell-4">
 
-<pre>
-<code class="language-js" id="for-loop">
-for (let i=0; i<=10; <span class="highlight">i++</span>) {
+```js {#for-loop data-span="1:22:24 .highlight"}
+for (let i=0; i<=10; i++) {
   console.log(`iteration ${i}`);
 }
-</code>
-</pre>
+```
 
 </div>
 <div class="cell-2">

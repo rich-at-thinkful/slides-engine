@@ -3,7 +3,7 @@
 <div class="row">
 <div class="cell-2">
 
-<pre><code class="language-js">
+```js
 const countDown = function(from) {
     // Base case
     if (from === 0) {
@@ -16,7 +16,7 @@ const countDown = function(from) {
 };
 
 countDown(5);
-</code></pre>
+```
 
 Base case {.annotation data-for=base-case data-line=1 .fragment data-index=12}
 
@@ -79,11 +79,11 @@ return;
 
 </div>
 
-<pre><code class="language-bash">
-<span class="fragment" data-index="2">5</span>
-<span class="fragment" data-index="4">4</span>
-<span class="fragment" data-index="6">3</span>
-<span class="fragment" data-index="8">2</span>
-<span class="fragment" data-index="10">1</span>
-</code></pre>
+```bash {data-span="1 .fragment data-index=2; 2 .fragment data-index=4; 3 .fragment data-index=6; 4 .fragment data-index=8; 5 .fragment data-index=10"}
+5
+4
+3
+2
+1
+```
 

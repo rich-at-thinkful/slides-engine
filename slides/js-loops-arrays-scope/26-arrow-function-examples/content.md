@@ -13,12 +13,12 @@ console.log(doubled);
 </div>
 <div class="cell-3">
 
-<pre><code>
-const doubled = <span class="highlight">array.map((item, index) =></span> {
+```js {data-span="1:27:42 .highlight"}
+const doubled = array.map((item, index) => {
   return item * 2
 });
 console.log(doubled);
-</code></pre>
+```
 
 </div>
 </div>
@@ -37,12 +37,12 @@ console.log(filtered);
 </div>
 <div class="cell-3">
 
-<pre><code>
-const filtered = <span class="highlight">array.filter((item, index) =></span> {
+```js {data-span="1:31:46 .highlight"}
+const filtered = array.filter((item, index) => {
   return item > 5;
 });
 console.log(filtered);
-</code></pre>
+```
 
 </div>
 </div>

@@ -23,11 +23,11 @@ Create two "instances" of the closure
 </div>
 <div class="cell-2">
 
-<pre><code id="closure">
+``` {#closure data-span="4:5:19 .fragment data-style=highlight-in data-index=2"}
 function createCounter() {
     let runningCount = 0;
 
-    <span class="fragment" data-index="2" data-style="highlight-in">return function</span>(increment = 1){
+    return function(increment = 1){
         runningCount += increment;
         return runningCount;
     };
@@ -43,7 +43,7 @@ console.log(counter1());    // 3
 console.log(counter2(5));   // 5
 console.log(counter2(3));   // 8
 console.log(counter2(2));   // 10
-</code></pre>
+```
 
 </div>
 <div class="cell-2">

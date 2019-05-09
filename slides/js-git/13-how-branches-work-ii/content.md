@@ -2,15 +2,15 @@
 
 Bob makes more commits, knowing at any time he can revert back to `master`.
 
-<pre>
-<code class="language-sh">$ git lg
-<span class="highlight">* 6fbba36 (HEAD -> smartbot) add extra bot functions</span>
-<span class="highlight">* 648be02 import bot functions to index.html</span>
-<span class="highlight">* 43dd387 add bot functions</span>
+```sh {data-span="2 .highlight; 3 .highlight; 4 .highlight"}
+$ git lg
+* 6fbba36 (HEAD -> smartbot) add extra bot functions</span>
+* 648be02 import bot functions to index.html</span>
+* 43dd387 add bot functions</span>
 * 74224ab (master) add greet function
 * db2aeed link js script to html page
-* f39488b add title and header</code>
-</pre>
+* f39488b add title and header
+```
 
 <div class="fragment">
 

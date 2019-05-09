@@ -6,18 +6,17 @@
 
 ### Function
 
-<pre><code class="language-js">
-var studentList = <span class="highlight">function(students) {</span>
+```js {data-span="1:19 .highlight"}
+var studentList = function(students) {
     console.log(students);
 }
 studentList(["Joe", "Cindy", "Jeanne"]);
-</code></pre>
+```
 
 
 ### Arrow function
 
-<pre><code class="language-js">
+```js {data-span="1:19:31 .highlight"}
+var studentList = (students) => console.log(students);
 studentList(["Joe", "Cindy", "Jeanne"]);
-var studentList = <span class="highlight">(students) =></span> console.log(students);
-studentList(["Joe", "Cindy", "Jeanne"]);
-</code></pre>
+```

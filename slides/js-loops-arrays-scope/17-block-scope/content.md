@@ -5,13 +5,13 @@ Scope is typically limited to functions only - no `if`, `for`, or other code blo
 <div class="row">
 <div class="cell-4">
 
-<pre><code id="var-scope">
-for (<span class="highlight">var</span> i = 0; i < 10; i++) {
+```js {#var-scope data-span="1:6:8 .highlight"}
+for (var i = 0; i < 10; i++) {
   // do something
 }
 
 console.log(i);  //=>  10
-</code></pre>
+```
 
 </div>
 <div class="cell">
@@ -24,13 +24,13 @@ Yuck! The `i` variable is hoisted to global scope {.annotation data-for=var-scop
 <div class="row">
 <div class="cell-4">
 
-<pre><code id="let-scope">
-for (<span class="highlight">let</span> i = 0; i < 10; i++) {
+```js {#let-scope data-span="1:6:8 .highlight"}
+for (let i = 0; i < 10; i++) {
   // do something
 }
 
 console.log(i);  //=>  ReferenceError
-</code></pre>
+```
 
 </div>
 <div class="cell">

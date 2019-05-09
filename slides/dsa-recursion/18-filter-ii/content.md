@@ -3,21 +3,21 @@
 <div class="row smaller">
 <div class="cell-3">
 
-<pre><code class="language-js">
+```js {data-span="7:25:58 .fragment .highlight-secondary data-style=highlight-in data-index=5; 9:12:42 .fragment .highlight data-style=highlight-in data-index=3}
 const filter = function(arr, predicate){
     //base case
     if (!arr.length){
         return [];
     }
     if (predicate(arr[0])) {
-        return [arr[0], <span class="fragment highlight-secondary" data-style="highlight-in" data-index="5">...filter(arr.slice(1), predicate)</span>];
+        return [arr[0], ...filter(arr.slice(1), predicate)];
     }
-    return <span class="fragment highlight" data-style="highlight-in" data-index="3">filter(arr.slice(1), predicate);</span>
+    return filter(arr.slice(1), predicate);
 };
 
 let arr = [10,5,6,3,8];
 console.log(filter(arr, x => x < 7));
-</code></pre>
+```
 
 Base case {.annotation .fragment data-for=filter-last data-line=2 data-index=11}
 
@@ -31,30 +31,30 @@ Base case {.annotation .fragment data-for=filter-last data-line=2 data-index=11}
 filter([10,5,6,3,8], x => x < 7)
 ```
 
-<pre><code class="language-js fragment nudge-l-1" data-index="2">
+```js {.fragment .nudge-l-1 data-index=2 data-span="2:8:32 .fragment data-style=highlight-in data-index=3"}
 predicate(10) // false
-return <span class="fragment" data-style="highlight-in" data-index="3">filter([5,6,3,8], x=>x<7);</span>
-</code></pre>
+return filter([5,6,3,8], x=>x<7);
+```
 
-<pre><code class="language-js fragment nudge-l-2" data-index="4">
+```js {.fragment .nudge-l-2 data-index=4 data-span="2:12:37 .fragment data-style=highlight-in .highlight-secondary data-index=5"}
 predicate(5) // true
-return [5, <span class="fragment highlight-secondary" data-style="highlight-in" data-index="5">...filter([6,3,8], x=>x<7)</span>];
-</code></pre>
+return [5, ...filter([6,3,8], x=>x<7)];
+```
 
-<pre><code class="language-js fragment nudge-l-3" data-index="6">
+```js  {.fragment .nudge-l-3 data-index=6 data-span="2:12:35 .fragment data-style=highlight-in .highlight-secondary data-index=7"}
 predicate(6) // true
-return [6, <span class="fragment highlight-secondary" data-style="highlight-in" data-index="7">...filter([3,8], x=>x<7)</span>];
-</code></pre>
+return [6, ...filter([3,8], x=>x<7)];
+```
 
-<pre><code class="language-js fragment nudge-l-4" data-index="8">
+```js {.fragment .nudge-l-4 data-index=8 data-span="2:12:33 .fragment data-style=highlight-in .highlight-secondary data-index=9"}
 predicate(3) // true
-return [3, <span class="fragment highlight-secondary" data-style="highlight-in" data-index="9">...filter([8], x=>x<7)</span>];
-</code></pre>
+return [3, ...filter([8], x=>x<7)];
+```
 
-<pre><code class="language-js fragment nudge-l-5" data-index="10" id="filter-last">
+```js {.fragment .nudge-l-5 data-index=10 #filter-last data-span="2:8:27 .fragment data-style=highlight-in data-index=11"}
 predicate(8) // false
-return <span class="fragment" data-style="highlight-in" data-index="11">filter([], x=>x<7)</span>;
-</code></pre>
+return filter([], x => x<7);
+```
 
 </div>
 

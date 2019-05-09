@@ -2,21 +2,21 @@
 
 ## What does this program do?
 
-<pre><code class="language-js">
-const <span class="highlight">filter</span> = function(arr, predicate){
+```js {data-span="1:7:12 .highlight; 6:9:17 .highlight .highlight-secondary; 7:49:57 .highlight .highlight-secondary; 9:12:17 .highlight; 9:33:41 .highlight .highlight-secondary; 13:25:34 .highlight .highlight-secondary"}
+const filter = function(arr, predicate){
     //base case
     if (!arr.length){
         return [];
     }
-    if (<span class="highlight highlight-secondary">predicate</span>(arr[0])) {
-        return [arr[0], ...filter(arr.slice(1), <span class="highlight highlight-secondary">predicate</span>)];
+    if (predicate(arr[0])) {
+        return [arr[0], ...filter(arr.slice(1), predicate)];
     }
-    return <span class="highlight">filter</span>(arr.slice(1), <span class="highlight highlight-secondary">predicate</span>);
+    return filter(arr.slice(1), predicate);
 };
 
 let arr = [10,5,6,3,8];
-console.log(filter(arr, <span class="highlight highlight-secondary">x => x < 7</span>));
-</code></pre>
+console.log(filter(arr, x => x < 7));
+```
 
 * Lets walk through this example
 * What is the base case?

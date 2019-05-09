@@ -2,12 +2,12 @@
 
 ## A recursive method is one that calls itself
 
-<pre><code class="language-javascript">
-const <span class="highlight">countDown</span> = function (some parameters) {
+```js {data-span="1:7:15 .highlight; 4:5:13 .highlight}
+const countDown = function (some parameters) {
     // other logic that the function should perform
 
-    <span class="highlight">countDown</span>(some other parameters);
+    countDown(some other parameters);
 };
 
 countDown(5);
-</code></pre>
+```

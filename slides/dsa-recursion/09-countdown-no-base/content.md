@@ -3,14 +3,14 @@
 <div class="row">
 <div class="cell-4">
 
-<pre><code class="language-js" id="countdown-no-base">
+```js {#countdown-no-base}
 //write a function that count numbers down
 const countDown = function(from) {
     console.log(from);
     countDown(from - 1);
 };
 countDown(5);
-</code></pre>
+```
 
 </div>
 <div class="cell-2">
