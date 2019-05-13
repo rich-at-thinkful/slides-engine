@@ -43,6 +43,17 @@
     font-style: normal !important;
 }
 
+:root {
+    --white: #ffffff;
+    --green: #20c200;
+    --darkGreen: #147b00;
+    --purple: #864bff;
+    --darkPurple: #6c29f6;
+    --red: #ff0020;
+    --blue: #5442ec;
+    --darkBlue: #3e2aee;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -185,16 +196,16 @@ blockquote {
 }
 
 .highlight {
-    border: 3px #20c200 solid;
+    border: 3px var(--green) solid;
 }
 
 code .highlight {
     border: 0;
-    border-bottom: 3px #20c200 solid;
+    border-bottom: 3px var(--green) solid;
 }
 
 code .highlight-secondary, .highlight-secondary {
-    border-color: #3E2AEE;
+    border-color: var(--blue);
 }
 
 #progress-bar {
@@ -203,7 +214,7 @@ code .highlight-secondary, .highlight-secondary {
     bottom: 0;
     left: 0;
     height: 2px;
-    background-color: #3E2AEE;
+    background-color: var(--blue);
 }
 
 svg.overlay {
@@ -357,3 +368,40 @@ path.line-arrow-start{
 #arrow path {
     fill: #373a36;
 }
+
+
+.background-green {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.background-dark-green {
+    color: var(--white);
+    background-color: var(--darkGreen);
+}
+
+.background-purple {
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+.background-dark-purple {
+    color: var(--white);
+    background-color: var(--darkPurple);
+}
+
+.background-red {
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.background-blue {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.background-dark-blue {
+    color: var(--white);
+    background-color: var(--darkBlue);
+}
+
