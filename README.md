@@ -108,6 +108,38 @@ You can also change the behavior of the fragment using the `data-style` attribut
 * `data-style="highlight-in-out"` - the `highlight` class will be added, then removed from the fragment
 * `data-style="highlight-out-in"` - the `highlight` class will be removed, then re-added to the fragment
 
+### Code highlights
+
+You can highlight sections of code using the `highlight` class.  This can be done using the `data-span` attribute, which adds `<span>` tags to a code block.
+
+The format of the `data-span` attribute is as follows:
+
+```
+data-span="line:start-character-inclusive:end-character-inclusive attributes"
+```
+
+If you want to highlight multiple sections of a code block, you can separate the spans using a semi-colon.
+
+For example, here we add the highlight class to the function name (`helloWorld`, which is line 1, characters 10-19), and name of the log function (`console.log`, which is line 2, characters 5-15):
+
+````md
+```js {data-span="1:10:19 .highlight; 2:5:15 .highlight"}
+function helloWorld() {
+    console.log('Hello world');
+}
+```
+````
+
+You can use this in conjunction with fragments.  For example, the following code would highlight `helloWorld` as the second fragment:
+
+````md
+```js {data-span="1:10:19 .fragment data-style=highlight-in data-index=2"}
+function helloWorld() {
+    console.log('Hello world');
+}
+```
+````
+
 ### Code annotation
 
 You can annotate a particular line of code using the `annotate` class.  This will link your annotation with a particular line of a code block.  When you annotate code, you _must_ use the `data-for` attribute to identify the ID of the code block.  You can optionally also use the `data-line` attribute to point the annotation to a particular line of code.  It defaults to line 1.
