@@ -133,7 +133,132 @@
         );
     }
 
-    function drawLine(e1, e2, svg, className) {
+    function getSides(side1, side2, rect1, rect2) {
+        if (side1 !== 'auto' && side2 !== 'auto') {
+            return [side1, side2];
+        }
+
+        if (rect1.x + rect1.width < rect2.x) {
+            // e2 is to the right of e1
+            side1 = side1 === 'auto' ? 'r' : side1;
+            side2 = side2 === 'auto' ? 'l' : side2;
+        } else if (rect2.x + rect2.width < rect1.x) {
+            // e2 is to the left of e1
+            side1 = side1 === 'auto' ? 'l' : side1;
+            side2 = side2 === 'auto' ? 'r' : side2;
+        } else if (rect1.y + rect1.height < rect2.y) {
+            // e2 is below e1
+            side1 = side1 === 'auto' ? 'b' : side1;
+            side2 = side2 === 'auto' ? 't' : side2;
+        } else if (rect2.y + rect2.height < rect1.y) {
+            // e2 is above e1
+            side1 = side1 === 'auto' ? 't' : side1;
+            side2 = side2 === 'auto' ? 'b' : side2;
+        } else {
+            side1 = side1 === 'auto' ? 'm' : side1;
+            side2 = side2 === 'auto' ? 'm' : side2;
+        }
+
+        return [side1, side2];
+    }
+
+    function getControlPoints(side, rect1, rect2) {
+        let x, y, cx, cy;
+
+        switch (side) {
+            case 'l':
+            case 'tl':
+            case 'lt':
+            case 'bl':
+            case 'lb':
+                x = rect1.x;
+                break;
+            case 'r':
+            case 'tr':
+            case 'rt':
+            case 'br':
+            case 'rb':
+                x = rect1.x + rect1.width;
+                break;
+            case 't':
+            case 'b':
+            case 'm':
+                x = rect1.x + rect1.width / 2;
+                break;
+        }
+
+        switch (side) {
+            case 't':
+            case 'tl':
+            case 'lt':
+            case 'tr':
+            case 'rt':
+                y = rect1.y;
+                break;
+            case 'b':
+            case 'bl':
+            case 'lb':
+            case 'br':
+            case 'rb':
+                y = rect1.y + rect1.height;
+                break;
+            case 'l':
+            case 'r':
+            case 'm':
+                y = rect1.y + rect1.height / 2;
+                break;
+        }
+
+        switch (side) {
+            case 'l':
+            case 'r':
+            case 'lt':
+            case 'lb':
+            case 'rt':
+            case 'rb':
+                cy = y;
+                break;
+            case 't':
+            case 'b':
+            case 'tl':
+            case 'tr':
+            case 'bl':
+            case 'br':
+                cx = x;
+                break;
+            case 'm':
+                cx = x;
+                cy = y;
+                break;
+        }
+
+        switch (side) {
+            case 'l':
+            case 'lt':
+            case 'lb':
+                cx = (x + rect2.x + rect2.width) / 2;
+                break;
+            case 'r':
+            case 'rt':
+            case 'rb':
+                cx = (x + rect2.x) / 2;
+                break;
+            case 't':
+            case 'tl':
+            case 'tr':
+                cy = (y + rect2.y) / 2;
+                break;
+            case 'b':
+            case 'bl':
+            case 'br':
+                cy = (y + rect2.y + rect2.height) / 2;
+                break;
+        }
+
+        return {x, y, cx, cy};
+    }
+
+    function drawLine(e1, e2, side1, side2, svg, className) {
         const rect1 = e1.getBoundingClientRect();
         const rect2 = e2.getBoundingClientRect();
         if (
@@ -145,55 +270,19 @@
             // One of them isn't on screen (i.e. a fragment)
             return;
         }
-        let x1, x2, cx1, cx2, y1, y2, cy1, cy2;
 
-        if (rect1.x + rect1.width < rect2.x) {
-            // e2 is to the right of e1
-            x1 = rect1.x + rect1.width;
-            x2 = rect2.x;
-            y1 = rect1.y + rect1.height / 2;
-            y2 = rect2.y + rect2.height / 2;
-            cx1 = (x1 + x2) / 2;
-            cy1 = y1;
-            cx2 = (x1 + x2) / 2;
-            cy2 = y2;
-        } else if (rect2.x + rect2.width < rect1.x) {
-            // e2 is to the left of e1
-            x1 = rect1.x;
-            x2 = rect2.x + rect2.width;
-            y1 = rect1.y + rect1.height / 2;
-            y2 = rect2.y + rect2.height / 2;
-            cx1 = (x1 + x2) / 2;
-            cy1 = y1;
-            cx2 = (x1 + x2) / 2;
-            cy2 = y2;
-        } else if (rect1.y + rect1.height < rect2.y) {
-            // e2 is below e1
-            x1 = rect1.x + rect1.width / 2;
-            x2 = rect2.x + rect2.width / 2;
-            y1 = rect1.y + rect1.height;
-            y2 = rect2.y;
-            cx1 = x1;
-            cy1 = (y1 + y2) / 2;
-            cx2 = x2;
-            cy2 = (y1 + y2) / 2;
-        } else if (rect2.y + rect2.height < rect1.y) {
-            // e2 is above ei
-            y1 = rect1.y;
-            y2 = rect2.y + rect2.height;
-            x1 = rect1.x + rect1.width / 2;
-            x2 = rect2.x + rect2.width / 2;
-            cx1 = x1;
-            cy1 = (y1 + y2) / 2;
-            cx2 = x2;
-            cy2 = (y1 + y2) / 2;
-        } else {
-            // They overlap
-            console.error(
-                `Could not draw line between overlapping elements ${e1} and ${e2}`
-            );
-            return;
-        }
+        [side1, side2] = getSides(side1, side2, rect1, rect2);
+
+        const {x: x1, y: y1, cx: cx1, cy: cy1} = getControlPoints(
+            side1,
+            rect1,
+            rect2
+        );
+        const {x: x2, y: y2, cx: cx2, cy: cy2} = getControlPoints(
+            side2,
+            rect2,
+            rect1
+        );
 
         const path = document.createElementNS(SVG_NS, 'path');
         const d = `M ${x1} ${y1} C ${cx1} ${cy1}, ${cx2} ${cy2}, ${x2} ${y2}`;
@@ -231,7 +320,14 @@
                     const line = document.querySelector(
                         `#${targetId} > span:nth-child(${lineNumber})`
                     );
-                    drawLine(line, annotation, svg, 'line-annotation');
+                    drawLine(
+                        line,
+                        annotation,
+                        'auto',
+                        'auto',
+                        svg,
+                        'line-annotation'
+                    );
                 });
             });
         });
@@ -247,7 +343,10 @@
             const toId = line.getAttribute('data-to');
             const to = document.querySelector(`#${toId}`);
 
-            drawLine(from, to, svg, line.className);
+            const fromSide = line.getAttribute('data-from-side') || 'auto';
+            const toSide = line.getAttribute('data-to-side') || 'auto';
+
+            drawLine(from, to, fromSide, toSide, svg, line.className);
         });
     }
 

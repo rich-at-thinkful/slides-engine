@@ -183,3 +183,19 @@ Look at what happened after
 <div class="line line-arrow-start" data-from="before" data-to="after"></div>
 ```
 
+By default, it will automatically work out which side of the elements to draw the line from and to.  To override this, you can use the `data-from-side` and `data-to-side` attributes, which can be set to one of the following values:
+
+* `t` - Top middle
+* `b` - Bottom middle
+* `l` - Left middle
+* `r` - Right middle
+* `m` - Middle
+* `tl` - Top left, line starts vertically
+* `tr` - Top right, line starts vertically
+* `bl` - Bottom left, line starts vertically
+* `br` - Bottom right, line starts vertically
+* `lt` - Top left, line starts horizontally
+* `rt` - Top right, line starts horizontally
+* `lb` - Bottom left, line starts horizontally
+* `rb` - Bottom right, line starts horizontally
+
