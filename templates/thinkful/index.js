@@ -47,11 +47,6 @@
     }
 
     function highlightCode() {
-        // Trim whitespace
-        const code = document.querySelectorAll('pre code');
-        code.forEach(block => {
-            block.innerHTML = block.innerHTML.replace(/(^\s*\n)+/, '');
-        });
         hljs.initHighlighting();
     }
 
