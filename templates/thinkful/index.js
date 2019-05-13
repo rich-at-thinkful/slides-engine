@@ -104,7 +104,8 @@
             const spans = block
                 .getAttribute('data-span')
                 .split(';')
-                .map(s => s.trim());
+                .map(s => s.trim())
+                .filter(s => s !== '');
             const lines = block.innerText.split('\n');
             spans
                 .map(span => parseCodeSpan(span, lines))
