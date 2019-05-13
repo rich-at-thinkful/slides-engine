@@ -63,30 +63,31 @@ return filter([], x => x<7);
 ```js {.fragment data-index=17}
 return [5, 6, 3];
 ```
-<pre><code class="language-js fragment nudge-r-1" data-index="16">
-<span></span>
-return [5, 6, 3];
-</code></pre>
 
-<pre><code class="language-js fragment nudge-r-2" data-index="15">
-<span></span>
-return [5, 6, 3];
-</code></pre>
+```js {.fragment .nudge-r-1 data-index=16}
 
-<pre><code class="language-js fragment nudge-r-3" data-index="14">
-<span></span>
+return [5, 6, 3];
+```
+
+```js {.fragment .nudge-r-2 data-index=15}
+
+return [5, 6, 3];
+```
+
+```js {.fragment .nudge-r-3 data-index=14}
+
 return [6, 3];
-</code></pre>
+```
 
-<pre><code class="language-js fragment nudge-r-4" data-index="13">
-<span></span>
+```js {.fragment .nudge-r-4 data-index=13}
+
 return [3];
-</code></pre>
+```
 
-<pre><code class="language-js fragment nudge-r-5" data-index="12">
-<span></span>
+```js {.fragment .nudge-r-5 data-index=12}
+
 return [];
-</code></pre>
+```
 </div>
 </div>
 </div>
