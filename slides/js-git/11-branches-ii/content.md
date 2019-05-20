@@ -9,8 +9,8 @@
 </div>
 <div class="cell-2">
 
-![Merged branch](branch-merged.png){.fragment data-style=out}
-![Merged branch](branch-deleted.png){.fragment}
+![Merged branch](branch-merged.png){.fragment .fragment-dn data-style=out}
+![Merged branch](branch-deleted.png){.fragment .fragment-dn}
 
 </div>
 </div>
