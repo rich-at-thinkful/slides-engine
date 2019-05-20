@@ -2,8 +2,8 @@ title: Introduction to React
 template: thinkful
 slides:
   - react-introduction/01-what-is-react
-  - react-introduction/02-node-ecosystem
-  - react-introduction/03-modules
+  # - react-introduction/02-node-ecosystem
+  # - react-introduction/03-modules
   - react-introduction/04-react-component
   - react-introduction/05-a-react-component
   - react-introduction/06-jsx-vs-html
