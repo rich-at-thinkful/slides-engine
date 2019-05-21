@@ -7,4 +7,4 @@ slides:
   - node-intro/04-review-npm
   - node-intro/05-process-object
   - node-intro/06-commonjs
-  
+  - node-intro/07-debugging
