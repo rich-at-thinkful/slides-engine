@@ -4,3 +4,7 @@ slides:
   - node-intro/01-overview
   - node-intro/02-what-is-node
   - node-intro/03-node-repl
+  - node-intro/04-review-npm
+  - node-intro/05-process-object
+  - node-intro/06-commonjs
+  
