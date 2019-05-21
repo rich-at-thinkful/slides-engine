@@ -5,11 +5,11 @@
 export function add(a, b) {
     return a + b;
 }
-// math.test.js
-import {add} from './math';
 ```
 
 ```js
+// math.test.js
+import {add} from './math';
 describe('add', () => { // Test suite
     it('should add positive numbers', () => { // Test case
         const result = add(3, 5);
