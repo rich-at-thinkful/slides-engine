@@ -1,4 +1,10 @@
 title: Web APIs with Express
 template: thinkful
 slides:
-  - node-express-intro/0x-req-res
+  - node-express-intro/01-overview
+  - node-express-intro/02-comm-diagram
+  - node-express-intro/03-url-breakdown
+  - node-express-intro/04-req-res-example
+  - node-express-intro/05-make-easier
+  - node-express-intro/06-hello-express
+
