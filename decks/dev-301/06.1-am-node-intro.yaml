@@ -8,3 +8,4 @@ slides:
   - node-intro/05-process-object
   - node-intro/06-commonjs
   - node-intro/07-debugging
+  - node-intro/08-ndb-walkthrough
