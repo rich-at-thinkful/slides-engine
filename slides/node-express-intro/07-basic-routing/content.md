@@ -1,8 +1,6 @@
 # Basic Routing
 
-* [http://localhost:8000/pizza/pepperoni](http://localhost:8000/pizza/pepperoni)
-* [http://localhost:8000/pizza/cheese](http://localhost:8000/pizza/cheese)
-* [http://localhost:8000/burger](http://localhost:8000/burger)
+* Requests are routed differently based on their **HTTP method** and their **path**
 
 <div class="row">
 <div class="grid-2">
@@ -21,3 +19,28 @@ app.get('/pizza/pepperoni', (req, res) => {});
 
 </div>
 </div>
+
+<div class="fragment" data-index="1">
+
+<div class="row" style="margin-top:100px">
+<div class="grid-2">
+
+```text
+POST /pizza/pepperoni HTTP/1.1
+Content-Type: application/json
+
+{ "size":"12 inches" }
+```
+
+</div>
+
+<div class="grid-4">
+
+```js
+app.post('/pizza/pepperoni', (req, res) => {});
+```
+
+</div>
+</div>
+</div>
+
