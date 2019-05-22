@@ -7,4 +7,5 @@ slides:
   - node-express-intro/04-req-res-example
   - node-express-intro/05-make-easier
   - node-express-intro/06-hello-express
+  - node-express-intro/07-basic-routing
 
