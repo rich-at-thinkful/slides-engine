@@ -364,8 +364,18 @@
         drawLines(svg);
     }
 
-    function main() {
+    function addEventListeners() {
         window.onresize = resize;
+        document.addEventListener('swiped-left', function(e) {
+            Fieldfare.next();
+        });
+        document.addEventListener('swiped-right', function(e) {
+            Fieldfare.prev();
+        });
+    }
+
+    function main() {
+        addEventListeners();
         addCodeSpans();
         highlightCode();
         resize();
