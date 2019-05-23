@@ -20,7 +20,7 @@ this.setState({
 
 ```js
 // Bad
-this.state.arr = this.state.splice(2, 1);
+this.state.arr.splice(2, 1);
 // Good
 this.setState({
     arr: this.state.arr.filter((item, index) => index !== 2)
