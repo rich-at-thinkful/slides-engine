@@ -8,3 +8,7 @@ slides:
   - node-express-security/05-securing-endpoints-2
   - node-express-security/06-validating-reqs
   - node-express-security/07-insert-pipeline
+  - node-express-security/08-cors
+  - node-express-security/09-cors-config    
+  - node-express-security/10-helmet
+  
