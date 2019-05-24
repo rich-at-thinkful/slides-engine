@@ -3,7 +3,7 @@
 * Requests are routed differently based on their **HTTP method** and their **path**
 
 <div class="row">
-<div class="grid-2">
+<div class="cell-2">
 
 ```text
 GET /pizza/pepperoni HTTP/1.1
@@ -11,7 +11,7 @@ GET /pizza/pepperoni HTTP/1.1
 
 </div>
 
-<div class="grid-4">
+<div class="cell-4">
 
 ```js
 app.get('/pizza/pepperoni', (req, res) => {});
@@ -23,7 +23,7 @@ app.get('/pizza/pepperoni', (req, res) => {});
 <div class="fragment" data-index="1">
 
 <div class="row" style="margin-top:100px">
-<div class="grid-2">
+<div class="cell-2">
 
 ```text
 POST /pizza/pepperoni HTTP/1.1
@@ -34,7 +34,7 @@ Content-Type: application/json
 
 </div>
 
-<div class="grid-4">
+<div class="cell-4">
 
 ```js
 app.post('/pizza/pepperoni', (req, res) => {});

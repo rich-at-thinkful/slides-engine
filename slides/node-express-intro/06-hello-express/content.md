@@ -2,7 +2,7 @@
 
 <div class="row">
 
-<div class="grid-4">
+<div class="cell-4">
 
 ```bash
 $ npm install express
@@ -23,7 +23,7 @@ app.listen(8080, () => console.log('Server on 8080'));
 ```
 </div>
 
-<div class="grid-2">
+<div class="cell-2">
 
 Import Express library {.annotation .fragment style="font-size:.8em;" data-index="1" data-style="in-out" data-for="express-boiler" data-line="1"}
 

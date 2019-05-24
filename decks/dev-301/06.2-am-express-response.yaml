@@ -3,3 +3,4 @@ template: thinkful
 slides:
   - node-express-response-obj/01-overview
   - node-express-response-obj/02-response-breakdown
+  - node-express-response-obj/03-response-codes
