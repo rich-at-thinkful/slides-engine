@@ -9,7 +9,6 @@ app.get('/foo', (req, res) => {});
 ```
 
 <div class="fragment" data-index="1">
-<p>&nbsp;</p>
 
 * ...but you can also pass in named functions
 * This allows for more modularity / reusability in future
@@ -23,3 +22,8 @@ app.get('/foo', handleFoo);
 </div>
 
 * Add the `GET /types` endpoint with named handler {.fragment data-index="2"}
+
+```text {.fragment data-index="2"}
+[`Bug`, `Dark`, `Dragon`, `Electric`, `Fairy`, `Fighting`, `Fire`, `Flying`, `Ghost`, `Grass`, `Ground`, `Ice`, 
+`Normal`, `Poison`, `Psychich`, `Rock`, `Steel`, `Water`]
+```
