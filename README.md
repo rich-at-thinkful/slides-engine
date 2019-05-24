@@ -149,7 +149,7 @@ For example, to annotate the body of a `sayHello` function:
 ````md
 <!-- Set up grid so annotation is next to code -->
 <div class="row">
-<div class="grid-4">
+<div class="cell-4">
 
 ```js {#console-log-example}
 function sayHello() {
@@ -158,7 +158,7 @@ function sayHello() {
 ```
 
 </div>
-<div class="grid-2">
+<div class="cell-2">
 
 Logs the string "Hello world" to the console {.annotation data-for="console-log-example" data-line="2"}
 
