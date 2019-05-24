@@ -1,0 +1,10 @@
+title: Server Security and Config
+template: thinkful
+slides:
+  - node-express-security/01-overview
+  - node-express-security/02-setup
+  - node-express-security/03-handlers
+  - node-express-security/04-securing-endpoints
+  - node-express-security/05-securing-endpoints-2
+  - node-express-security/06-validating-reqs
+  - node-express-security/07-insert-pipeline
