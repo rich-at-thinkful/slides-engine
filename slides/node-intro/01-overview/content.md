@@ -1,22 +1,8 @@
 # Workshop Overview
 
-<div class="smaller">
-
-  * Using Node
-    * Run node REPL
-      * Special commands
-    * Execute a script
-      * process
-      * process.env
-      * process.argv
-
-  * Client-Server Basics
-    * Req/Res Lifecycle
-    * HTTP Message Breakdown
-    * URL/URI Breakdown
-
-  * Node "Hello World" server
-
-  * NPM (Node Package Manager)
-
-</div>
+* What is Node?
+* Node REPL vs. scripts
+* Node Package Manager
+* Understand `process`
+* Review CommonJS modules
+* Using a debugger

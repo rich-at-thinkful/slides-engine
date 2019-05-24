@@ -1,6 +1,0 @@
-title: Introduction to Node
-template: thinkful
-slides:
-  - node-intro/01-overview
-  - node-intro/02-what-is-node
-  - node-intro/03-node-repl
