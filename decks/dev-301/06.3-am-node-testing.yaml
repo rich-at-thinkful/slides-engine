@@ -7,4 +7,8 @@ slides:
   - node-testing/04-testing-tools-libs
   - node-testing/05-assertions
   - node-testing/06-walkthrough-nytserver
-  - node-testing/07-app-test  
+  - node-testing/07-app-test-1
+  - node-testing/08-app-test-2
+  - node-testing/09-app-test-3
+  - node-testing/10-app-test-4
+  
