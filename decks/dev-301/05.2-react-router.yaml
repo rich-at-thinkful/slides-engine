@@ -8,4 +8,5 @@ slides:
   - react-router/05-fallback-route
   - react-router/06-navigation-links
   - react-router/07-navigation-history
-  - react-router/08-ei-project
+  - react-router/08-render-props
+  - react-router/09-ei-project
