@@ -4,4 +4,9 @@ slides:
   - node-db-intro/01-overview
   - node-db-intro/02-db-scale-1
   - node-db-intro/03-db-scale-2
+  - node-db-intro/04-relational
+  - node-db-intro/05-postgres-intro
+  - node-db-intro/06-tables-rows-cols   
+  - node-db-intro/07-psql-cli-commands
+  - node-db-intro/08-psql-shell-commands
   
