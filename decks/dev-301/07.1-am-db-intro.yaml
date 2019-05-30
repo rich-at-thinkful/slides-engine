@@ -1,0 +1,7 @@
+title: Intro to Databases
+template: thinkful
+slides:
+  - node-db-intro/01-overview
+  - node-db-intro/02-db-scale-1
+  - node-db-intro/03-db-scale-2
+  
