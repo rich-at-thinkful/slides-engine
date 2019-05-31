@@ -1,6 +1,6 @@
 # PostgreSQL Shell Commands
 
-## Start interactive shell
+## Start interactive shell {.smaller}
 
 <div class="row">
 <div class="cell-4">
@@ -9,7 +9,7 @@
 $ psql -U dev -d my_database
 ```
 
-## Execute commands from file
+## Execute commands from file {.smaller}
 
 ```bash
 $ psql -U dev -d my_database -f ./data/my_script.sql
@@ -26,7 +26,7 @@ $ psql -U dev -d my_database -f ./data/my_script.sql
 <div class="row fragment" data-index="1">
 <div class="cell-4">
 
-## Inside the shell
+## Inside the shell {.smaller}
 
 ```text {#shell-1}
 postgres=# \l
@@ -62,10 +62,3 @@ help {.fragment .annotation data-index="2" data-for="shell-1" data-line="7"}
 </div>
 
 </div>
-
-
-<style>
-h2 {
-  font-size: .8rem;
-}
-</style>
