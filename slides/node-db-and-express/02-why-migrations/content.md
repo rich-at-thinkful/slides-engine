@@ -26,6 +26,8 @@
 
 * Acts as documentation for your database's structure
 
+* Allows changes over time as your application's features evolve
+
 * One trait of a modern software-as-a-service, as defined in [12 Factor App](https://12factor.net/){target=_blank}
   * maximum portability between execution environments {.smaller}
   * suitable for deployment on cloud platforms {.smaller}
