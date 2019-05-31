@@ -1,7 +1,7 @@
 # Tables, Rows, Columns
 
-* **Table**: Collection of data with fields and values
-* **Column**: One column for every field
+* **Table**: Collection of data with fields and values (*table name must be unique*)
+* **Column**: One column for every field (*column name must be unique*)
 * **Row**: One row for every "record" - contains values for each field
 
 <div class="row">

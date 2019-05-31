@@ -4,9 +4,15 @@ slides:
   - node-db-intro/01-overview
   - node-db-intro/02-db-scale-1
   - node-db-intro/03-db-scale-2
-  - node-db-intro/04-relational
-  - node-db-intro/05-postgres-intro
-  - node-db-intro/06-tables-rows-cols   
-  - node-db-intro/07-psql-cli-commands
-  - node-db-intro/08-psql-shell-commands
+  - node-db-intro/04-db-solves
+  - node-db-intro/05-relational
+  - node-db-intro/06-postgres-intro
+  - node-db-intro/07-tables-rows-cols   
+  - node-db-intro/08-psql-cli-commands
+  - node-db-intro/09-psql-shell-commands
+  - node-db-intro/10-sql-commands-1
+  - node-db-intro/11-sql-commands-2
+  - node-db-intro/12-sql-commands-3
+  - node-db-intro/13-sql-commands-4
+  - node-db-intro/14-dont-forget-semi
   
