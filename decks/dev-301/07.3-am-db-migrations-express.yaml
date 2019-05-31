@@ -1,0 +1,5 @@
+title: Databases with Express
+template: thinkful
+slides:
+  - node-db-and-express/01-overview
+  - node-db-and-express/02-why-migrations
