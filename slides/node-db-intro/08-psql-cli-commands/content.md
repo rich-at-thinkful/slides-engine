@@ -40,6 +40,9 @@ $ dropuser dev
 </div>
 
 <div class="cell-2">
+
+**NOTE!** Many of these functions can be accomplished with SQL commands as well {.fragment .smaller data-index=3 style="color:blue;margin-top:75px;"}
+
 </div>
 
 </div>
