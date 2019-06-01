@@ -17,8 +17,9 @@ describe('Articles Endpoints', function() {
     app.set('db', db);
   });
 
-  before('clean the table', () => 
-    db('blogful_articles').truncate());
+  const cleanArticles = () => db('blogful_articles').truncate();
+  before('clean the table', cleanArticles);
+  afterEach('clean the table', cleanArticles);
 
   after('disconnect from db', () => db.destroy());
 })
@@ -33,7 +34,9 @@ set this test knex instance on app so our routes will use it {.fragment data-ind
 
 ensure starting test suite with a fresh empty table {.fragment data-index=3 .annotation data-for=before-after-1 data-line=14}
 
-release connection when all tests finished {.fragment data-index=4 .annotation data-for=before-after-1 data-line=16}
+empty db after every individual test {.fragment data-index=4 .annotation data-for=before-after-1 data-line=15}
+
+release connection when all tests finished {.fragment data-index=5 .annotation data-for=before-after-1 data-line=17}
 
 </div>
 </div>

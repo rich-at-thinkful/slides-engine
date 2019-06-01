@@ -13,4 +13,5 @@ slides:
   - node-db-and-express/10-setup-tests-2
   - node-db-and-express/11-fixtures
   - node-db-and-express/12-context-with-fixture
+  - node-db-and-express/13-context-with-fixture-2
   

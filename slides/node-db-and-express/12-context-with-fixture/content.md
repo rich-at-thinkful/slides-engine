@@ -1,12 +1,15 @@
 # Context
 
-<div class='row'>
+* `context` and `describe` are actually synonymous
+* However, we conventionally use `context` for DRYing our tests
+
+<div class='row fragment' data-index=0>
 <div class='cell-4'>
 
-```js {#context-1}
+```js {#context-1 data-span="3:24:45 .highlight"}
 describe('GET /articles', () => {
   context('Given articles exist', () => {
-    beforeEach(() => {});
+    beforeEach(() => { /* use fixture here */ });
     
     it('some test here', () => {});
     it('another test here', () => {});
@@ -24,7 +27,7 @@ describe('GET /articles', () => {
 
 use our fixture to add articles to db {.annotation data-for=context-1 data-line=3}
 
-they'll be deleted after every test because we have already set that up with `afterEach` {.annotation data-for=context-1 data-line=3}
+the data will be deleted after every test because we have already set that up in the outer `describe` with `afterEach` {.annotation data-for=context-1 data-line=3}
 
 </div>
 </div>
