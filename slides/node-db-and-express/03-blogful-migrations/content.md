@@ -1,6 +1,6 @@
 # Blogful Over Time
 
-* Initially, our API just has an `articles` table to store all blogs
+* Initially, our API just has a `blogful_articles` table to store all blogs
 
 
 * A future iteration might: {.fragment data-index=1}

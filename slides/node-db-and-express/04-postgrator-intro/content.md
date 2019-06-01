@@ -22,18 +22,6 @@ CREATE TABLE blogful_articles (
 
   </div>
   <div class="cell-2">
-  <div class="fragment" data-index="3">
-
-## Run Postgrator {.smaller}
-
-```
-$ npx postgrator 
-  --config postgrator-config.js [step]
-```
-
-(default `step` = max){.smallest}
-
-  </div>
 
 migration sequence {.annotation .smaller data-for=migrate-1 data-line=1 .fragment data-index=1 data-style=in-out}
 
