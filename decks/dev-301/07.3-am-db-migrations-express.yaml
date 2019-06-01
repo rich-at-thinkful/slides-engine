@@ -6,3 +6,5 @@ slides:
   - node-db-and-express/03-blogful-migrations
   - node-db-and-express/04-postgrator-intro
   - node-db-and-express/05-postgrator-ex-2
+  - node-db-and-express/06-seed-separate
+  - node-db-and-express/07-walkthrough-get-endpoint
