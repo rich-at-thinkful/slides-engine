@@ -3,7 +3,62 @@
 <div class="row">
 <div class="cell-3">
 
+### server.js
+
+<div class="smallest">
+
+* Install `knex` and `pg` 
+* Import `knex` to `server.js` and instantiate
+* Set `DB_URL` in env and config
+
+</div>
+
+<div class="fragment" data-index="1">
+
+### app.js
+
+<div class="smallest">
+
 * Copy over [ArticlesService](https://gist.github.com/tomatau/f79c7f4ef53c5ec5e86656d4b43dcbc9){target=_blank}
+* Create `/articles` endpoint
+  * utilize service to get data and return as json
+  * but how do we get access to the Knex instance? {style="color:var(--red);"}
+
+</div>
+
+</div> <!-- end fragment 1 -->
+
+</div>
+<div class="cell-3">
+
+```diff {.fragment data-index=2}
+  const db = knex({
+    client: 'pg',
+    connection: DB_URL,
+  })
+
++ app.set('db', db)
+
+  app.listen(PORT, () => {
+```
+
+we must use `req.app` so it works for tests, too {.annotation data-for=req-get data-line=1 .fragment data-index=4 .tiny}
+
+```diff {.fragment data-index=3 #req-get}
++ const knexInstance = req.app.get('db');
++ ArticlesService.getAllArticles(knexInstance)
+    .then(articles => {
+      res.json(articles)
+    })
+    .catch(next);
+  })
+```
+
+</div>
+</div>
+
+<!--
+<div class="cell-3">
 
 <div class="fragment" data-index="1">
 
@@ -23,9 +78,7 @@
 
 </div>
 </div>
-</div>
 
-<div class="cell-3">
 <div class="fragment" data-index="2">
 
 * Make test pass
@@ -39,4 +92,5 @@
 * Do it again with `GET /articles/:articleId`! {.fragment data-index=4}
 
 </div>
-</div>
+-->
+

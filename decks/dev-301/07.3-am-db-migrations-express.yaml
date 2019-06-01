@@ -9,3 +9,5 @@ slides:
   - node-db-and-express/06-postgrator-setup
   - node-db-and-express/07-seed-separate
   - node-db-and-express/08-walkthrough-get-endpoint
+  - node-db-and-express/09-setup-tests
+  - node-db-and-express/10-setup-tests-2
