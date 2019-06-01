@@ -4,3 +4,5 @@ slides:
   - node-db-and-express/01-overview
   - node-db-and-express/02-why-migrations
   - node-db-and-express/03-blogful-migrations
+  - node-db-and-express/04-postgrator-intro
+  - node-db-and-express/05-postgrator-ex-2
