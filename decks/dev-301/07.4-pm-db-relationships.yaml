@@ -1,0 +1,10 @@
+title: Relationships and Schema Design
+template: thinkful
+slides:
+  - node-db-relationships/01-overview
+  - node-db-relationships/02-original-data
+  - node-db-relationships/03-insertion-anomalies
+  - node-db-relationships/04-insertion-anomalies-2
+  - node-db-relationships/05-deletion-anomalies
+
+  
