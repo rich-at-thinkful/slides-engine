@@ -6,5 +6,8 @@ slides:
   - node-db-relationships/03-insertion-anomalies
   - node-db-relationships/04-insertion-anomalies-2
   - node-db-relationships/05-deletion-anomalies
-
+  - node-db-relationships/06-better-way
+  - node-db-relationships/07-normalize-supplier
+  - node-db-relationships/08-normalize-item
+  - node-db-relationships/09-normalize-order
   
