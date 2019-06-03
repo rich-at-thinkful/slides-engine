@@ -10,4 +10,9 @@ slides:
   - node-db-relationships/07-normalize-supplier
   - node-db-relationships/08-normalize-item
   - node-db-relationships/09-normalize-order
-  
+  - node-db-relationships/10-supplier-in-sql
+  - node-db-relationships/11-item-in-sql
+  - node-db-relationships/12-order-in-sql
+  - node-db-relationships/13-as-migrations 
+  - node-db-relationships/14-output-detail
+  - node-db-relationships/15-constraint-example 

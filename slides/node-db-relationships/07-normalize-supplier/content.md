@@ -2,6 +2,8 @@
 
 * Extract just the supplier fields and place in their own table
 
+&nbsp;
+
 ### supplier table {.center}
 
 <div class="row">

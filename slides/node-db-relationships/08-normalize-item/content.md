@@ -3,16 +3,16 @@
 * Extract the relevant fields for items and place in their own table
 * Add a column to apply a **relationship** of the item to a supplier
 
-### *item table*
+### *item table* {style=margin-top:25px}
 
 <div class="row">
-<div class="cell-3">
+<div class="cell-4">
 
 ![Normalize Item](normalize-items.png)
 
 </div>
 
-<div class="cell-3 smaller fragment" data-index="1">
+<div class="cell-2 smaller fragment" data-index="1">
 
 * item.supplier column must be a valid supplier.id
 
@@ -27,11 +27,11 @@
 
 <style>
 .highlight-column-1 {
-  width: 115px;
-  height: 250px;
+  width: 135px;
+  height: 315px;
   border: 3px solid red;
   position: fixed;
-  top: 260px;
-  left: 510px;
+  top: 280px;
+  left: 680px;
 }
 </style>
