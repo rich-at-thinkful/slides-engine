@@ -17,6 +17,7 @@ WHERE total_cost < 600;
 ---------+----------
        1 |       10
        3 |       50
+       5 |     2000
 ```
 
 </div>
@@ -32,13 +33,14 @@ first, get the item ids needed {.annotation data-for=ex-1-query-1}
 <div class='cell-4'>
 
 ```sql
-SELECT item_name from item WHERE id IN (1,3);
+SELECT item_name from item WHERE id IN (1,3,5);
 ```
 
 ```text {#ex-1-query-2}
-    item_name    
------------------
+    item_name     
+------------------
  Paper Additives
+ Abaca Sheet Pulp
  Wood pulp
 ```
 
@@ -50,10 +52,4 @@ then lookup the name(s) against the identified item ids {.annotation data-for=ex
 </div>
 </div>
 
-Inefficient! Unscalable! {.fragment data-index=2 .smaller style=width:60%;color:var(--red)}
-
-
-
-
-
-<!-- * List all cities of suppliers who have orders not yet shipped -->
+Inefficient! Unscalable! {.fragment data-index=2 .smaller style="width:270px;padding-left:15px" class="background-red"}
