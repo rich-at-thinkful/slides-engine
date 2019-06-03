@@ -1,6 +1,6 @@
 # Time to Normalize: decompose items
 
-* Extract the relevant fields for items and place in their own table
+* Extract the relevant fields for items and place them in their own table
 * Add a column to apply a **relationship** of the item to a supplier
 
 ### *item table* {style=margin-top:25px}

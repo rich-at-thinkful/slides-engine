@@ -1,6 +1,6 @@
 # Time to Normalize: decompose suppliers
 
-* Extract just the supplier fields and place in their own table
+* Extract only the supplier fields and place them in their own table
 
 &nbsp;
 

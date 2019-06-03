@@ -1,6 +1,6 @@
 ### Deletion Anomalies
 
-* Deleting the highlighted order would also permanently lose Blumfeld Paper Supplier info {style=color:var(--red)} 
+* Deleting the highlighted order would permanently lose Blumfeld Paper Supplier info {style=color:var(--red)} 
 
 <div class="tiny">
 

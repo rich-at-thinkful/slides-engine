@@ -3,7 +3,7 @@
 <div class='row'>
 <div class='cell-4'>
 
-```sql {#supplier-sql-1}
+```sql {#supplier-sql-1 data-span="5:3:15 .fragment data-style=highlight-in data-index=1"}
 DROP TABLE IF EXISTS supplier;
 
 CREATE TABLE supplier (
@@ -17,7 +17,7 @@ CREATE TABLE supplier (
 </div>
 <div class='cell-2 smallest'>
 
-use `supplier_name` instead of `name` as field due to reserved keyword {.annotation data-for=supplier-sql-1 data-line=5 .fragment data-index=1}
+field is designated `supplier_name`, as `name` is a SQL reserved keyword {.annotation data-for=supplier-sql-1 data-line=5 .fragment data-index=1}
 
 </div>
 </div>

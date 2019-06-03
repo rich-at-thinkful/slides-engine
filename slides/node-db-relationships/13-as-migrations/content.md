@@ -1,4 +1,4 @@
-# Building as Migrations
+# Generate Schema as Migrations
 
 <div class='row'>
 <div class='cell-4'>

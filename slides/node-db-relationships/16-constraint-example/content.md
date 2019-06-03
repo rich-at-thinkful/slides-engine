@@ -35,13 +35,13 @@ We can't place an order if item value is null {.fragment data-index=2 .backgroun
 </div>
 </div>
 
-<hr />
+<hr class="fragment" data-index="3" />
 
 
 <div class='row'>
 <div class='cell-4'>
 
-```sql {#fk-break-2 .fragment data-index=3}
+```sql {#fk-break-2 .fragment data-index=3 data-span="2:6:9 .fragment data-style=highlight-in data-index=3; 2:57:57 .fragment data-style=highlight-in data-index=3;"}
 INSERT INTO supplier_order 
     (item, amount, total_cost, shipping_status) VALUES (2, 20, 20, 'Shipped');
 ```
@@ -49,7 +49,7 @@ INSERT INTO supplier_order
 </div>
 <div class='cell-2 smallest'>
 
-We've supplied a value, so now what's the issue? {.fragment data-index=3}
+We've supplied an item value, so now what's the issue? {.fragment data-index=3}
 
 </div>
 </div>

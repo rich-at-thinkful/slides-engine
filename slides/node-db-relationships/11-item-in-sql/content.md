@@ -20,9 +20,9 @@ CREATE TABLE item (
 
 `supplier` column is a foreign key to the `id` column on another table {.annotation data-for=item-sql-1 data-line=8 .fragment data-index=1}
 
-`REFERENCES` is constraint that enforces if `id` provided, must be a valid supplier {.annotation data-for=item-sql-1 data-line=8 .fragment data-index=2}
+`REFERENCES` constraint: if `id` provided, must be a valid supplier {.annotation data-for=item-sql-1 data-line=8 .fragment data-index=2}
 
-`NOT NULL` is constraint that prevents item existing without a supplier {.annotation data-for=item-sql-1 data-line=8 .fragment data-index=3}
+`NOT NULL` constraint: prevents item existing without a supplier {.annotation data-for=item-sql-1 data-line=8 .fragment data-index=3}
 
 </div>
 </div>
