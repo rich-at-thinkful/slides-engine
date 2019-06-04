@@ -3,7 +3,7 @@
 <div class='row'>
 <div class='cell-4'>
 
-```sql {#item-sql-1 data-span="8:20:29 .fragment data-style=highlight-in-out data-index=2; 8:44:51 .fragment data-style=highlight-in data-index=3"}
+```sql {#item-sql-1 data-span="8:20:42 .fragment data-style=highlight-in-out data-index=2; 8:44:51 .fragment data-style=highlight-in data-index=3"}
 DROP TABLE IF EXISTS item;
 
 CREATE TABLE item (

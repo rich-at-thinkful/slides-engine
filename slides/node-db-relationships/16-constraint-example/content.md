@@ -41,9 +41,9 @@ We can't place an order if item value is null {.fragment data-index=2 .backgroun
 <div class='row'>
 <div class='cell-4'>
 
-```sql {#fk-break-2 .fragment data-index=3 data-span="2:6:9 .fragment data-style=highlight-in data-index=3; 2:57:57 .fragment data-style=highlight-in data-index=3;"}
+```sql {#fk-break-2 .fragment data-index=3 data-span="2:6:9 .fragment data-style=highlight-in data-index=3; 2:57:59 .fragment data-style=highlight-in data-index=3;"}
 INSERT INTO supplier_order 
-    (item, amount, total_cost, shipping_status) VALUES (2, 20, 20, 'Shipped');
+    (item, amount, total_cost, shipping_status) VALUES (666, 20, 20, 'Shipped');
 ```
 
 </div>
@@ -61,7 +61,7 @@ We've supplied an item value, so now what's the issue? {.fragment data-index=3}
 ```sql {#fk-break-2a .fragment data-index=4}
 ERROR:  insert or update on table "supplier_order" 
     violates foreign key constraint "supplier_order_item_fkey"
-DETAIL:  Key (item)=(2) is not present in table "item".
+DETAIL:  Key (item)=(666) is not present in table "item".
 ```
 
 </div>

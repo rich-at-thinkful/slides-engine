@@ -17,7 +17,7 @@ DELETE FROM item WHERE id = 1;
 
 We'll add an order for item 1 {.annotation data-for=fk-break-3 data-line=1 .fragment data-index=1}
 
-But what happens if we then try to delete item 1? {.annotation data-for=fk-break-3 data-line=4 .fragment data-index=2}
+But what happens if we then try to delete item 1, causing an "orphaned" order? {.annotation data-for=fk-break-3 data-line=4 .fragment data-index=2}
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 # Overview
 
 * Data Integrity and Anomalies
-* Normalization
+* Solving with Normalization
 * ERD - Entity Relationship Diagram
 * Foreign keys 
   - REFERENCES
