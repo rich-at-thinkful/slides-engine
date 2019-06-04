@@ -5,3 +5,5 @@ slides:
   - node-post-del/02-post
   - node-post-del/03-post-non-ajax
   - node-post-del/04-post-ajax
+  - node-post-del/05-post-endpoint
+  - node-post-del/06-parse-json-body  
