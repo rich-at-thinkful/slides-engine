@@ -7,7 +7,7 @@
 ## What is a migration?
 
 * Every migration comprises one or more SQL statements to alter the database schema 
-  * (e.g. add a table, rename a column, etc.) {.smaller}
+  * (e.g. create a table, rename a column, etc.) {.smaller}
 
 * Each migration should have complementary "undo" instructions to revert the change 
 

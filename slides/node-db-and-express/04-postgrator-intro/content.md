@@ -1,6 +1,7 @@
 # Postgrator CLI
 
 * Simple tool that executes your migration files in a specified order
+* All migrations comprise a DO and UNDO file
 
 <div class="row">
   <div class="cell-4">

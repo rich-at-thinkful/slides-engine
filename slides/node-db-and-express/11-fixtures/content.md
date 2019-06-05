@@ -1,8 +1,12 @@
 # Fixtures
 
+<div class="smaller">
+
 * Fixtures are dummy data used in testing
 * Instead of creating data for every test, fixtures help us reuse and keep our expected data consistent
 * [Fixture Data](https://github.com/Thinkful-Ed/blogful-api/blob/test-gets-when-empty/test/articles.fixtures.js){target=_blank}
+
+</div>
 
 **./test/articles.fixtures.js**
 ```js

@@ -7,7 +7,7 @@
 
 ```bash {#migrate-code}
 $ createdb blogful_test
-$ MIGRATION_DB_URL=blogful_test npm run migrate
+$ MIGRATION_DB_NAME=blogful_test npm run migrate
 ```
 
 </div>
