@@ -9,7 +9,7 @@
 module.exports = { myFunction, myString };
 
 // ES6 export
-export default { myFunction, myString };
+export { myFunction, myString };
 ```
 
 ### Import in `index.js`
