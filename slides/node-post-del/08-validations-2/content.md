@@ -19,7 +19,7 @@ set `newsLetter` default value if not provided in request {.annotation data-for=
 </div>
 
 
-<div class='row' style="padding-top:25px;">
+<div class='row fragment' data-index="3" style="padding-top:25px;">
 <div class='cell-4'>
 
 ```js {#register-2}
@@ -33,13 +33,13 @@ if (!username) {
 </div>
 <div class='cell-2 smallest'>
 
-send a 400 Bad Request if field missing {.annotation data-for=register-2 data-line=3 .fragment data-index=3}
+send a 400 Bad Request if field missing {.annotation data-for=register-2 data-line=3 .fragment data-index=4}
 
 </div>
 </div>
 
 
-<div class='row' style="padding-top:25px;">
+<div class='row fragment' data-index="5" style="padding-top:25px;">
 <div class='cell-4'>
 
 ```js {#register-3}
@@ -53,7 +53,7 @@ if (!password.match(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)) {
 </div>
 <div class='cell-2 smallest'>
 
-regular expression testing password strength {.annotation data-for=register-3 data-line=1 .fragment data-index=4}
+regular expression testing password strength {.annotation data-for=register-3 data-line=1 .fragment data-index=6}
 
 </div>
 </div>
