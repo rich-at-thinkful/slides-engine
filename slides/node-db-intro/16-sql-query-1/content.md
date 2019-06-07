@@ -1,7 +1,7 @@
 # SQL Commands - More Querying
 
 * Let's have some fun with a much larger dataset!
-* [Download CSV data](https://raw.githubusercontent.com/Thinkful-Ed/node-postgres-resources/master/products.csv)
+* [Download CSV data](https://raw.githubusercontent.com/Thinkful-Ed/node-postgres-resources/master/products.csv){target=_blank}
 
 <div class='row'>
 <div class='cell-4'>
