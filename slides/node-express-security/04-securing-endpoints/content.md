@@ -11,7 +11,7 @@
 * The server holds onto a secret `API_TOKEN` token (like a unique id)
 * The client must set an HTTP header with every request
   * e.g. `Authorization: Bearer 893hjhks-s87s9fh-8sdfhb-iy8778bhk`
-  * (yes, the header value is the word "Bearer" preceded by a token) {.smallest}
+  * (yes, the header value is the word "Bearer", followed by space, followed by a token) {.smallest}
 * If no header provided, or value mismatches, server returns `401 Unauthorized`
 
 </div>
