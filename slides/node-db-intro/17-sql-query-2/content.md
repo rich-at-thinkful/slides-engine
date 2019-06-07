@@ -47,7 +47,7 @@ COUNT {.fragment data-index=2}
 <div class='cell-4'>
 
 * Find a decent tea {.fragment data-index=4}
-  * *aisle:* tea, *dept:* beverage, *price:* pick range {.fragment data-index=4 .smaller}
+  * *aisle:* tea, *dept:* beverages, *price:* pick range {.fragment data-index=4 .smaller}
 
 </div>
 <div class='cell-2 smallest note-text'>

@@ -31,12 +31,12 @@ GROUP BY {.fragment data-index=1}
 <div class='row'>
 <div class='cell-4'>
 
-* How many canned goods products are there in the cat food care aisle? {.fragment data-index=2}
+* How many products are there with "canned" in the name but not in an aisle that contains "canned"? {.fragment data-index=2}
 
 </div>
 <div class='cell-2 smallest note-text'>
 
-WHERE, ILIKE, COUNT, GROUP BY {.fragment data-index=2}
+WHERE, NOT ILIKE, COUNT {.fragment data-index=2}
 
 </div>
 </div><!-- end row -->
@@ -53,18 +53,4 @@ AVG, ROUND, GROUP BY, ORDER BY {.fragment data-index=4}
 
 </div>
 </div><!-- end row -->
-
-<div class='row'>
-<div class='cell-4'>
-
-* ...from above, only "herbal" in name {.fragment data-index=5}
-
-</div>
-<div class='cell-2 smallest note-text'>
-
-LIKE, ILIKE {.fragment data-index=5}
-
-</div>
-</div><!-- end row -->
-
 
