@@ -4,7 +4,7 @@
 * Lets you type JavaScript directly in your terminal and see instant output
 * Used for very simple experimentation and debugging
 * Similar to the web browser DevTools console 
-  * But there's no DOM, `window` object or `document` object!!
+  * But there's no DOM, `window` object or `document` object
 
 ```bash
 $ node
