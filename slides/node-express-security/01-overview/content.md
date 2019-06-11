@@ -1,7 +1,5 @@
 # Overview
 
-* Walkthrough - Build Pokedex API Server
-
 * Misc. best practices
   * Reusable handlers
 
@@ -11,3 +9,5 @@
   * Environment variables
   * CORS
   * Helmet
+
+* Walkthrough - Build Pokedex API Server
