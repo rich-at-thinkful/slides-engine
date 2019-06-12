@@ -14,7 +14,7 @@
 
 ```js
 describe('GET /books', () => {
-  it('should be sorted by title', () => {
+  it('should return array of books sorted by title', () => {
     return request(app)
       .get('/books')
       .query({ sort: 'title' })

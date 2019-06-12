@@ -17,7 +17,7 @@ const request = require('supertest');
 const app = require('../app');
 
 describe('GET /books', () => {
-  it('should return 400 on incorrect sort value', () => {
+  it('should return 400 if `sort` query is invalid', () => {
     return request(app)
 +     .get('/books')
 +     .query({ sort: 'MISTAKE' })

@@ -11,9 +11,9 @@ const app = require('../app');
 describe('GET /books', () => {
   it('should return an array of books');
 
-  it('should be 400 if sort is incorrect');
+  it('should return 400 if `sort` query is invalid');
 
-  it('should sort by title');
+  it('should return array of books sorted by title');
 });
 ```
 
