@@ -15,6 +15,6 @@ Defensive coding is necessary in the wild world of Internet applications
 
 Client-side validations are common, but the server is the last line of defense and it cannot be sure a malicious actor hasn't circumvented those validations.
 
-Always **validate** anything you intend to store on execute or the server side
+Always **validate** anything you intend to store or execute on the server side
 
 </div>
