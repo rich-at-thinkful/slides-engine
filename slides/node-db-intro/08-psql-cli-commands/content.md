@@ -14,7 +14,7 @@ $ pg_ctl stop
 <div class="cell-2">
 <div class="smaller">
 
-`PGDATA` env variable must be set! {.annotation data-for="server-ctl" data-line="1" .fragment data-index="0"}
+`PGDATA` env variable must be set for this to work {.annotation data-for="server-ctl" data-line="1" .fragment data-index="0"}
 
 </div>
 </div>
