@@ -3,7 +3,8 @@
 
 # Databases solve...
 
-* Storing LARGE quantities of data safely
+* Solutions that need to **scale**
+  * Store LARGE quantities of data safely
   * Prevent users from overwriting data or causing conflicting data {.smaller}
   * Backup management {.smaller}
 
