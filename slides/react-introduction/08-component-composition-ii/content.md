@@ -1,6 +1,22 @@
 # Component composition
 
 ```js
+function App() {
+    return (
+        <div className="app">
+            <Header />
+            <PersonList />
+            <Footer />
+        </div>
+    );
+}
+```
+
+<div class="row">
+
+<div class="cell-3">
+
+```js
 // These two components are identical
 function PersonList() {
     return (
@@ -13,6 +29,10 @@ function PersonList() {
     );
 }
 ```
+
+</div>
+
+<div class="cell-3">
 
 ```js
 function PersonList() {
@@ -28,3 +48,6 @@ function PersonList() {
     );
 };
 ```
+
+</div>
+</div>

@@ -7,10 +7,11 @@ slides:
   - react-introduction/04-react-component
   - react-introduction/05-a-react-component
   - react-introduction/06-jsx-vs-html
-  - react-introduction/07-component-composition
-  - react-introduction/08-props
-  - react-introduction/09-component-with-props
-  - react-introduction/10-passing-props
-  - react-introduction/11-mapping-over-data
-  - react-introduction/12-class-components
-  - react-introduction/13-ei-project
+  - react-introduction/07-component-composition-i
+  - react-introduction/08-component-composition-ii
+  - react-introduction/09-props
+  - react-introduction/10-component-with-props
+  - react-introduction/11-passing-props
+  - react-introduction/12-mapping-over-data
+  - react-introduction/13-class-components
+  - react-introduction/14-ei-project
