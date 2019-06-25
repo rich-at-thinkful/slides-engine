@@ -1,4 +1,4 @@
-# Testing
+# Automated Testing
 
 * Why?
     * Make sure code works (but you should be doing this already!)
