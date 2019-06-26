@@ -2,12 +2,11 @@
 
 ```js
 class SsnForm extends React.Component {
-    // Add boolean to say if it's valid and place to store error messages
-    state = {ssn: '', ssnValid: false, validationMessages: {}};
+    state = {ssn: {value: ''}};
     setSsn = ssn => {
-        // Validate after we set the value
-        this.setState({ssn}, () => this.validateSsn(ssn));
+        this.setState({ssn: {value: ssn}});
     };
+    // Add a validation function
     validateSsn = ssn => {
         const validationMessages = {...this.state.validationMessages};
         let ssnValid = true;
