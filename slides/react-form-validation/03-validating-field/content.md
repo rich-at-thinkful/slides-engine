@@ -7,7 +7,7 @@ class SsnForm extends React.Component {
         this.setState({ssn: {value: ssn}});
     };
     // Add a validation function
-    validateSsn = ssn => {
+    validateSsn = () => {
         let ssn = this.state.ssn.value;
         ssn = ssn.replace(/[\s-]/g, ''); // Remove whitespace and dashes
         if (ssn.length !== 9) {
