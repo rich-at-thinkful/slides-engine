@@ -88,7 +88,7 @@ http://localhost:8080/grade?mark=80
 
 <div class="smaller">
 
-<em>expected: B | got: <span style="color: red;"><strong>F</strong></span></em>
+<em>expected: C | got: <span style="color: red;"><strong>F</strong></span></em>
 
 </div>
 
