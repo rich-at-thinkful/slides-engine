@@ -3,7 +3,7 @@
 <div class="row">
 <div class="cell-5">
 
-![NDB Snapshot](ndb-snap.png){.center}
+![NDB Snapshot](overall-debugger-shot.png){.center}
 
 </div>
 
@@ -12,10 +12,10 @@
 
 * Run script
 * Add breakpoint
-* Kill process
+* Step
 * Examine vars
 * Real time REPL
-* Get CL arguments
+* Use CL arguments
 
 * [Live demo assignment](https://courses.thinkful.com/ei-node-postgres-v1/checkpoint/2){target="_blank"}
 
