@@ -1,4 +1,4 @@
-# NDB Walkthrough
+# VSC Debugger Walkthrough
 
 <div class="row">
 <div class="cell-5">
