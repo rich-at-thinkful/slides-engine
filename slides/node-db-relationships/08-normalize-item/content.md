@@ -14,7 +14,7 @@
 
 <div class="cell-2 smaller fragment" data-index="1">
 
-* item.supplier column must be a valid supplier.id
+* item.supplier_id column must be a valid supplier.id
 
 * a column in one table that **references** the primary key of another is called a **foreign key**
 
