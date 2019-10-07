@@ -8,7 +8,7 @@ With two queries (one against each table), we could get the data we need and man
 <div class='cell-4'>
 
 ```sql
-SELECT item as item_id, amount as quantity FROM supplier_order
+SELECT item_id, amount as quantity FROM supplier_order
 WHERE total_cost < 600;
 ```
 

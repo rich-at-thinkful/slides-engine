@@ -9,11 +9,11 @@ products=> \d+ item
  supplier_name | text    |           | not null |                                  | extended |              | 
  unit          | text    |           |          |                                  | extended |              | 
  unit_cost     | numeric |           |          |                                  | main     |              | 
- supplier      | integer |           |          |                                  | plain    |              | 
+ supplier_id   | integer |           |          |                                  | plain    |              | 
 Indexes:
     "item_pkey" PRIMARY KEY, btree (id)
 Foreign-key constraints:
-    "item_supplier_fkey" FOREIGN KEY (supplier) REFERENCES supplier(id)
+    "item_supplier_id_fkey" FOREIGN KEY (supplier_id) REFERENCES supplier(id)
 Referenced by:
-    TABLE "supplier_order" CONSTRAINT "supplier_order_item_fkey" FOREIGN KEY (item) REFERENCES item(id)
+    TABLE "supplier_order" CONSTRAINT "supplier_order_item_id_fkey" FOREIGN KEY (item_id) REFERENCES item(id)
 ```

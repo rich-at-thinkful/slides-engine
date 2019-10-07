@@ -10,7 +10,7 @@ Single query using JOIN to acquire precisely the data we need in a consistent fo
 ```sql {data-span="1:8:32 .fragment style=border-color:red data-style=highlight-in data-index=3; 1:35:67 .fragment style=border-color:red data-style=highlight-in data-index=3}
 SELECT item.item_name as product, supplier_order.amount as quantity 
 FROM supplier_order
-JOIN item ON item.id = supplier_order.item
+JOIN item ON item.id = supplier_order.item_id
 WHERE total_cost < 600;
 ```
 
@@ -38,11 +38,11 @@ WHERE total_cost < 600;
 ## Compare to `JOIN` output using `SELECT *`: {.smaller}
 
 ```text
- id | order_date | item | amount | total_cost | shipping_status | id |    item_name     | unit | unit_cost | supplier 
-----+------------+------+--------+------------+-----------------+----+------------------+------+-----------+----------
-  1 | 2019-06-03 |    1 |     10 |       38.5 | Delivered       |  1 | Paper Additives  | LBS  |      3.85 |        1
-  3 | 2019-06-03 |    3 |     50 |        560 | Shipped         |  3 | Abaca Sheet Pulp | LBS  |     11.20 |        1
-  5 | 2019-06-03 |    5 |   2000 |        400 | Preparing       |  5 | Wood pulp        | LBS  |      0.20 |        3
+ id | order_date | item_id | amount | total_cost | shipping_status | id |    item_name     | unit | unit_cost | supplier 
+----+------------+---------+--------+------------+-----------------+----+------------------+------+-----------+----------
+  1 | 2019-06-03 |    1    |     10 |       38.5 | Delivered       |  1 | Paper Additives  | LBS  |      3.85 |        1
+  3 | 2019-06-03 |    3    |     50 |        560 | Shipped         |  3 | Abaca Sheet Pulp | LBS  |     11.20 |        1
+  5 | 2019-06-03 |    5    |   2000 |        400 | Preparing       |  5 | Wood pulp        | LBS  |      0.20 |        3
 ```
 
 </div>
@@ -83,28 +83,28 @@ WHERE total_cost < 600;
 
 .highlight-column-caption-all-item {
   color: green;
-  left: 650px;
+  left: 675px;
 }
 
 .highlight-column-all-order {
   left: 65px;
-  width: 580px;
+  width: 610px;
   border-color: blue;
 }
 .highlight-column-all-item {
-  left: 650px;
+  left: 675px;
   width: 500px;
   border-color: green;
 }
 
 .highlight-column-amount {
-  left: 280px;
+  left: 310px;
   width: 100px;
   border-color: red;
 }
 
 .highlight-column-item-name {
-  left: 690px;
+  left: 720px;
   width: 182px;
   border-color: red;
 }

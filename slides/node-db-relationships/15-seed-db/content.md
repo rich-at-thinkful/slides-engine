@@ -16,7 +16,7 @@ INSERT INTO supplier
 
 -- insert some items
 INSERT INTO item
-  (item_name, unit, unit_cost, supplier)
+  (item_name, unit, unit_cost, supplier_id)
   VALUES
     ('Paper Additives', 'LBS', '3.85', 1),
     ('G-Colors Envelope Papers', 'LBS', '0.62', 2),    
@@ -27,7 +27,7 @@ INSERT INTO item
 
 -- insert some orders
 INSERT INTO supplier_order 
-  (item, amount, total_cost, shipping_status)
+  (item_id, amount, total_cost, shipping_status)
   VALUES
     (1, 10, 38.5, 'Delivered'),
     (2, 2000, 1240, 'Shipped'),

@@ -3,7 +3,7 @@
 <div class='row'>
 <div class='cell-4'>
 
-```sql {#item-sql-1 data-span="8:20:42 .fragment data-style=highlight-in-out data-index=2; 8:44:51 .fragment data-style=highlight-in data-index=3"}
+```sql {#item-sql-1 data-span="8:23:45 .fragment data-style=highlight-in-out data-index=2; 8:47:54 .fragment data-style=highlight-in data-index=3"}
 DROP TABLE IF EXISTS item;
 
 CREATE TABLE item (
@@ -11,14 +11,14 @@ CREATE TABLE item (
   item_name TEXT NOT NULL,
   unit TEXT,
   unit_cost numeric,
-  supplier INTEGER REFERENCES supplier(id) NOT NULL
+  supplier_id INTEGER REFERENCES supplier(id) NOT NULL
 ); 
 ```
 
 </div>
 <div class='cell-2 smallest'>
 
-`supplier` column is a foreign key to the `id` column on another table {.annotation data-for=item-sql-1 data-line=8 .fragment data-index=1}
+`supplier_id` column is a foreign key to the `id` column on another table {.annotation data-for=item-sql-1 data-line=8 .fragment data-index=1}
 
 `REFERENCES` constraint: if `id` provided, must be a valid supplier {.annotation data-for=item-sql-1 data-line=8 .fragment data-index=2}
 

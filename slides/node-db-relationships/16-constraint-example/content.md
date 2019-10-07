@@ -23,14 +23,14 @@ Why won't this order go through? {.fragment data-index=1}
 <div class='cell-4'>
 
 ```sql {#fk-break-1a .fragment data-index=2}
-ERROR:  null value in column "item" violates not-null constraint
+ERROR:  null value in column "item_id" violates not-null constraint
 DETAIL:  Failing row contains (1, 2019-02-06, null, 20, 20, Shipped).
 ```
 
 </div>
 <div class='cell-2 smallest'>
 
-We can't place an order if item value is null {.fragment data-index=2 .background-red style=padding-left:10px}
+We can't place an order if item_id value is null {.fragment data-index=2 .background-red style=padding-left:10px}
 
 </div>
 </div>
@@ -41,15 +41,15 @@ We can't place an order if item value is null {.fragment data-index=2 .backgroun
 <div class='row'>
 <div class='cell-4'>
 
-```sql {#fk-break-2 .fragment data-index=3 data-span="2:6:9 .fragment data-style=highlight-in data-index=3; 2:57:59 .fragment data-style=highlight-in data-index=3;"}
+```sql {#fk-break-2 .fragment data-index=3 data-span="2:6:12 .fragment data-style=highlight-in data-index=3; 2:60:63 .fragment data-style=highlight-in data-index=3;"}
 INSERT INTO supplier_order 
-    (item, amount, total_cost, shipping_status) VALUES (666, 20, 20, 'Shipped');
+    (item_id, amount, total_cost, shipping_status) VALUES (666, 20, 20, 'Shipped');
 ```
 
 </div>
 <div class='cell-2 smallest'>
 
-We've supplied an item value, so now what's the issue? {.fragment data-index=3}
+We've supplied an `item_id` value, so now what's the issue? {.fragment data-index=3}
 
 </div>
 </div>
@@ -60,8 +60,8 @@ We've supplied an item value, so now what's the issue? {.fragment data-index=3}
 
 ```sql {#fk-break-2a .fragment data-index=4}
 ERROR:  insert or update on table "supplier_order" 
-    violates foreign key constraint "supplier_order_item_fkey"
-DETAIL:  Key (item)=(666) is not present in table "item".
+    violates foreign key constraint "supplier_order_item_id_fkey"
+DETAIL:  Key (item_id)=(666) is not present in table "item".
 ```
 
 </div>

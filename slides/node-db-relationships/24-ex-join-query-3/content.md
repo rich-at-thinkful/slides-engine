@@ -44,8 +44,8 @@ We need to join in the `supplier` table but there's no **reference** from `suppl
 ```diff {#join-part-3 .fragment data-index=5}
   SELECT supplier.city as "Cities pending shipping"
   FROM supplier_order
-+ JOIN item ON supplier_order.item = item.id
-+ JOIN supplier ON item.supplier = supplier.id
++ JOIN item ON supplier_order.item_id = item.id
++ JOIN supplier ON item.supplier_id = supplier.id
   WHERE supplier_order.shipping_status != 'Shipped';
 ```
 
@@ -71,25 +71,7 @@ So let's first `JOIN` the `item` table onto `supplier_order`... {.annotation dat
 
 </div><div class="cell-2"></div></div>
 
-<style>
-.highlight-column-amount {
-  width: 100px;
-  height: 110px;
-  border: 3px solid red;
-  position: fixed;
-  top: 500px;
-  left: 280px;
-}
 
-.highlight-column-item-name {
-  width: 182px;
-  height: 110px;
-  border: 3px solid red;
-  position: fixed;
-  top: 500px;
-  left: 690px;
-}
-</style>
 
 <!--
 the first query is just two joined tables with the `SELECT` columns extracted and renamed {.smallest .center .fragment data-index=2 style=color:var(--red)}

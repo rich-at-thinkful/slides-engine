@@ -5,8 +5,8 @@
 
 ```diff
 CREATE TABLE supplier_order (
-- item INTEGER REFERENCES item(id) NOT NULL,
-+ item INTEGER REFERENCES item(id) ON DELETE CASCADE NOT NULL, 
+- item_id INTEGER REFERENCES item(id) NOT NULL,
++ item_id INTEGER REFERENCES item(id) ON DELETE CASCADE NOT NULL, 
 ```
 
 </div>
