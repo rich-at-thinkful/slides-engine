@@ -15,7 +15,7 @@
 * Step
 * Examine vars
 * Real time REPL
-* Use CL arguments
+* How to send in CL arguments
 
 * [Live demo assignment](https://courses.thinkful.com/ei-node-postgres-v1/checkpoint/2){target="_blank"}
 
