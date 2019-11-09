@@ -7,7 +7,7 @@
 <div class='cell-4'>
 
 ```js {#json-ex-1 data-span="4:33:41 .fragment data-style=highlight-in data-index=2"}
-app.use(express.jsonParser());
+app.use(express.json());
 
 app.post('/character', (req, res) => {
   res.send(`You sent me a ${req.body.race}!`);
@@ -35,7 +35,7 @@ You sent me a Hobbit!
 </div>
 <div class='cell-2 smallest'>
 
-mount the `jsonParser` middleware {.annotation data-for=json-ex-1 data-line=1 .fragment data-index=1}
+mount the JSON parser middleware {.annotation data-for=json-ex-1 data-line=1 .fragment data-index=1}
 
 if `Content-Type` is JSON, then `req.body` will be provided as an object parsed from the request's JSON body {.annotation data-for=json-ex-1 data-line=4 .fragment data-index=2}
 
