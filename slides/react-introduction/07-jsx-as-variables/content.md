@@ -32,8 +32,10 @@ function PersonList() {
     return (
          <div className="personList">
             <h3>Person List</h3>
-            {person}
-            {people}
+            <ul>
+                {person}
+                {people}
+            </ul>
         </div>
     );
 };
