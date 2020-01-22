@@ -56,17 +56,7 @@ app.get('/grade', (req, res) => {
 </div>
 <div class="cell-3">
 
-**Add a script to package.json for debugging**
-
-``` {data-span="4:3:80 .highlight"}
-"scripts": {
-  "start": "node app",
-  "dev": "nodemon app",
-  "debug": "ndb node app"
-}
-
-$ npm run debug
-```
+**Use the VSC debugger to step through**
 
 **Attempt:**
 
