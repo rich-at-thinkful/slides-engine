@@ -3,9 +3,9 @@
 <div class="row">
 <div class="cell-4">
 
+## POST data {.smaller}
 ```json
 {
-  "id": "3c8da4d5-1597-46e7-baa1-e402aed70d80",
   "username": "sallyStudent",
   "password": "c00d1ng1sc00l",
   "favoriteClub": "Cache Valley Stone Society",
@@ -47,7 +47,7 @@ get values from `req.body` and validate here {.annotation data-for=process-1 dat
 
 db will usually generate id, but without one, we'll do it here {.annotation data-for=process-1 data-line=5 .fragment data-index=4}
 
-construct validated object and store it {.annotation data-for=process-1 data-line=6 .fragment data-index=5}
+construct validated object and store it {.annotation data-for=process-1 data-line=7 .fragment data-index=5}
 
 respond `201 Created` with new `user` object (incl. newly minted id) and `Location` header {.annotation data-for=process-1 data-line=11 .fragment data-index=7}
 
