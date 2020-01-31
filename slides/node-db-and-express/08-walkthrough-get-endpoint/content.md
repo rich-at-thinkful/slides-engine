@@ -19,7 +19,7 @@
 
 <div class="smallest">
 
-* Copy over [ArticlesService](https://gist.github.com/tomatau/f79c7f4ef53c5ec5e86656d4b43dcbc9){target=_blank}
+* Copy over [ArticlesService](https://raw.githubusercontent.com/Thinkful-Ed/blogful-api/master/src/articles/articles-service.js){target=_blank}
 * Create `/articles` endpoint
   * utilize service to get data and return as json
   * but how do we get access to the Knex instance? {style="color:var(--red);"}
