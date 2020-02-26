@@ -1,7 +1,7 @@
 # Postgrator CLI Setup
 
 ```bash
-$ npm install postgrator-cli -D
+$ npm install postgrator-cli@3.2.0 -D
 $ npm install pg
 ```
 
