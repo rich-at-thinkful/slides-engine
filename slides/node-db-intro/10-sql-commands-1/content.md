@@ -7,11 +7,11 @@
 
 ```sql {#table-1 data-span="2:16:21 .fragment data-style=highlight-in-out data-index=1; 2:26:36 .fragment data-style=highlight-in-out data-index=2; 6:34:38 .fragment data-style=highlight-in data-index=3"}
 CREATE TABLE items (
-  id           serial    PRIMARY KEY,
-  name         text      NOT NULL,
-  description  text,
-  completed    boolean   DEFAULT false,  
-  created      timestamp DEFAULT now()
+  id           SERIAL       PRIMARY KEY,
+  name         TEXT         NOT NULL,
+  description  TEXT,
+  completed    BOOLEAN      DEFAULT false,  
+  created      TIMESTAMPTZ  DEFAULT now()
 );
 ```
 
