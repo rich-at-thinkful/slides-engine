@@ -3,7 +3,7 @@
 
 # Walkthrough
 
-* [nytServer](https://github.com/Thinkful-Ed/node-postgres-nytServer){target="_blank"}
+* [nytServer](https://github.com/rich-at-thinkful/nyt-server){target="_blank"}
 
 </div>
 <div class="cell-4">
