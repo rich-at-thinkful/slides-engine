@@ -15,8 +15,7 @@ slides:
   - node-db-intro/12-sql-commands-3
   - node-db-intro/13-sql-commands-4
   - node-db-intro/14-sql-gotchas
-  - node-db-intro/15-dont-forget-semi
-  - node-db-intro/16-sql-query-1
-  - node-db-intro/17-sql-query-2
-  - node-db-intro/18-sql-query-3
+  - node-db-intro/15-sql-query-1
+  - node-db-intro/16-sql-query-2
+  - node-db-intro/17-sql-query-3
   

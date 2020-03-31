@@ -1,3 +1,0 @@
-# Don't forget...
-
-![Don't forget semicolon](dont-forget-semi.jpg){.center}
