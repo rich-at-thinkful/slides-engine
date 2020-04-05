@@ -15,9 +15,7 @@ $ createdb suppliers
 {
   "migrationDirectory": "migrations",
   "driver": "pg",
-  "host": "localhost",
-  "port": "5432",
-  "database": "suppliers"
+  "connectionString": "postgresql://localhost/suppliers"
 }
 ```
 
