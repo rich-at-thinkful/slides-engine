@@ -1,0 +1,7 @@
+title: Callback Props
+template: thinkful
+slides:
+  - react-callback-props/03-why-callback-props
+  - react-callback-props/04-why-callback-props-ii
+  - react-callback-props/05-passing-callback-props
+  - react-callback-props/06-calling-callback-props
