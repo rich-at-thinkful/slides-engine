@@ -212,6 +212,23 @@ code .highlight-secondary, .highlight-secondary {
     border-color: var(--blue);
 }
 
+#arrows {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#arrows, .arrow {
+    line-height: 1;
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
 #progress-bar {
     width: 0;
     position: absolute;
@@ -372,7 +389,6 @@ path.line-arrow-start{
 #arrow path {
     fill: #373a36;
 }
-
 
 .background-green {
     color: var(--white);

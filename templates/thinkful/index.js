@@ -20,6 +20,14 @@
         return document.querySelector('svg');
     }
 
+    function getLeftArrow() {
+        return document.getElementById('arrow-left');
+    }
+
+    function getRightArrow() {
+        return document.getElementById('arrow-right');
+    }
+
     function onSlideChange(
         currentSlide,
         totalSlides,
@@ -29,6 +37,21 @@
         getProgressBar().style.width = `${100 *
             currentSlide /
             (totalSlides - 1)}%`;
+        const leftArrow = getLeftArrow();
+        const rightArrow = getRightArrow();
+        leftArrow.removeAttribute('disabled');
+        rightArrow.removeAttribute('disabled');
+        if (currentSlide === 0 && currentFragment === 0) {
+          getLeftArrow().setAttribute('disabled', '');
+        }
+
+        if (currentSlide === totalSlides - 1 && (
+              totalFragments === 0 ||
+              currentFragment === totalFragments - 1
+          )
+        ) {
+          getRightArrow().setAttribute('disabled', '');
+        }
         drawOverlay();
     }
 
@@ -371,6 +394,12 @@
         });
         document.addEventListener('swiped-right', function(e) {
             Fieldfare.prev();
+        });
+        getLeftArrow().addEventListener('click', function(e) {
+          Fieldfare.prev();
+        });
+        getRightArrow().addEventListener('click', function(e) {
+          Fieldfare.next();
         });
     }
 
