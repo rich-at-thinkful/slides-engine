@@ -47,7 +47,7 @@
 
         if (currentSlide === totalSlides - 1 && (
               totalFragments === 0 ||
-              currentFragment === totalFragments - 1
+              currentFragment === totalFragments
           )
         ) {
           getRightArrow().setAttribute('disabled', '');

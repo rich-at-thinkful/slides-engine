@@ -1,0 +1,21 @@
+title: Hash Maps
+template: thinkful
+slides:
+  - dsa-hash-maps/01-associative-arrays
+  - dsa-hash-maps/02-key-terminology
+  - dsa-hash-maps/03-hash-functions
+  - dsa-hash-maps/04-good-hash-functions
+  - dsa-hash-maps/05-simple-hash-functions
+  - dsa-hash-maps/06-better-string-hashing
+  - dsa-hash-maps/07-inserting
+  - dsa-hash-maps/08-collisions-open-addressing
+  - dsa-hash-maps/09-lookup-open-addressing
+  - dsa-hash-maps/10-collisions-separate-chaining
+  - dsa-hash-maps/11-lookup-separate-chaining
+  - dsa-hash-maps/12-performance-considerations
+  - dsa-hash-maps/13-removing-values
+
+
+
+
+

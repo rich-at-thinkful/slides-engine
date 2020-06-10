@@ -425,3 +425,14 @@ path.line-arrow-start{
     background-color: var(--darkBlue);
 }
 
+.background-transparent {
+    background-color: transparent;
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.mb-2 {
+    margin-bottom: 2em;
+}
