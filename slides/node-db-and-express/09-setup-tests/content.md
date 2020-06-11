@@ -24,7 +24,6 @@ runs script with env variable temporarily changed {.annotation data-for=migrate-
 **./test/setup.js**
 
 ```diff {#setup-test}
-+ process.env.TZ = 'UTC';
 + require('dotenv').config()
   const { expect } = require('chai')
   const supertest = require('supertest')
@@ -33,10 +32,7 @@ runs script with env variable temporarily changed {.annotation data-for=migrate-
 </div>
 <div class='cell-2 smallest'>
 
-sets UTC timezone for test sync {.annotation data-for=setup-test data-line=1}
-
-allows access env variables in tests {.annotation data-for=setup-test data-line=2}
-
+allows access to env variables in tests {.annotation data-for=setup-test data-line=2}
 
 </div>
 </div>
