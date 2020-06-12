@@ -1,0 +1,25 @@
+title: Search and Tree Traversal Algorithms
+template: thinkful
+slides:
+  - dsa-search-traversal/01-thoughts-on-searching
+  - dsa-search-traversal/02-linear-search
+  - dsa-search-traversal/03-linear-search-example
+  - dsa-search-traversal/04-binary-search
+  - dsa-search-traversal/05-binary-search-example
+  - dsa-search-traversal/06-binary-vs-linear
+  - dsa-search-traversal/07-tree-traversal
+  - dsa-search-traversal/08-dfs-pre
+  - dsa-search-traversal/09-dfs-pre-example
+  - dsa-search-traversal/10-dfs-in
+  - dsa-search-traversal/11-dfs-in-example
+  - dsa-search-traversal/12-dfs-post
+  - dsa-search-traversal/13-dfs-post-example
+  - dsa-search-traversal/14-bfs
+  - dsa-search-traversal/15-ei-project
+
+
+
+
+
+
+
