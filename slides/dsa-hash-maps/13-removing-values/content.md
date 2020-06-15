@@ -15,6 +15,6 @@
 {
     key: 'gregg',
     value: 'drums',
-    deleted: true'
+    deleted: true
 }
 ```
