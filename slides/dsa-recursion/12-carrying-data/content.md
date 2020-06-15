@@ -1,14 +1,14 @@
 # Carrying data through recursions
 
 ```js
-const upperStr = function(str){
+function upperStr(str){
   if (str === "") {
     return "";
 }
   const newChar = str[0].toUpperCase();
 
-  // Concatenate new data with reduced string for next iteration...
-  return newChar + upperStr(str.slice(1)); 
+  // Concatenate new data with reduced string for next iteration
+  return newChar + upperStr(str.slice(1));
 }
 console.log(upperStr('hello'));
 ```

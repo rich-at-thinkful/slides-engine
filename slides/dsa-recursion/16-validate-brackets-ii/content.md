@@ -4,7 +4,7 @@
 <div class="cell-3">
 
 ```js
-const isValid = function(str, open=0) {
+function isValid(str, open=0) {
     if (str.length === 0) return open === 0;
 
     if (open < 0) return false;

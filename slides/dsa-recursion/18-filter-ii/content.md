@@ -4,7 +4,7 @@
 <div class="cell-3">
 
 ```js {data-span="7:25:58 .fragment .highlight-secondary data-style=highlight-in data-index=5; 9:12:42 .fragment .highlight data-style=highlight-in data-index=3}
-const filter = function(arr, predicate){
+function filter(arr, predicate){
     //base case
     if (!arr.length){
         return [];

@@ -3,7 +3,7 @@
 ## What does this program do?
 
 ```js {data-span="3:16:25 .highlight; 15:12:18 .highlight; 15:20:31 .highlight; 15:34:37 .highlight"}
-const isValid = function(str, open=0) {
+function isValid(str, open=0) {
     if (str.length === 0) {
         return open === 0;
     }

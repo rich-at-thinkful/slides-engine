@@ -1,7 +1,7 @@
 # Carrying data through recursions
 
 ```
-const upperStr = function(str){
+function upperStr(str){
   if (str === "") {
     return "";
 }
@@ -17,27 +17,27 @@ console.log(upperStr('hello'));
 <div class="cell-2">
 
 ```js {.fragment #first-upper}
-upperStr('hello') = 'H' + upperstr('ello')
+upperStr('hello') === 'H' + upperstr('ello')
 ```
 
 ```js {.fragment data-index=2 .nudge-l-1}
-upperStr('ello') = 'E' + upperstr('llo')
+upperStr('ello') === 'E' + upperstr('llo')
 ```
 
 ```js {.fragment data-index=3 .nudge-l-2}
-upperStr('llo') = 'L' + upperstr('lo')
+upperStr('llo') === 'L' + upperstr('lo')
 ```
 
 ```js {.fragment data-index=4 .nudge-l-3}
-upperStr('lo') = 'L' + upperstr('o')
+upperStr('lo') === 'L' + upperstr('o')
 ```
 
 ```js {.fragment data-index=5 .nudge-l-4}
-upperStr('o') = 'O' + upperstr('')
+upperStr('o') === 'O' + upperstr('')
 ```
 
 ```js {.fragment data-index=6 .nudge-l-5 #last-upper}
-upperStr('') = (base case)
+upperStr('') === '' // base case
 ```
 
 <div class="fragment line line-arrow-end" data-index="7" data-from="first-upper" data-to="last-upper"></div>

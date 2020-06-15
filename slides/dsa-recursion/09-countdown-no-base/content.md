@@ -4,11 +4,10 @@
 <div class="cell-4">
 
 ```js {#countdown-no-base}
-//write a function that count numbers down
-const countDown = function(from) {
+function countDown(from) {
     console.log(from);
     countDown(from - 1);
-};
+}
 countDown(5);
 ```
 

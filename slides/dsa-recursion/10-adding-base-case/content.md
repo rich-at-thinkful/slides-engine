@@ -4,7 +4,7 @@
 <div class="cell-2">
 
 ```js
-const countDown = function(from) {
+function countDown(from) {
     // Base case
     if (from === 0) {
         return;

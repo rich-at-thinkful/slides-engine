@@ -1,13 +1,12 @@
 # Countdown program - non-recursive
 
 ```js
-//write a function that count numbers down
-const countDown = function(from) {
+function countDown(from) {
     for(let i=from; i>0; i--){
-        console.log(`counting numbers ${i}`);
+        console.log(i);
     }
 }
+
 countDown(5);
 ```
 
-*How would you write this using recursion?* {.bigger}
