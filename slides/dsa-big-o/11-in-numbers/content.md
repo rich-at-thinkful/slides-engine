@@ -1,0 +1,60 @@
+# Big O in numbers
+
+<table>
+    <tr>
+        <th>n</th>
+        <th>O(1)</th>
+        <th>O(log(n))</th>
+        <th>O(n)</th>
+        <th>O(nlog(n))</th>
+        <th>O(n^2)</th>
+        <th>O(2^n)</th>
+    </tr>
+    <tr>
+        <th>10</th>
+        <td>1</td>
+        <td>1</td>
+        <td>10</td>
+        <td>100</td>
+        <td>1E3</td>
+        <td>~1E3</td>
+    </tr>
+    <tr>
+        <th>100</th>
+        <td>1</td>
+        <td>2</td>
+        <td>100</td>
+        <td>200</td>
+        <td>1E6</td>
+        <td>~1E30</td>
+    </tr>
+    <tr>
+        <th>1000</th>
+        <td>1</td>
+        <td>3</td>
+        <td>1000</td>
+        <td>3000</td>
+        <td>1E9</td>
+        <td>~1E301</td>
+    </tr>
+    <tr>
+        <th>10000</th>
+        <td>1</td>
+        <td>4</td>
+        <td>1000</td>
+        <td>40000</td>
+        <td>1E12</td>
+        <td>~1E3010</td>
+    </tr>
+    <tr>
+        <th>100000</th>
+        <td>1</td>
+        <td>5</td>
+        <td>10000</td>
+        <td>500000</td>
+        <td>1E15</td>
+        <td>~1E30102</td>
+    </tr>
+</table>
+
+        
