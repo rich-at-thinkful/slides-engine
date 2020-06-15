@@ -17,6 +17,8 @@ Accessed by index {.highlight}
 </div>
 </div>
 
+<div class="fragment">
+
 ## Maps
 
 * Map keys to values
@@ -38,4 +40,6 @@ Accessed by index {.highlight}
 Accessed by key {.highlight}
 
 </div>
+</div>
+
 </div>
