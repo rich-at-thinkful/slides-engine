@@ -4,13 +4,13 @@
 <div class="cell-4">
 
 ```
-dsfPreOrder() {
+dfsPreOrder() {
     console.log(this.key);
     if (this.left) {
-        this.left.dsfPreOrder();
+        this.left.dfsPreOrder();
     }
     if (this.right) {
-        this.right.dsfPreOrder();
+        this.right.dfsPreOrder();
     }
 }
 ```

@@ -4,13 +4,13 @@
 <div class="cell-4">
 
 ```
-dsfInOrder() {
+dfsInOrder() {
     if (this.left) {
-        this.left.dsfInOrder();
+        this.left.dfsInOrder();
     }
     console.log(this.key);
     if (this.right) {
-        this.right.dsfInOrder();
+        this.right.dfsInOrder();
     }
 }
 ```

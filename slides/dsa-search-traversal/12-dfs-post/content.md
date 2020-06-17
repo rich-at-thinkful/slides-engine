@@ -4,12 +4,12 @@
 <div class="cell-4">
 
 ```
-dsfPostOrder() {
+dfsPostOrder() {
     if (this.left) {
-        this.left.dsfPostOrder();
+        this.left.dfsPostOrder();
     }
     if (this.right) {
-        this.right.dsfPostOrder();
+        this.right.dfsPostOrder();
     }
     console.log(this.key);
 }
