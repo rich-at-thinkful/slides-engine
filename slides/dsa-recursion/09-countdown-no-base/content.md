@@ -14,19 +14,19 @@ countDown(5);
 </div>
 <div class="cell-2">
 
-```js {.annotation data-for=countdown-no-base data-line=6}
+```js {.annotation data-for=countdown-no-base data-line=5}
 countDown(5)
 ```
 
-```js {.annotation data-for=countdown-no-base data-line=4 .nudge-l-1}
+```js {.annotation data-for=countdown-no-base data-line=3 .nudge-l-1}
 countDown(4)
 ```
 
-```js {.annotation data-for=countdown-no-base data-line=4 .nudge-l-2}
+```js {.annotation data-for=countdown-no-base data-line=3 .nudge-l-2}
 countDown(3)
 ```
 
-```js {.annotation data-for=countdown-no-base data-line=4 .nudge-l-3}
+```js {.annotation data-for=countdown-no-base data-line=3 .nudge-l-3}
 countDown(2)
 ```
 
