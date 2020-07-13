@@ -35,7 +35,7 @@ countDown(2)
 </div>
 
 <div class="row">
-<div class="cell-4">
+<div class="cell-4 fragment">
 
 ```bash
 5
