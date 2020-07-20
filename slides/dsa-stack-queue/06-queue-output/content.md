@@ -1,7 +1,7 @@
 # What happens to the queue?
 
 ```js
-const queue = new Stack();
+const queue = new Queue();
 queue.enqueue(4);
 queue.enqueue(5);
 queue.dequeue();

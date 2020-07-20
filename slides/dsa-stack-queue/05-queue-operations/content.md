@@ -1,7 +1,7 @@
 # Queue operations
 
-* Enqueue: Add an item to the end
-* Dequeue: Remove the item from the top of the stack
+* Enqueue: Add an item to the end of the queue
+* Dequeue: Remove an item from the start of the queue
 * Both O(1)
 
 <div class="fragment">
