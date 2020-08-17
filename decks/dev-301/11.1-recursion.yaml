@@ -17,8 +17,8 @@ slides:
   - dsa-recursion/14-write-together
   - dsa-recursion/15-validate-brackets-i
   - dsa-recursion/16-validate-brackets-ii
-  - dsa-recursion/17-filter-i
-  - dsa-recursion/18-filter-ii
+  #- dsa-recursion/17-filter-i
+  #- dsa-recursion/18-filter-ii
 
 
 
