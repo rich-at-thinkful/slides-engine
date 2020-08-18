@@ -17,23 +17,23 @@ console.log(upperStr('hello'));
 <div class="cell-2">
 
 ```js {.fragment #first-upper}
-upperStr('hello') === 'H' + upperstr('ello')
+upperStr('hello') === 'H' + upperStr('ello')
 ```
 
 ```js {.fragment data-index=2 .nudge-l-1}
-upperStr('ello') === 'E' + upperstr('llo')
+upperStr('ello') === 'E' + upperStr('llo')
 ```
 
 ```js {.fragment data-index=3 .nudge-l-2}
-upperStr('llo') === 'L' + upperstr('lo')
+upperStr('llo') === 'L' + upperStr('lo')
 ```
 
 ```js {.fragment data-index=4 .nudge-l-3}
-upperStr('lo') === 'L' + upperstr('o')
+upperStr('lo') === 'L' + upperStr('o')
 ```
 
 ```js {.fragment data-index=5 .nudge-l-4}
-upperStr('o') === 'O' + upperstr('')
+upperStr('o') === 'O' + upperStr('')
 ```
 
 ```js {.fragment data-index=6 .nudge-l-5 #last-upper}

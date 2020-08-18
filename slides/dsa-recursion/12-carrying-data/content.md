@@ -4,7 +4,7 @@
 function upperStr(str){
   if (str === "") {
     return "";
-}
+  }
   const newChar = str[0].toUpperCase();
 
   // Concatenate new data with reduced string for next iteration
