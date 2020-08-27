@@ -4,11 +4,11 @@
 <div class="cell-4">
 
 ```js
-bfs(values=[]) {
+bfs() {
     const queue = [this];
     while (queue.length) {
         const node = queue.shift();
-        values.push(node.value);
+        console.log(node.key);
         node.left && queue.push(node.left);
         node.right && queue.push(node.right);
     }
