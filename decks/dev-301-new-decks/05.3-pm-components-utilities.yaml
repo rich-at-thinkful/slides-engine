@@ -1,0 +1,16 @@
+title: "CSS Frameworks - Components & Utilities"
+template: thinkful
+slides:
+  - fe-05.3-css-frameworks/13-common-components
+  - fe-05.3-css-frameworks/14-alerts
+  - fe-05.3-css-frameworks/15-buttons
+  - fe-05.3-css-frameworks/16-cards
+  - fe-05.3-css-frameworks/17-forms
+  - fe-05.3-css-frameworks/18-forms-example
+  - fe-05.3-css-frameworks/19-jumbotron
+  - fe-05.3-css-frameworks/20-navs
+  - fe-05.3-css-frameworks/21-borders-colors
+  - fe-05.3-css-frameworks/22-text
+  - fe-05.3-css-frameworks/23-spacing
+  - fe-05.3-css-frameworks/24-flex
+  - fe-05.3-css-frameworks/25-assignment
