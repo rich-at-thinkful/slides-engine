@@ -6,6 +6,8 @@ slides:
   - fe-05.4-javascript-dom/03-script-elements
   - fe-05.4-javascript-dom/04-external-javascript
   - fe-05.4-javascript-dom/05-what-is-dom 
-  - fe-05.4-javascript-dom/06-selecting-elements
-  - fe-05.4-javascript-dom/07-assignment
-  
+  - fe-05.4-javascript-dom/06-dom-family-tree 
+  - fe-05.4-javascript-dom/07-selecting-elements
+  - fe-05.4-javascript-dom/08-selectors
+  - fe-05.4-javascript-dom/09-selector-examples
+  - fe-05.4-javascript-dom/10-assignment
