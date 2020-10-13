@@ -1,0 +1,11 @@
+title: "JavaScript and the DOM"
+template: thinkful
+slides:
+  - fe-05.4-javascript-dom/01-javascript-dom
+  - fe-05.4-javascript-dom/02-connecting-html-javascript
+  - fe-05.4-javascript-dom/03-script-elements
+  - fe-05.4-javascript-dom/04-external-javascript
+  - fe-05.4-javascript-dom/05-what-is-dom 
+  - fe-05.4-javascript-dom/06-selecting-elements
+  - fe-05.4-javascript-dom/07-assignment
+  

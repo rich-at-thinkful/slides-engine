@@ -1,0 +1,8 @@
+title: "Updating the DOM"
+template: thinkful
+slides:
+  - fe-05.4-javascript-dom/08-updating-dom
+  - fe-05.4-javascript-dom/09-modify-properties
+  - fe-05.4-javascript-dom/10-create-new-elements
+  - fe-05.4-javascript-dom/11-remove-elements
+  - fe-05.4-javascript-dom/12-assignment
