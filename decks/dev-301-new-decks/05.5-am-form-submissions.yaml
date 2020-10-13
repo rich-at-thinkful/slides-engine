@@ -1,0 +1,9 @@
+title: "Form Submissions"
+template: thinkful
+slides:
+  - fe-05.5-javascript-form-render/01-javascript-form-render
+  - fe-05.5-javascript-form-render/02-form-submissions
+  - fe-05.5-javascript-form-render/03-handle-form-submissions
+  - fe-05.5-javascript-form-render/04-process-form-data
+  - fe-05.5-javascript-form-render/05-form-validation
+  - fe-05.5-javascript-form-render/06-assignment
