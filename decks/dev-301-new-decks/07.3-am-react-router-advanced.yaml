@@ -1,0 +1,7 @@
+title: "Advanced React Router"
+template: thinkful
+slides:
+  - fe-07.3-react-router-advanced/01-nested-routes
+  - fe-07.3-react-router-advanced/02-nested-routes-ii
+  - fe-07.3-react-router-advanced/03-use-route-match-hook
+  - fe-07.3-react-router-advanced/04-assignments
