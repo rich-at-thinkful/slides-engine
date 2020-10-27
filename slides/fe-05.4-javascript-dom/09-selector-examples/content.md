@@ -11,5 +11,5 @@ document.querySelectorAll(".location")
 ```
 * Id selector
 ```
-document.querySelector("#area)
+document.querySelector("#area")
 ```

@@ -8,7 +8,6 @@
     * Call `.json()` method on the response
 
 ```js
-  fetch("https://jsonplaceholder.typicode.com/users/1")
-    .then((response) => response.json())
-    .then(setUser);
+  const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+  const user = await response.json();
 ```

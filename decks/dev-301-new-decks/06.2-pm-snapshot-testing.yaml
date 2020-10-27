@@ -1,6 +1,6 @@
-title: "React - Snapshot Testing"
+title: "React - Assignment"
 template: thinkful
 slides:
-  - fe-06.2-advance-rendering-testing/05-testing
-  - fe-06.2-advance-rendering-testing/06-snapshot-testing
+  # - fe-06.2-advance-rendering-testing/05-testing
+  # - fe-06.2-advance-rendering-testing/06-snapshot-testing
   - fe-06.2-advance-rendering-testing/07-assignments

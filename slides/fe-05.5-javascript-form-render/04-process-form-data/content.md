@@ -7,7 +7,7 @@
 ```
 const submitHandler = (event) => {
     // get the name input
-    const parkName = document.querySelector("#parkName").value;
+    const parkName = event.target.parkName.value;
 
     console.log(parkName);
 };
@@ -17,8 +17,7 @@ const submitHandler = (event) => {
 const submitHandler = (event) => {
   event.preventDefault();
 
-  const form = document.querySelector("#parkForm");
-  const formData = new FormData(form);
+  const formData = new FormData(event.target)
   
   const name = formData.get("parkName");
   console.log(name);

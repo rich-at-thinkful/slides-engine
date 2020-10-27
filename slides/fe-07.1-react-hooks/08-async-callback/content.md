@@ -4,9 +4,13 @@
 * Must be within the `useEffect` callback
 
 ```js
-useEffect(() => {
-  fetch("https://jsonplaceholder.typicode.com/users/1")
-    .then((response) => response.json())
-    .then(setUser);
-}, []);
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    async function loadUsers() {
+      const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+      setUser(await response.json())
+    }
+    loadUsers()
+  }, []);
 ```

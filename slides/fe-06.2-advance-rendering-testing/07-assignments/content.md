@@ -1,6 +1,6 @@
 # Assignment
 
-* Snapshot Testing - Qualified Coding Challenge
+<!-- * Snapshot Testing - Qualified Coding Challenge -->
 * Build a React Profile Page
     * Create additional components that are then used by the App component.
     * Do not assume anything about the list lengths. Your app should accommodate different values for the variables (name, birthday, imageSrc, hobbies, dailyActivities)

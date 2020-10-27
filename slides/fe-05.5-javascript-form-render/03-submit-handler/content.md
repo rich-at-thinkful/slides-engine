@@ -17,7 +17,7 @@ const main = () => {
   form.addEventListener("submit", submitHandler);
 };
 ```
-* Invoke `main()` function when `DOMContnetLoaded`
+* Invoke `main()` function when `DOMContentLoaded`
 ```
 window.addEventListener("DOMContentLoaded", main);
 ```

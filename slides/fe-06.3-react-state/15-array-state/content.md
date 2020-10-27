@@ -8,9 +8,17 @@ const handleClick = (value) => {
   setResults([...results, value]);
 };
 ```
+* Use `.map()` to Update a Value in an Array In State
+```
+const handleUpdate = (index, value) => {
+  const newResults = results.map((result, i) => i === index ? 'value' : result);
+  setResults(newResults);
+};
+```
 
 * Use `.filter()` to Delete a Value In State
-```const deleteToss = (indexToDelete) => {
+```
+const deleteToss = (indexToDelete) => {
   setResults((currentResults) =>
     currentResults.filter((ignored, index) => index !== indexToDelete)
   );

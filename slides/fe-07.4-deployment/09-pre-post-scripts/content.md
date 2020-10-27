@@ -17,4 +17,4 @@
 
 * Run the tests
 * If the tests succeed, run the build
-* Deploy to production with ``vercel --prod`
+* Deploy to production with `vercel --prod`

@@ -5,6 +5,6 @@
 `vercel`
 
 * Subsequent Deployments
-
-`vercel -- prod`
+    * Preview - `vercel`
+    * Production - `vercel --prod`
 
