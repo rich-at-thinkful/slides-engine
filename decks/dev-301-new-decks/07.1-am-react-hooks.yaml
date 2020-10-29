@@ -1,0 +1,17 @@
+title: "React + APIs with Hooks"
+template: thinkful
+slides:
+  - fe-07.1-react-hooks/01-hooks
+  - fe-07.1-react-hooks/02-side-effects
+  - fe-07.1-react-hooks/03-useeffect-hook
+  - fe-07.1-react-hooks/04-run-effect-every
+  - fe-07.1-react-hooks/05-run-effect-once
+  - fe-07.1-react-hooks/06-run-effect-value-change
+  - fe-07.1-react-hooks/07-fetch-function
+  - fe-07.1-react-hooks/08-async-callback
+  - fe-07.1-react-hooks/09-saving-data
+  - fe-07.1-react-hooks/10-multiple-effects
+  - fe-07.1-react-hooks/11-effect-hook-cleanup
+  - fe-07.1-react-hooks/12-abortcontroller
+  - fe-07.1-react-hooks/13-cleanup-fetch
+  - fe-07.1-react-hooks/14-assignments

@@ -1,0 +1,7 @@
+title: "React - Complex Data In State"
+template: thinkful
+slides:
+  - fe-06.3-react-state/14-complex-data-state
+  - fe-06.3-react-state/15-array-state
+  - fe-06.3-react-state/16-object-state
+  - fe-06.3-react-state/17-assignment

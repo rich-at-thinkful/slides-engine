@@ -1,0 +1,11 @@
+title: "Render Pattern"
+template: thinkful
+slides:
+  - fe-05.5-javascript-form-render/07-render-pattern
+  - fe-05.5-javascript-form-render/08-separate-data
+  # - fe-05.5-javascript-form-render/09-process-data
+  - fe-05.5-javascript-form-render/10-update-dom
+  - fe-05.5-javascript-form-render/11-render-index
+  - fe-05.5-javascript-form-render/12-render-function
+  - fe-05.5-javascript-form-render/13-add-render
+  - fe-05.5-javascript-form-render/14-assignment

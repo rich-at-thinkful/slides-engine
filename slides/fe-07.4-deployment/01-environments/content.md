@@ -1,0 +1,5 @@
+# Environment
+
+* Development
+* Staging
+* Production 
