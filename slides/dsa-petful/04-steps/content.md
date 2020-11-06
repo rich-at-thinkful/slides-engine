@@ -18,6 +18,6 @@
     * Create a separate queue on the backend for your cat and dog data
     * Update the GET endpoints to return the pet at the head of the queue
     * Update the DELETE endpoint to dequeue when someone wants to adopt
-4. Deploy it!  Frontend with Now, backend with Heroku.
+4. Deploy it!  Frontend with Vercel, backend with Heroku.
 
 </div>
