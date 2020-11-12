@@ -1,0 +1,7 @@
+title: Decoder Ring Capstone
+template: thinkful
+slides:
+  - pf-decoder-ring-capstone/01-about-the-capstone
+  - pf-decoder-ring-capstone/02-caesar-shift
+  - pf-decoder-ring-capstone/03-polybius-square
+  - pf-decoder-ring-capstone/04-substitution-cipher
