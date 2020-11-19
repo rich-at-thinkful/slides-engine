@@ -1,0 +1,27 @@
+title: Relationships and Schema Design
+template: thinkful
+slides:
+  - node-db-relationships/01-overview
+  - node-db-relationships/02-original-data
+  - node-db-relationships/03-insertion-anomalies
+  - node-db-relationships/04-insertion-anomalies-2
+  - node-db-relationships/05-deletion-anomalies
+  - node-db-relationships/06-better-way
+  - node-db-relationships/07-normalize-supplier
+  - node-db-relationships/08-normalize-item
+  - node-db-relationships/09-normalize-order
+  - node-db-relationships/10-supplier-in-sql
+  - node-db-relationships/11-item-in-sql
+  - node-db-relationships/12-order-in-sql
+  - node-db-relationships/13-as-migrations 
+  - node-db-relationships/14-output-detail
+  - node-db-relationships/15-seed-db 
+  - node-db-relationships/16-constraint-example 
+  - node-db-relationships/17-constraint-example-2
+  - node-db-relationships/18-tweaking-constraints
+  - node-db-relationships/19-on-delete-cascade   
+  - node-db-relationships/20-erd   
+  - node-db-relationships/21-query-join 
+  - node-db-relationships/22-ex-join-query-1
+  - node-db-relationships/23-ex-join-query-2 
+  - node-db-relationships/24-ex-join-query-3 

@@ -1,0 +1,15 @@
+title: "React Router Introduction"
+template: thinkful
+slides:
+  - fe-07.2-react-router-intro/01-routing
+  - fe-07.2-react-router-intro/02-react-router
+  - fe-07.2-react-router-intro/03-browser-router
+  - fe-07.2-react-router-intro/04-routes
+  - fe-07.2-react-router-intro/05-swtich
+  - fe-07.2-react-router-intro/06-link
+  - fe-07.2-react-router-intro/07-organizing-react-code
+  - fe-07.2-react-router-intro/08-route-params
+  - fe-07.2-react-router-intro/09-user-params-hook
+  - fe-07.2-react-router-intro/10-modify-history
+  - fe-07.2-react-router-intro/11-modify-history-go
+  - fe-07.2-react-router-intro/12-assignments

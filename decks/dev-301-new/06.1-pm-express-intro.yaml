@@ -1,0 +1,16 @@
+title: Web APIs with Express
+template: thinkful
+slides:
+  - node-express-intro/01-overview
+  - node-express-intro/02-comm-diagram
+  - node-express-intro/03-url-breakdown
+  - node-express-intro/04-req-res-example
+  - node-express-intro/05-make-easier
+  - node-express-intro/06-hello-express
+  - node-express-intro/07-basic-routing
+  - node-express-intro/08-middleware
+  - node-express-intro/09-middleware-logging
+  - node-express-intro/10-request-object
+  - node-express-intro/11-query-object
+  - node-express-intro/12-nodemon
+  - node-express-intro-new/13-walkthrough

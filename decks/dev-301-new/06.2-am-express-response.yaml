@@ -1,0 +1,11 @@
+title: Working with Express Response Object
+template: thinkful
+slides:
+  - node-express-response-obj/01-overview
+  - node-express-response-obj/02-response-breakdown
+  - node-express-response-obj/03-response-codes
+  - node-express-response-obj/04-response-codes-common
+  - node-express-response-obj/05-response-with-express
+  - node-express-response-obj/06-debugging-response
+  - node-express-response-obj/07-live-nytserver
+  

@@ -1,0 +1,12 @@
+title: "React Components"
+template: thinkful
+slides:
+  - fe-06.1-react-introduction/20-functional-components
+  - fe-06.1-react-introduction/21-props
+  - fe-06.1-react-introduction/22-component-with-props
+  - fe-06.1-react-introduction/23-component-composition-i
+  - fe-06.1-react-introduction/24-component-composition-ii
+  - fe-06.1-react-introduction/25-conditional-rendering-if
+  - fe-06.1-react-introduction/26-conditional-rendering-switch
+  - fe-06.1-react-introduction/27-prevent-rendering
+  - fe-06.1-react-introduction/28-assignments

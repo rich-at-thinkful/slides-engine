@@ -1,0 +1,20 @@
+title: Node POST and DELETE requests
+template: thinkful
+slides:
+  - node-post-del/01-overview
+  - node-post-del/02-post
+  - node-post-del/03-post-non-ajax
+  - node-post-del/04-post-ajax
+  - node-post-del/05-post-endpoint
+  - node-post-del/06-parse-json-body  
+  - node-post-del/07-validations
+  - node-post-del/08-validations-2
+  - node-post-del/09-validations-3
+  - node-post-del/10-process-data
+  - node-post-del/11-process-data-2
+  - node-post-del/12-named-params-review  
+  - node-post-del/13-named-params 
+  - node-post-del/14-named-params-2
+  - node-post-del/15-delete  
+  - node-post-del/16-delete-consider 
+  - node-post-del/17-security 
