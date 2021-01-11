@@ -1,9 +1,15 @@
-title: "Form Submissions"
+title: "Event Handling and Form Submissions"
 template: thinkful
 slides:
-  - fe-05.5-javascript-form-render/01-form-submissions
-  - fe-05.5-javascript-form-render/02-handle-form-submissions
-  - fe-05.5-javascript-form-render/03-submit-handler 
-  - fe-05.5-javascript-form-render/04-process-form-data
-  - fe-05.5-javascript-form-render/05-form-validation
-  - fe-05.5-javascript-form-render/06-assignment
+  - fe-05.5-javascript-form-render/01-event-listeners
+  - fe-05.5-javascript-form-render/02-events
+  - fe-05.5-javascript-form-render/03-event-handlers
+  - fe-05.5-javascript-form-render/04-event-listener-examples
+  - fe-05.5-javascript-form-render/05-attach-multiple
+  - fe-05.5-javascript-form-render/06-dcl-event
+  - fe-05.5-javascript-form-render/07-form-submissions
+  - fe-05.5-javascript-form-render/08-handle-form-submissions
+  - fe-05.5-javascript-form-render/09-submit-handler 
+  - fe-05.5-javascript-form-render/10-process-form-data
+  - fe-05.5-javascript-form-render/11-form-validation
+  - fe-05.5-javascript-form-render/12-assignment
