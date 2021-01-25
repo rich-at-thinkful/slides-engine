@@ -7,4 +7,3 @@
     * If the hobbies list is empty, you should display nothing for hobbies.
     * If the dailyActivities list is empty, you should display nothing for the schedule.
     * Style the components using inline styling and/or CSS files. It does not need to match the appearance of the example image, but should have a reasonable layout.
-    * Include a snapshot test for each component.
