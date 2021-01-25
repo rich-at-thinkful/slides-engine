@@ -4,7 +4,7 @@
 
 ```
 function GroceryList({ items }) {
-  const rows = groceryList.map(({ quantity, item }, index) => (
+  const rows = items.map(({ quantity, item }, index) => (
     <tr key={index}>
       <td>{quantity}</td>
       <td>{item}</td>
