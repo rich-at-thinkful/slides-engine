@@ -6,6 +6,6 @@
 // GroceryList.jsx
 function GroceryList({ items }) {
   const list = items.map((item, index) => <li key={index}>{item}</li>);
-  return <ul>{items}</ul>;
+  return <ul>{list}</ul>;
 }
 ```
