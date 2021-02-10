@@ -10,4 +10,5 @@ slides:
   - fe-05.4-javascript-dom/07-selecting-elements
   - fe-05.4-javascript-dom/08-selectors
   - fe-05.4-javascript-dom/09-selector-examples
-  - fe-05.4-javascript-dom/10-assignment
+  - fe-05.4-javascript-dom/10-nodelist
+  - fe-05.4-javascript-dom/11-assignment
