@@ -1,5 +1,5 @@
 # Arrays
 
 * Contiguous block of memory
-* Keep a pointer to the first item
-* Use pointer arithmetic to traverse the array
+* Store a pointer to the first item
+* Store the length of the array

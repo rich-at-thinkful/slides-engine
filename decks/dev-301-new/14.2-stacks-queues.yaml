@@ -1,0 +1,13 @@
+title: Stacks and Queues
+template: thinkful
+slides:
+  - dsa-stack-queue/01-stacks
+  - dsa-stack-queue/02-stack-operations
+  - dsa-stack-queue/03-stack-output
+  - dsa-stack-queue/04-queues
+  - dsa-stack-queue/05-queue-operations
+  - dsa-stack-queue/06-queue-output
+    #- dsa-stack-queue/07-ei-project
+
+
+

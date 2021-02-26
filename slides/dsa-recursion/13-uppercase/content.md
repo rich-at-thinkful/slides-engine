@@ -1,4 +1,4 @@
-# Carrying data through recursions
+# Carrying data through recursions (bottom-up)
 
 ```
 function upperStr(str){

@@ -1,0 +1,21 @@
+title: Arrays, sets and maps
+template: thinkful
+slides:
+  - dsa-arrays/01-memory
+  #- dsa-arrays/02-pointer-arithmetic
+  - dsa-arrays/03-arrays
+  - dsa-arrays/04-initializing
+  - dsa-arrays/05-pushing
+  - dsa-arrays/06-resizing-one-step
+    #- dsa-arrays/07-resizing-sensible
+  - dsa-arrays/08-retrieving
+  - dsa-arrays/09-popping
+  - dsa-arrays/10-inserting
+  - dsa-arrays/11-removing
+  - dsa-sets-maps/01-sets-maps
+  - dsa-sets-maps/02-hash-functions
+  - dsa-sets-maps/03-simple-hash-functions
+  - dsa-sets-maps/04-inserting
+  - dsa-sets-maps/05-collisions
+  - dsa-sets-maps/06-lookup
+  #- dsa-arrays/12-ei-project

@@ -1,0 +1,19 @@
+title: Binary Search Trees
+template: thinkful
+slides:
+  - dsa-binary-search-trees/01-tree-structure
+  - dsa-binary-search-trees/02-binary-trees
+  - dsa-binary-search-trees/03-binary-search-trees
+  - dsa-binary-search-trees/04-duplicates
+  - dsa-binary-search-trees/05-inserting
+  - dsa-binary-search-trees/06-retrieving
+  - dsa-binary-search-trees/07-removing-zero
+  - dsa-binary-search-trees/08-removing-one
+  - dsa-binary-search-trees/09-removing-two-left
+    #- dsa-binary-search-trees/10-removing-two-right
+    #- dsa-binary-search-trees/11-ei-project
+
+
+
+
+

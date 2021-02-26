@@ -1,0 +1,19 @@
+title: Linked Lists
+template: thinkful
+slides:
+  - dsa-linked-lists/01-structure
+  - dsa-linked-lists/02-traversal
+  - dsa-linked-lists/03-insertion-start
+  - dsa-linked-lists/04-insertion-end
+  - dsa-linked-lists/05-insertion-middle
+  - dsa-linked-lists/06-deletion-start
+  - dsa-linked-lists/07-deletion-middle-end
+    #- dsa-linked-lists/08-array-vs-ll
+    #- dsa-linked-lists/09-cache-locality
+    #- dsa-linked-lists/10-array-vs-ll-ii
+  - dsa-linked-lists/11-dlls
+    #- dsa-linked-lists/12-ei-project
+
+
+
+

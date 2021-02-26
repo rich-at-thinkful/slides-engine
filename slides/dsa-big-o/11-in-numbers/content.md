@@ -16,7 +16,7 @@
         <td>1</td>
         <td>10</td>
         <td>100</td>
-        <td>1E3</td>
+        <td>1E2</td>
         <td>~1E3</td>
     </tr>
     <tr>
@@ -25,7 +25,7 @@
         <td>2</td>
         <td>100</td>
         <td>200</td>
-        <td>1E6</td>
+        <td>1E4</td>
         <td>~1E30</td>
     </tr>
     <tr>
@@ -34,26 +34,26 @@
         <td>3</td>
         <td>1000</td>
         <td>3000</td>
-        <td>1E9</td>
-        <td>~1E301</td>
+        <td>1E6</td>
+        <td>~1E300</td>
     </tr>
     <tr>
         <th>10000</th>
         <td>1</td>
         <td>4</td>
-        <td>1000</td>
+        <td>10000</td>
         <td>40000</td>
-        <td>1E12</td>
-        <td>~1E3010</td>
+        <td>1E8</td>
+        <td>~1E3000</td>
     </tr>
     <tr>
         <th>100000</th>
         <td>1</td>
         <td>5</td>
-        <td>10000</td>
+        <td>100000</td>
         <td>500000</td>
-        <td>1E15</td>
-        <td>~1E30102</td>
+        <td>1E10</td>
+        <td>~1E30000</td>
     </tr>
 </table>
 
