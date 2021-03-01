@@ -9,7 +9,7 @@
 ```
 ```
 // App.js
-import "./styles.css";
+import "./App.css";
 
 import React from "react";
 import "./App.css";
