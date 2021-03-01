@@ -4,12 +4,20 @@ slides:
   - dsa-binary-search-trees/01-tree-structure
   - dsa-binary-search-trees/02-binary-trees
   - dsa-binary-search-trees/03-binary-search-trees
-  - dsa-binary-search-trees/04-duplicates
+    #- dsa-binary-search-trees/04-duplicates
   - dsa-binary-search-trees/05-inserting
   - dsa-binary-search-trees/06-retrieving
   - dsa-binary-search-trees/07-removing-zero
   - dsa-binary-search-trees/08-removing-one
   - dsa-binary-search-trees/09-removing-two-left
+  - dsa-search-traversal/07-tree-traversal
+  - dsa-search-traversal/08-dfs-pre
+  - dsa-search-traversal/09-dfs-pre-example
+  - dsa-search-traversal/10-dfs-in
+  - dsa-search-traversal/11-dfs-in-example
+  - dsa-search-traversal/12-dfs-post
+  - dsa-search-traversal/13-dfs-post-example
+  - dsa-search-traversal/14-bfs
     #- dsa-binary-search-trees/10-removing-two-right
     #- dsa-binary-search-trees/11-ei-project
 
