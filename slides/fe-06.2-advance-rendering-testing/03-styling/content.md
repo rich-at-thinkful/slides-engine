@@ -1,7 +1,7 @@
 # Styling
 
 ```
-/* styles.css */
+/* App.css */
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -12,7 +12,7 @@
 import "./styles.css";
 
 import React from "react";
-import "./styles.css";
+import "./App.css";
 
 function App() {
   return (
