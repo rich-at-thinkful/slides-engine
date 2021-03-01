@@ -3,7 +3,7 @@ template: thinkful
 slides:
   - dsa-big-o/01-algorithms
   - dsa-big-o/02-complexity
-  - dsa-big-o/03-bogofind
+    #- dsa-big-o/03-bogofind
   - dsa-big-o/04-product
   - dsa-big-o/07-o1
   - dsa-big-o/08-ologn
