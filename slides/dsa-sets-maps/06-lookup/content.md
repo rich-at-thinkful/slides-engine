@@ -1,13 +1,9 @@
 # Lookup
 
 ```js
-const obj = {
-    key: 'gregg',
-};
+const key = 'gregg';
 
-const hash = hashString(obj.key); // 260512401
-
-const index = hash % capacity; // 3
+const index = hashString(key); // 3
 ```
 
 

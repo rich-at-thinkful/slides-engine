@@ -1,14 +1,10 @@
 # Inserting into a hash map
 
 ```js
-const obj = {
-    key: 'david',
-    value: 'vocals'
-};
+const key = 'david';
+const value = 'vocals';
 
-const hash = hashString(obj.key); // 256362285
-
-const index = hash % capacity; // 3
+const index = hashString(key); // 3
 ```
 
 

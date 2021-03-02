@@ -1,14 +1,10 @@
 # Dealing with collisions
 
 ```js
-const obj = {
-    key: 'gregg',
-    value: 'drums'
-};
+const key = 'gregg';
+const value = 'drums';
 
-const hash = hashString(obj.key); // 260512401
-
-const index = hash % capacity; // 3
+const index = hashString(key); // 3
 ```
 
 
