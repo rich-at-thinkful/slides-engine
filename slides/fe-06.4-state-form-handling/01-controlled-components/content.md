@@ -1,4 +1,4 @@
-# Controlled Inputs
+# Controlled Components
 
 ## Store the value of the input in state
 
