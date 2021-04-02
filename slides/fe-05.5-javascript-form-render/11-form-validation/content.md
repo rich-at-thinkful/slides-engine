@@ -5,20 +5,23 @@
 const submitHandler = (event) => {
   event.preventDefault();
 
-  const form = document.querySelector("#parkForm");
+  const form = event.target;
   const formData = new FormData(form);
 
-  // Keep track of if any errors are found
-  let hasErrors = false;
+  const errors = validateForm(formData);
 
-  formData.forEach((value, key) => {
-    let errorId = `#${key.slice(4).toLowerCase()}Error`;
-    if (value.trim() === "") {
-      document.querySelector(errorId).style.display = "block";
-      hasErrors = true;
-    } else {
-      document.querySelector(errorId).style.display = "none";
-    }
+  // clear all previous errors
+  const errorElements = document.querySelectorAll(".error");
+  for (let element of errorElements) {
+    element.style.display = "none";
+  }
+
+  // display any new errors
+  Object.keys(errors).forEach((key) => {
+    // find the specific error element
+    const errorElement = document.querySelector(`#${key}-form .error`);
+    errorElement.innerHTML = errors[key];
+    errorElement.style.display = "block";
   });
 };
 ```
