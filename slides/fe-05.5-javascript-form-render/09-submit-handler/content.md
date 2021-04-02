@@ -10,10 +10,10 @@ const submitHandler = (event) => {
 * Add event listener for the form submission
 ```
 const main = () => {
-  // get the form element
-  const form = document.querySelector("#parkForm");
+  // Get the form element
+  const form = document.querySelector("#park-form");
 
-  // attach the submit handler
+  // Attach the submit handler
   form.addEventListener("submit", submitHandler);
 };
 ```
