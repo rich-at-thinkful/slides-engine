@@ -7,7 +7,7 @@
 ```
 const submitHandler = (event) => {
     // get the name input
-    const parkName = event.target.parkName.value;
+    const parkName = event.target.name.value;
 
     console.log(parkName);
 };
@@ -19,7 +19,7 @@ const submitHandler = (event) => {
 
   const formData = new FormData(event.target)
   
-  const name = formData.get("parkName");
+  const name = formData.get("name");
   console.log(name);
 };
 ```
