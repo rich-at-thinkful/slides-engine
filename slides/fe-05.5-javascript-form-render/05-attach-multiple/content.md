@@ -1,10 +1,10 @@
 # Attaching Event Handlers To Multiple Elements
 
 ```
-// select all the buttons for all the parks
-const allBtns = document.querySelectorAll(".rateBtn");
+// Select all the buttons for all the parks
+const allBtns = document.querySelectorAll(".rate-button");
 
-// iterate the list of buttons and add an event handler to each
+// Iterate through the list of buttons and add an event handler to each
 allBtns.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     console.log(event.target);
