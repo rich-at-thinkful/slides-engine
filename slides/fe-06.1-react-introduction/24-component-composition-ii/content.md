@@ -16,7 +16,7 @@ function App() {
 function WelcomeList() {
     return (
         <div className="welcomeList">
-            <h3>Welecome List</h3>
+            <h3>Welcome List</h3>
                 <WelcomeBack name="Joe" />
                 <WelcomeBack name="Anna" />
                 <WelcomeBack name="Nancy" />
