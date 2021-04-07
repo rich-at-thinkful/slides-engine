@@ -11,7 +11,7 @@ const handleClick = (value) => {
 * Use `.map()` to Update a Value in an Array In State
 ```
 const handleUpdate = (index, value) => {
-  const newResults = results.map((result, i) => i === index ? 'value' : result);
+  const newResults = results.map((result, i) => i === index ? value : result);
   setResults(newResults);
 };
 ```
