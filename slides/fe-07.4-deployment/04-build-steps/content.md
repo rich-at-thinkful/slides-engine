@@ -6,6 +6,6 @@
 
 2. Serve
 
-`npx serve -s --listen 3000`
+`npx serve -s build --listen 3000`
 
 3. Test
