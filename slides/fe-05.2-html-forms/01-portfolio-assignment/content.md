@@ -3,7 +3,6 @@
 * Code requirements
     * Create a page layout using flexbox.
     * Implement appropriate media queries for responsive design.
-    * Use semantic, valid markup.
-    * Build your page from scratch (without using a template).
+    * Follow a mobile-first development approach.
     * Use responsive navigation.
-    * Code a functional contact form.
+    * Use appropriate input types for the form.
