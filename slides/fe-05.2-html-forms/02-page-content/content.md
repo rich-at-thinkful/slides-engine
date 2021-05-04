@@ -1,4 +1,4 @@
-# Putting It All Together - Portfolio Assignment
+# Putting It All Together - Front-end foundations: Assignment
 
 * Page content requirements
     * Navigation
