@@ -1,4 +1,4 @@
-# Putting It All Together - Portfolio Assignment
+# Putting It All Together - Front-end foundations: Assignment
 
 * Project Details
     * [Thinkfulbnb - a vacation rental website](https://github.com/Thinkful-Ed/starter-thinkfulbnb)
