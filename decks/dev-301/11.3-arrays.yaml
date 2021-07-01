@@ -1,18 +1,18 @@
 title: Arrays
 template: thinkful
 slides:
-  - dsa-arrays/01-memory
-  - dsa-arrays/02-pointer-arithmetic
-  - dsa-arrays/03-arrays
-  - dsa-arrays/04-initializing
-  - dsa-arrays/05-pushing
-  - dsa-arrays/06-resizing-naive
-  - dsa-arrays/07-resizing-sensible
-  - dsa-arrays/08-retrieving
-  - dsa-arrays/09-popping
-  - dsa-arrays/10-inserting
-  - dsa-arrays/11-removing
-  - dsa-arrays/12-ei-project
+  - dsa-13.5-arrays/01-memory
+  - dsa-13.5-arrays/02-pointer-arithmetic
+  - dsa-13.5-arrays/03-arrays
+  - dsa-13.5-arrays/04-initializing
+  - dsa-13.5-arrays/05-pushing
+  - dsa-13.5-arrays/06-resizing-naive
+  - dsa-13.5-arrays/07-resizing-sensible
+  - dsa-13.5-arrays/08-retrieving
+  - dsa-13.5-arrays/09-popping
+  - dsa-13.5-arrays/10-inserting
+  - dsa-13.5-arrays/11-removing
+  - dsa-13.5-arrays/12-ei-project
 
 
 
