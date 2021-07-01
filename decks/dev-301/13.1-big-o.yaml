@@ -1,0 +1,23 @@
+title: Big O Notation
+template: thinkful
+slides:
+  - dsa-13.1-big-o/01-algorithms
+  - dsa-13.1-big-o/02-complexity
+  - dsa-13.1-big-o/03-product
+  - dsa-13.1-big-o/04-o1
+  - dsa-13.1-big-o/05-o1-chart
+  - dsa-13.1-big-o/06-ologn
+  - dsa-13.1-big-o/07-ologn-chart
+  - dsa-13.1-big-o/08-on
+  - dsa-13.1-big-o/09-on-chart
+  - dsa-13.1-big-o/10-on2
+  - dsa-13.1-big-o/11-on2-chart
+  - dsa-13.1-big-o/12-on3-chart
+  - dsa-13.1-big-o/13-in-numbers
+  - dsa-13.1-big-o/14-alternative-big-o
+  - dsa-13.1-big-o/15-separate-loops
+    #- dsa-13.1-big-o/13-ei-project
+
+
+
+
