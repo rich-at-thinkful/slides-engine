@@ -2,22 +2,22 @@ title: Recursion
 template: thinkful
 slides:
   #- dsa-recursion/01-goals
-  - dsa-recursion/02-recursion-i
-  - dsa-recursion/03-recursion-ii
-  - dsa-recursion/04-recursion-iii
-  - dsa-recursion/05-countdown-non-recursive
-  - dsa-recursion/06-recursion-structure
-  - dsa-recursion/07-base-cases
-  - dsa-recursion/08-recursive-case
-  - dsa-recursion/09-countdown-no-base
-  - dsa-recursion/10-adding-base-case
-  - dsa-recursion/11-main-points
-  - dsa-recursion/12-carrying-data
-  - dsa-recursion/13-uppercase
+  - dsa-13.3-recursion/02-recursion-i
+  - dsa-13.3-recursion/03-recursion-ii
+  - dsa-13.3-recursion/04-recursion-iii
+  - dsa-13.3-recursion/05-countdown-non-recursive
+  - dsa-13.3-recursion/06-recursion-structure
+  - dsa-13.3-recursion/07-base-cases
+  - dsa-13.3-recursion/08-recursive-case
+  - dsa-13.3-recursion/09-countdown-no-base
+  - dsa-13.3-recursion/10-adding-base-case
+  - dsa-13.3-recursion/11-main-points
+  - dsa-13.3-recursion/12-carrying-data
+  - dsa-13.3-recursion/13-uppercase
   #- dsa-recursion/15-carrying-data-down
-  - dsa-recursion/15-write-together
-  - dsa-recursion/16-validate-brackets-i
-  - dsa-recursion/17-validate-brackets-ii
+  - dsa-13.3-recursion/15-write-together
+  - dsa-13.3-recursion/16-validate-brackets-i
+  - dsa-13.3-recursion/17-validate-brackets-ii
   #- dsa-recursion/18-filter-i
   #- dsa-recursion/19-filter-ii
 

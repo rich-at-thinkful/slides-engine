@@ -2,12 +2,10 @@ title: Arrays, sets and maps
 template: thinkful
 slides:
   - dsa-13.5-arrays/01-memory
-  #- dsa-arrays/02-pointer-arithmetic
   - dsa-13.5-arrays/03-arrays
   - dsa-13.5-arrays/04-initializing
   - dsa-13.5-arrays/05-pushing
   - dsa-13.5-arrays/06-resizing-one-step
-    #- dsa-arrays/07-resizing-sensible
   - dsa-13.5-arrays/08-retrieving
   - dsa-13.5-arrays/09-popping
   - dsa-13.5-arrays/10-inserting
@@ -18,4 +16,3 @@ slides:
   - dsa-13.5-sets-maps/04-inserting
   - dsa-13.5-sets-maps/05-collisions
   - dsa-13.5-sets-maps/06-lookup
-  #- dsa-arrays/12-ei-project

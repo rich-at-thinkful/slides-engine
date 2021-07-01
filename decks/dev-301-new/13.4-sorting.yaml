@@ -1,19 +1,19 @@
 title: Sorting
 template: thinkful
 slides:
-  - dsa-sorting/01-sorting-algorithms
-  - dsa-sorting/02-bubble-sort
-  - dsa-sorting/03-bubble-sort-example
-  - dsa-sorting/04-bubble-sort-performance
-  - dsa-sorting/05-merge-sort
-  - dsa-sorting/06-merge-sort-split
-  - dsa-sorting/07-merge-sort-merge
-  - dsa-sorting/08-merge-algorithm
-  - dsa-sorting/09-merge-sort-performance
-  - dsa-sorting/10-quicksort
-  - dsa-sorting/11-quicksort-example
-  - dsa-sorting/12-quicksort-partitioning
-  - dsa-sorting/13-quicksort-performance
+  - dsa-13.4-sorting/01-sorting-algorithms
+  - dsa-13.4-sorting/02-bubble-sort
+  - dsa-13.4-sorting/03-bubble-sort-example
+  - dsa-13.4-sorting/04-bubble-sort-performance
+  - dsa-13.4-sorting/05-merge-sort
+  - dsa-13.4-sorting/06-merge-sort-split
+  - dsa-13.4-sorting/07-merge-sort-merge
+  - dsa-13.4-sorting/08-merge-algorithm
+  - dsa-13.4-sorting/09-merge-sort-performance
+  - dsa-13.4-sorting/10-quicksort
+  - dsa-13.4-sorting/11-quicksort-example
+  - dsa-13.4-sorting/12-quicksort-partitioning
+  - dsa-13.4-sorting/13-quicksort-performance
     #- dsa-sorting/14-ei-project
 
 
