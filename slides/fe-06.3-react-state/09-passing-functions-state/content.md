@@ -1,6 +1,6 @@
 # Passing a Function for State Updates
 
-* Instead, Pass a Function
+* Instead, pass a callback function
 ```
   <button
     onClick={() => {
