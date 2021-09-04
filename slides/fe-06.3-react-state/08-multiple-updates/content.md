@@ -1,17 +1,15 @@
 # Multiple Updates
 
-* Setting State Multiple Times Can Introduce Errors
+* Setting state multiple times can introduce errors
 
 ```
 <button
   onClick={() => {
-    setSubscribed(!subscribed);
     setSubscribedCount(subscribedCount + 1);
     setSubscribedCount(subscribedCount + 1);
-    if (!alerts) setAlerts(true);
   }}
 >
-  {subscribed ? "Unsubscribe" : "Subscribe"}
+  Subscribe
 </button>
 ```
 
