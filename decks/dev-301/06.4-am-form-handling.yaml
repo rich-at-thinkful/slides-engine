@@ -3,8 +3,10 @@ template: thinkful
 slides:
   - fe-06.4-state-form-handling/01-controlled-components
   - fe-06.4-state-form-handling/02-submitting-forms
-  - fe-06.4-state-form-handling/03-setting-initial-form-state
-  - fe-06.4-state-form-handling/04-select-input-type
-  - fe-06.4-state-form-handling/05-radio-button-input-type
-  - fe-06.4-state-form-handling/06-checkbox-input-type
-  - fe-06.4-state-form-handling/07-assignments
+  - fe-06.4-state-form-handling/03-select-input-type
+  - fe-06.4-state-form-handling/04-radio-button-input-type
+  - fe-06.4-state-form-handling/05-checkbox-input-type
+  - fe-06.4-state-form-handling/06-formdata-as-object
+  - fe-06.4-state-form-handling/07-setting-initial-form-state
+  - fe-06.4-state-form-handling/08-assignments
+  

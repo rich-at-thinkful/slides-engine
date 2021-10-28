@@ -1,11 +1,10 @@
-# Initial Form State
-
-## Store Inital Values For Form
+# Storing Initial Form State
 
 ```js
 const initialFormState = {
   name: "",
   email: "",
+  referral: "twitter"
 };
 ```
 * The initial state stored in formData is created from this object.
