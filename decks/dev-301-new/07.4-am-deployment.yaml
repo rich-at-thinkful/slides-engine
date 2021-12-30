@@ -10,4 +10,5 @@ slides:
   - fe-07.4-deployment/07-vercel-json
   - fe-07.4-deployment/08-automation
   - fe-07.4-deployment/09-pre-post-scripts
-  - fe-07.4-deployment/10-assignment
+  - fe-07.4-deployment/10-heroku  
+  - fe-07.4-deployment/11-assignment
