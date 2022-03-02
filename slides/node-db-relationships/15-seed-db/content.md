@@ -4,19 +4,19 @@
 
 ```sql
 -- first remove any data that may be present
-TRUNCATE  supplier, item, supplier_order RESTART IDENTITY CASCADE;
+TRUNCATE  suppliers, items, orders RESTART IDENTITY CASCADE;
 
 -- insert some suppliers
-INSERT INTO supplier
-  (supplier_name, phone, city)
+INSERT INTO suppliers
+  (name, phone, city)
   VALUES 
     ('Arnold Grummers Papermaking', '920-840-6056', 'Appleton'),
     ('Glatfelter', '49 (0) 3 39 86 / 69-0', 'Falkenhagen'),
     ('Blumfeld Paper', '555-6789', 'Moscow');
 
 -- insert some items
-INSERT INTO item
-  (item_name, unit, unit_cost, supplier_id)
+INSERT INTO items
+  (name, unit, unit_cost, supplier_id)
   VALUES
     ('Paper Additives', 'LBS', '3.85', 1),
     ('G-Colors Envelope Papers', 'LBS', '0.62', 2),    
@@ -26,7 +26,7 @@ INSERT INTO item
     ('White Envelope Papers', 'LBS', '0.52', 2);
 
 -- insert some orders
-INSERT INTO supplier_order 
+INSERT INTO orders 
   (item_id, amount, total_cost, shipping_status)
   VALUES
     (1, 10, 38.5, 'Delivered'),

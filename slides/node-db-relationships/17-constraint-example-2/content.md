@@ -6,10 +6,10 @@
 <div class='cell-4'>
 
 ```sql {#fk-break-3}
-INSERT INTO supplier_order 
+INSERT INTO orders 
     (item_id, amount, total_cost, shipping_status) VALUES (1, 20, 10, 'Shipped');
 
-DELETE FROM item WHERE id = 1;
+DELETE FROM items WHERE id = 1;
 ```
 
 </div>
@@ -27,9 +27,9 @@ But what happens if we then try to delete item 1, causing an "orphaned" order? {
 <div class='cell-4'>
 
 ```sql {#fk-break-3a .fragment data-index=3}
-ERROR:  update or delete on table "item" violates 
-    foreign key constraint "supplier_order_item_id_fkey" on table "supplier_order"
-DETAIL:  Key (id)=(1) is still referenced from table "supplier_order".
+ERROR:  update or delete on table "items" violates 
+    foreign key constraint "orders_items_id_fkey" on table "orders"
+DETAIL:  Key (id)=(1) is still referenced from table "orders".
 ```
 
 </div>

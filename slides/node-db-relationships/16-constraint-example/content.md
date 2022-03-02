@@ -6,7 +6,7 @@
 <div class='cell-4'>
 
 ```sql {#fk-break-1}
-INSERT INTO supplier_order 
+INSERT INTO orders
     (amount, total_cost, shipping_status) VALUES (20, 20, 'Shipped');
 ```
 
@@ -42,7 +42,7 @@ We can't place an order if item_id value is null {.fragment data-index=2 .backgr
 <div class='cell-4'>
 
 ```sql {#fk-break-2 .fragment data-index=3 data-span="2:6:12 .fragment data-style=highlight-in data-index=3; 2:60:63 .fragment data-style=highlight-in data-index=3;"}
-INSERT INTO supplier_order 
+INSERT INTO orders 
     (item_id, amount, total_cost, shipping_status) VALUES (666, 20, 20, 'Shipped');
 ```
 
@@ -59,9 +59,9 @@ We've supplied an `item_id` value, so now what's the issue? {.fragment data-inde
 <div class='cell-4'>
 
 ```sql {#fk-break-2a .fragment data-index=4}
-ERROR:  insert or update on table "supplier_order" 
-    violates foreign key constraint "supplier_order_item_id_fkey"
-DETAIL:  Key (item_id)=(666) is not present in table "item".
+ERROR:  insert or update on table "orders" 
+    violates foreign key constraint "orders_item_id_fkey"
+DETAIL:  Key (item_id)=(666) is not present in table "items".
 ```
 
 </div>

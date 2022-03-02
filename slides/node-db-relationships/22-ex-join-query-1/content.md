@@ -8,7 +8,7 @@ With two queries (one against each table), we could get the data we need and man
 <div class='cell-4'>
 
 ```sql
-SELECT item_id, amount as quantity FROM supplier_order
+SELECT item_id, amount as quantity FROM orders
 WHERE total_cost < 600;
 ```
 
@@ -33,11 +33,11 @@ first, get the item ids needed {.annotation data-for=ex-1-query-1}
 <div class='cell-4'>
 
 ```sql
-SELECT item_name from item WHERE id IN (1,3,5);
+SELECT name from items WHERE id IN (1,3,5);
 ```
 
 ```text {#ex-1-query-2}
-    item_name     
+       name     
 ------------------
  Paper Additives
  Abaca Sheet Pulp

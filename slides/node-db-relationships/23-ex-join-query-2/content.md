@@ -7,10 +7,10 @@ Single query using JOIN to acquire precisely the data we need in a consistent fo
 <div class='row fragment' data-index=0>
 <div class='cell-4'>
 
-```sql {data-span="1:8:32 .fragment style=border-color:red data-style=highlight-in data-index=3; 1:35:67 .fragment style=border-color:red data-style=highlight-in data-index=3}
-SELECT item.item_name as product, supplier_order.amount as quantity 
-FROM supplier_order
-JOIN item ON item.id = supplier_order.item_id
+```sql {data-span="1:8:28 .fragment style=border-color:red data-style=highlight-in data-index=3; 1:31:67 .fragment style=border-color:red data-style=highlight-in data-index=3}
+SELECT items.name as product, orders.amount as quantity 
+FROM orders
+JOIN items ON items.id = orders.item_id
 WHERE total_cost < 600;
 ```
 
@@ -38,7 +38,7 @@ WHERE total_cost < 600;
 ## Compare to `JOIN` output using `SELECT *`: {.smaller}
 
 ```text
- id | order_date | item_id | amount | total_cost | shipping_status | id |    item_name     | unit | unit_cost | supplier 
+ id | created_at | item_id | amount | total_cost | shipping_status | id |      name        | unit | unit_cost | supplier 
 ----+------------+---------+--------+------------+-----------------+----+------------------+------+-----------+----------
   1 | 2019-06-03 |    1    |     10 |       38.5 | Delivered       |  1 | Paper Additives  | LBS  |      3.85 |        1
   3 | 2019-06-03 |    3    |     50 |        560 | Shipped         |  3 | Abaca Sheet Pulp | LBS  |     11.20 |        1
@@ -51,8 +51,8 @@ WHERE total_cost < 600;
 <div class="fragment" data-style="in-out" data-index="2">
   <div class="highlight-column highlight-column-all-order"></div>
   <div class="highlight-column highlight-column-all-item "></div>
-  <div class="highlight-column-caption highlight-column-caption-all-order">supplier_order</div>
-  <div class="highlight-column-caption highlight-column-caption-all-item">item</div>
+  <div class="highlight-column-caption highlight-column-caption-all-order">orders</div>
+  <div class="highlight-column-caption highlight-column-caption-all-item">items</div>
 </div>
 
 <div class="highlight-column highlight-column-amount fragment" data-index=3></div>

@@ -4,7 +4,7 @@
 
 &nbsp;
 
-### supplier table {.center}
+### suppliers table {.center}
 
 <div class="row">
 <div class="cell-4">

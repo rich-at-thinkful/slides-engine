@@ -8,9 +8,9 @@ npx postgrator 0                                    # rollback migrations
 ```
 
 ```diff {.fragment data-index=1}
-CREATE TABLE supplier_order (
-- item_id INTEGER REFERENCES item(id) NOT NULL,
-+ item_id INTEGER REFERENCES item(id) ON DELETE CASCADE NOT NULL, 
+CREATE TABLE orders (
+- item_id INTEGER REFERENCES items(id) NOT NULL,
++ item_id INTEGER REFERENCES items(id) ON DELETE CASCADE NOT NULL, 
 ```
 
 </div>
@@ -37,7 +37,7 @@ psql -d suppliers -f ./seed/seed.suppliers.sql      # re-seed
 <div class='cell-4'>
 
 ```diff {.fragment data-index=3}
-DELETE FROM item WHERE id = 1;
+DELETE FROM items WHERE id = 1;
 DELETE 1
 ```
 

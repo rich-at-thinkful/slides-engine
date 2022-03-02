@@ -3,7 +3,7 @@
 * Extract the relevant fields for items and place them in their own table
 * Add a column to apply a **relationship** of the item to a supplier
 
-### *item table* {style=margin-top:25px}
+### *items table* {style=margin-top:25px}
 
 <div class="row">
 <div class="cell-4">
@@ -14,7 +14,7 @@
 
 <div class="cell-2 smaller fragment" data-index="1">
 
-* item.supplier_id column must be a valid supplier.id
+* items.supplier_id column must be a valid suppliers.id
 
 * a column in one table that **references** the primary key of another is called a **foreign key**
 

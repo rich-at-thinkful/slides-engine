@@ -3,7 +3,7 @@
 * Extract the relevant fields for orders and place in their own table
 * Add a column to apply a **relationship** of the order to an item
 
-### *supplier_order table* {.center style=margin-top:25px}
+### *orders table* {.center style=margin-top:25px}
 
 <div class="row">
 <div class="cell-4">
