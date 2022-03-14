@@ -6,11 +6,11 @@ slides:
   - fe-06.3-react-state/01-state
   - fe-06.3-react-state/04-using-state
   - fe-06.3-react-state/05-make-use-state
-  - fe-06.3-react-state/06-one-way-data-flow
   - fe-06.3-react-state/07-asyn-state
   - fe-06.3-react-state/08-multiple-updates
   - fe-06.3-react-state/09-passing-functions-state
   - fe-06.3-react-state/10-state-multiple
   - fe-06.3-react-state/11-lifting-state
   - fe-06.3-react-state/12-state-props
+  - fe-06.3-react-state/06-one-way-data-flow
   - fe-06.3-react-state/13-assignments
