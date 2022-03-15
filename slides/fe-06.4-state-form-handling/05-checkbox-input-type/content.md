@@ -7,18 +7,16 @@
     id="subscription"
     type="checkbox"
     name="subscription"
-    onChange={handleChange}
-    checked={formData.subscription}
+    onChange={handleSubscriptionChange}
+    checked={subscription}
     value="subscription"
   />
 </label>
 ```
 ```js
-const handleChange = ({ target }) => {
-  const value = target.type === "checkbox" ? target.checked : target.value;
-  setFormData({
-    ...formData,
-    [target.name]: value,
-  });
+const handleSubscriptionChange = (event) => {
+  setSubscription(sub => !event.target.checked);
 };
 ```
+
+* Important! Checkbox uses the `checked` property on the input element

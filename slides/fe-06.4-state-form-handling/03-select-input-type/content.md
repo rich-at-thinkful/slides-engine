@@ -3,7 +3,7 @@
 ```js
 function SubscriberForm() {
   const [referral, setReferral] = useState("");
-  const handleChange = (event) => setReferral(event.target.value);
+  const handleReferralChange = (event) => setReferral(event.target.value);
 
   return (
     <form>
@@ -12,7 +12,7 @@ function SubscriberForm() {
         <select
           id="referral"
           name="referral"
-          onChange={handleChange}
+          onChange={handleReferralChange}
           value={referral}
         >
           <option value="">-- Select an Option --</option>

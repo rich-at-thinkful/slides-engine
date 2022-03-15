@@ -3,7 +3,7 @@
 ```js
 function SubscriberForm() {
   const [age, setAge] = useState("");
-  const handleChange = (event) => setAge(event.target.value);
+  const handleAgeChange = (event) => setAge(event.target.value);
   
   return (
     <form>
@@ -12,14 +12,14 @@ function SubscriberForm() {
         <label htmlFor="low">
           Under 18
           <input id="low" type="radio" name="age"
-            onChange={handleChange} value="low"
+            onChange={handleAgeChange} value="low"
             checked={age === "low"}
           />
         </label>
         <label htmlFor="middle">
           18 - 60
           <input id="middle" type="radio" name="age"
-            onChange={handleChange} value="middle"
+            onChange={handleAgeChange} value="middle"
             checked={age === "middle"}
           />
         </label>

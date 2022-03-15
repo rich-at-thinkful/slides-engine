@@ -1,14 +1,16 @@
 # FormData Object
 
-* Instead of using a separate state variable for each form element, we can store them all in one object
-* Logically groups all form inputs together
+* Instead of using a separate state var for each input, we store them all in one object
 * Allows clearing the form in a single setter call
 * Easy to set and reset initial form values
+* Easy to update with single change handler
 
 ```js
 const [formData, setFormData] = useState({ 
   name: "",
   email: "",
-  referral: "twitter"
+  referral: "twitter",
+  age: "low",
+  subscription: false,
 });
 ```

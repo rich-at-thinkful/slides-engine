@@ -4,7 +4,9 @@
 const initialFormState = {
   name: "",
   email: "",
-  referral: "twitter"
+  referral: "twitter",
+  age: "low",
+  subscription: false,
 };
 ```
 * The initial state stored in formData is created from this object.

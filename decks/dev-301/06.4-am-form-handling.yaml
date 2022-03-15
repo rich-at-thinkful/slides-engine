@@ -8,5 +8,6 @@ slides:
   - fe-06.4-state-form-handling/05-checkbox-input-type
   - fe-06.4-state-form-handling/06-formdata-as-object
   - fe-06.4-state-form-handling/07-setting-initial-form-state
-  - fe-06.4-state-form-handling/08-assignments
+  - fe-06.4-state-form-handling/08-handle-all-change
+  - fe-06.4-state-form-handling/09-assignments
   
