@@ -6,7 +6,6 @@ slides:
   - fe-06.3-react-state/03-event-handler-examples
   - fe-06.3-react-state/04-using-state
   - fe-06.3-react-state/05-make-use-state
-  - fe-06.3-react-state/07-asyn-state
   - fe-06.3-react-state/08-multiple-updates
   - fe-06.3-react-state/09-passing-functions-state
   - fe-06.3-react-state/10-state-multiple
