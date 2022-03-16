@@ -15,7 +15,7 @@
 ```
 ```js
 const handleSubscriptionChange = (event) => {
-  setSubscription(sub => !event.target.checked);
+  setSubscription(event.target.checked);
 };
 ```
 
