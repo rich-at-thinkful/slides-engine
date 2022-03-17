@@ -6,11 +6,11 @@
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    async function loadUsers() {
+    async function loadUser() {
       const response = await fetch(API_URL);
       setUser(await response.json())
     }
-    loadUsers()
+    loadUser()
   }, []); // Passing [] so it only runs the effect once
 
   useEffect(() => {
