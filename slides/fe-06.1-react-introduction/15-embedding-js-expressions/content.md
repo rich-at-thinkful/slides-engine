@@ -1,4 +1,4 @@
-# Embeding JavaScript Expressions
+# Embedding JavaScript Expressions
 
 ```
 const item = "apple";

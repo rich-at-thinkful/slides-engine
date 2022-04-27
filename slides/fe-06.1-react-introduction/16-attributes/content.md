@@ -1,9 +1,13 @@
-# Attributes
+# Props vs. Attributes
 
+* Props are sent into a JSX element
 * Similiar to HTML attributes
-* Use camelCase
+* Can contain values from expressions
 
 ```
 const url = "https://www.thinkful.com/";
-const linkTag = <a href={url}>Thinkful</a>;
+
+<p>
+  Check out <a href={url}>Thinkful's website</a>.
+</p>
 ```
