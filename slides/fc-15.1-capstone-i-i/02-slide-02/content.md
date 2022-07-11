@@ -1,6 +1,6 @@
 # Plan out your project
 
 * Review recommended schedule
-* Pick a Kaban Board Tool
+* Pick a Kanban Board Tool
     * GitHub Projects
     * Trello
