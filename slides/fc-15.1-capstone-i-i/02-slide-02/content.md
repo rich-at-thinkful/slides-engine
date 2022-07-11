@@ -4,3 +4,4 @@
 * Pick a Kanban Board Tool
     * GitHub Projects
     * Trello
+    * Jira
