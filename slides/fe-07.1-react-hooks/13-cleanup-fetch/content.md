@@ -8,7 +8,7 @@ useEffect(() => {
   async function loadUser() {
     try {
       const response = await fetch(
-        `http://slowwly.robertomurray.co.uk/delay/1000/url/https://jsonplaceholder.typicode.com/users/${userID}`,
+        `https://jsonplaceholder.typicode.com/users/${userID}`,
         { signal: abortController.signal } // Pass the AbortController signal to fetch
       );
       const userFromAPI = await response.json();
