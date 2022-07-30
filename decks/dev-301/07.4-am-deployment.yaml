@@ -7,7 +7,6 @@ slides:
   - fe-07.4-deployment/04-build-steps
   - fe-07.4-deployment/05-vercel-setup
   - fe-07.4-deployment/06-vercel-deployment
-  - fe-07.4-deployment/07-vercel-json
   - fe-07.4-deployment/08-automation
   - fe-07.4-deployment/09-pre-post-scripts
   - fe-07.4-deployment/10-heroku  
