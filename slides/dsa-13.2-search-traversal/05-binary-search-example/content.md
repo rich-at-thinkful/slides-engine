@@ -1,22 +1,24 @@
 # Binary search
 
 ```js
-function binarySearch(array, value, start=0, end=array.length-1) {
-    if (start > end) return -1;
+function binarySearch(sortedElements, target) {
+  let start = 0, end = sortedElements.length - 1;
 
-    let index = Math.floor((start + end) / 2);
-    let item = array[index];
+  while (start <= end) {
+    const index = Math.floor((start + end) / 2);
+    const currentElement = sortedElements[index];
 
-    if (item === value) {
-        return index;
+    if (currentElement === target) {
+      return index;
+    } else if (currentElement < target) {
+      start = index + 1;
+    } else if (currentElement > target) {
+      end = index - 1;
     }
-    else if (item < value) {
-        return binarySearch(array, value, index + 1, end);
-    }
-    else if (item > value) {
-        return binarySearch(array, value, start, index - 1);
-    }
-};
+  }
+
+  return -1;
+}
 ```
 
 * Find 45
